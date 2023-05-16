@@ -1,0 +1,34 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Aspirante",
+        "Service": "/DreamsBank/Services/dreamsbankmov.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "identificacion": "#Control:identificacion/#Value",
+        "nombre": "#Control:nombre/#Value",
+        "edad": "#Control:edad/#Value",
+        "ciudad": "#Control:ciudad/#Value",
+        "imagen": "#Control:imagen/#Value",
+        "semestre": "#Control:semestre/#Value",
+        "carrera": "#Control:carrera/#Value",
+        "fechaNacimiento": "#Control:fechaNacimiento/#Value",
+        "ciudadNacimiento": "#Control:ciudadNacimiento/#Value",
+        "telefono": "#Control:telefono/#Value",
+        "correo": "#Control:correo/#Value",
+        "direccion": "#Control:direccion/#Value",
+        "contrasena": "#Control:contrasena/#Value",
+        "idProducto_id": "#Control:idProducto_id/#SelectedValue",
+        "haDonado": "#Control:haDonado/#Value",
+        "generico1": "#Control:generico1/#Value",
+        "generico2": "#Control:generico2/#Value",
+        "generico3": "#Control:generico3/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/DreamsBank/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/DreamsBank/Actions/UpdateEntityFailureMessage.action"
+}

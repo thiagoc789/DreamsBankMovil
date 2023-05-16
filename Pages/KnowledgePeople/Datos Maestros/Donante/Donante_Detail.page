@@ -1,0 +1,132 @@
+{
+	"Caption": "Donante Detail",
+	"DesignTimeTarget": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Donante",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Donante/NavToDonante_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/DreamsBank/Rules/KnowledgePeople/Datos Maestros/Donante/Donante_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{idProducto_id}",
+						"Subhead": "{identificacion}",
+						"BodyText": "",
+						"Footnote": "{nombre}",
+						"Description": "{tipo}",
+						"StatusText": "{edad}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{ciudad}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "identificacion",
+							"Value": "{identificacion}"
+						},
+						{
+							"KeyName": "tipo",
+							"Value": "{tipo}"
+						},
+						{
+							"KeyName": "nombre",
+							"Value": "{nombre}"
+						},
+						{
+							"KeyName": "edad",
+							"Value": "{edad}"
+						},
+						{
+							"KeyName": "ciudad",
+							"Value": "{ciudad}"
+						},
+						{
+							"KeyName": "empresa",
+							"Value": "{empresa}"
+						},
+						{
+							"KeyName": "telefono",
+							"Value": "{telefono}"
+						},
+						{
+							"KeyName": "correo",
+							"Value": "{correo}"
+						},
+						{
+							"KeyName": "imagen",
+							"Value": "{imagen}"
+						},
+						{
+							"KeyName": "web",
+							"Value": "{web}"
+						},
+						{
+							"KeyName": "direccion",
+							"Value": "{direccion}"
+						},
+						{
+							"KeyName": "contrasena",
+							"Value": "{contrasena}"
+						},
+						{
+							"KeyName": "fechaNacimiento",
+							"Value": "{fechaNacimiento}"
+						},
+						{
+							"KeyName": "idProducto_id",
+							"Value": "{idProducto_id}"
+						},
+						{
+							"KeyName": "haDonado",
+							"Value": "{haDonado}"
+						},
+						{
+							"KeyName": "generico1",
+							"Value": "{generico1}"
+						},
+						{
+							"KeyName": "generico2",
+							"Value": "{generico2}"
+						},
+						{
+							"KeyName": "generico3",
+							"Value": "{generico3}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Donante_Detail",
+	"PrefersLargeCaption": true
+}

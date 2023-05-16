@@ -1,0 +1,119 @@
+{
+	"Caption": "Update Producto Detail",
+	"DesignTimeTarget": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Producto",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/DreamsBank/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Producto/Producto_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "id",
+							"_Name": "id",
+							"Value": "{id}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "nombre_producto",
+							"_Name": "nombre_producto",
+							"Value": "{nombre_producto}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "descripcion",
+							"_Name": "descripcion",
+							"Value": "{descripcion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "valor",
+							"_Name": "valor",
+							"Value": "{valor}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "tipo",
+							"_Name": "tipo",
+							"Value": "{tipo}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "modalidad",
+							"_Name": "modalidad",
+							"Value": "{modalidad}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ciudad",
+							"_Name": "ciudad",
+							"Value": "{ciudad}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "universidad",
+							"_Name": "universidad",
+							"Value": "{universidad}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "fabricante",
+							"_Name": "fabricante",
+							"Value": "{fabricante}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "imagen",
+							"_Name": "imagen",
+							"Value": "{imagen}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "generico1",
+							"_Name": "generico1",
+							"Value": "{generico1}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "generico2",
+							"_Name": "generico2",
+							"Value": "{generico2}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "generico3",
+							"_Name": "generico3",
+							"Value": "{generico3}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Producto_Edit",
+	"PrefersLargeCaption": true
+}

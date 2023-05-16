@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/DreamsBank/Pages/KnowledgePeople/Datos Maestros/Donante/Donante_Create.page",
+    "_Type": "Action.Type.Navigation"
+}

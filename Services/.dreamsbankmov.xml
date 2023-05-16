@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="DreamsBankService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="Aspirante" EntityType="DreamsBankService.Aspirante">
+                    <NavigationPropertyBinding Path="idProducto" Target="Producto"/>
+                </EntitySet>
+                <EntitySet Name="Donante" EntityType="DreamsBankService.Donante">
+                    <NavigationPropertyBinding Path="idProducto" Target="Producto"/>
+                </EntitySet>
+                <EntitySet Name="Producto" EntityType="DreamsBankService.Producto"/>
+            </EntityContainer>
+            <EntityType Name="Aspirante">
+                <Key>
+                    <PropertyRef Name="identificacion"/>
+                </Key>
+                <Property Name="identificacion" Type="Edm.String" MaxLength="100" Nullable="false"/>
+                <Property Name="nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="edad" Type="Edm.Int32"/>
+                <Property Name="ciudad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="imagen" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="semestre" Type="Edm.Int32"/>
+                <Property Name="carrera" Type="Edm.String" MaxLength="100"/>
+                <Property Name="fechaNacimiento" Type="Edm.Date"/>
+                <Property Name="ciudadNacimiento" Type="Edm.String" MaxLength="100"/>
+                <Property Name="telefono" Type="Edm.String" MaxLength="100"/>
+                <Property Name="correo" Type="Edm.String" MaxLength="100"/>
+                <Property Name="direccion" Type="Edm.String" MaxLength="100"/>
+                <Property Name="contrasena" Type="Edm.String" MaxLength="100"/>
+                <NavigationProperty Name="idProducto" Type="DreamsBankService.Producto">
+                    <ReferentialConstraint Property="idProducto_id" ReferencedProperty="id"/>
+                </NavigationProperty>
+                <Property Name="idProducto_id" Type="Edm.String" MaxLength="50"/>
+                <Property Name="haDonado" Type="Edm.Boolean"/>
+                <Property Name="generico1" Type="Edm.String" MaxLength="100"/>
+                <Property Name="generico2" Type="Edm.String" MaxLength="100"/>
+                <Property Name="generico3" Type="Edm.String" MaxLength="100"/>
+            </EntityType>
+            <EntityType Name="Donante">
+                <Key>
+                    <PropertyRef Name="identificacion"/>
+                </Key>
+                <Property Name="identificacion" Type="Edm.String" MaxLength="100" Nullable="false"/>
+                <Property Name="tipo" Type="Edm.String" MaxLength="50"/>
+                <Property Name="nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="edad" Type="Edm.Int32"/>
+                <Property Name="ciudad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="empresa" Type="Edm.String" MaxLength="100"/>
+                <Property Name="telefono" Type="Edm.String" MaxLength="100"/>
+                <Property Name="correo" Type="Edm.String" MaxLength="100"/>
+                <Property Name="imagen" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="web" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="direccion" Type="Edm.String" MaxLength="500"/>
+                <Property Name="contrasena" Type="Edm.String" MaxLength="100"/>
+                <Property Name="fechaNacimiento" Type="Edm.Date"/>
+                <NavigationProperty Name="idProducto" Type="DreamsBankService.Producto">
+                    <ReferentialConstraint Property="idProducto_id" ReferencedProperty="id"/>
+                </NavigationProperty>
+                <Property Name="idProducto_id" Type="Edm.String" MaxLength="50"/>
+                <Property Name="haDonado" Type="Edm.Boolean"/>
+                <Property Name="generico1" Type="Edm.String" MaxLength="100"/>
+                <Property Name="generico2" Type="Edm.String" MaxLength="100"/>
+                <Property Name="generico3" Type="Edm.String" MaxLength="100"/>
+            </EntityType>
+            <EntityType Name="Producto">
+                <Key>
+                    <PropertyRef Name="id"/>
+                </Key>
+                <Property Name="id" Type="Edm.String" MaxLength="50" Nullable="false"/>
+                <Property Name="nombre_producto" Type="Edm.String" MaxLength="100"/>
+                <Property Name="descripcion" Type="Edm.String" MaxLength="500"/>
+                <Property Name="valor" Type="Edm.String" MaxLength="100"/>
+                <Property Name="tipo" Type="Edm.String" MaxLength="50"/>
+                <Property Name="modalidad" Type="Edm.String" MaxLength="50"/>
+                <Property Name="ciudad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="universidad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="fabricante" Type="Edm.String" MaxLength="100"/>
+                <Property Name="imagen" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="generico1" Type="Edm.String" MaxLength="100"/>
+                <Property Name="generico2" Type="Edm.String" MaxLength="100"/>
+                <Property Name="generico3" Type="Edm.String" MaxLength="100"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

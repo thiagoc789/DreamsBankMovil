@@ -1,0 +1,29 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Producto",
+        "Service": "/DreamsBank/Services/dreamsbankmov.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "id": "#Control:id/#Value",
+        "nombre_producto": "#Control:nombre_producto/#Value",
+        "descripcion": "#Control:descripcion/#Value",
+        "valor": "#Control:valor/#Value",
+        "tipo": "#Control:tipo/#Value",
+        "modalidad": "#Control:modalidad/#Value",
+        "ciudad": "#Control:ciudad/#Value",
+        "universidad": "#Control:universidad/#Value",
+        "fabricante": "#Control:fabricante/#Value",
+        "imagen": "#Control:imagen/#Value",
+        "generico1": "#Control:generico1/#Value",
+        "generico2": "#Control:generico2/#Value",
+        "generico3": "#Control:generico3/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/DreamsBank/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/DreamsBank/Actions/UpdateEntityFailureMessage.action"
+}

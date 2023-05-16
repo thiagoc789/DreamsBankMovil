@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_KnowledgePeople"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgePeople/Menu_KnowledgePeople.page"
+}

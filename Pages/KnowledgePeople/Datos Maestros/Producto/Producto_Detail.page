@@ -1,0 +1,112 @@
+{
+	"Caption": "Producto Detail",
+	"DesignTimeTarget": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Producto",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Producto/NavToProducto_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/DreamsBank/Rules/KnowledgePeople/Datos Maestros/Producto/Producto_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{id}",
+						"Subhead": "{nombre_producto}",
+						"BodyText": "",
+						"Footnote": "{valor}",
+						"Description": "{descripcion}",
+						"StatusText": "{tipo}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{modalidad}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "id",
+							"Value": "{id}"
+						},
+						{
+							"KeyName": "nombre_producto",
+							"Value": "{nombre_producto}"
+						},
+						{
+							"KeyName": "descripcion",
+							"Value": "{descripcion}"
+						},
+						{
+							"KeyName": "valor",
+							"Value": "{valor}"
+						},
+						{
+							"KeyName": "tipo",
+							"Value": "{tipo}"
+						},
+						{
+							"KeyName": "modalidad",
+							"Value": "{modalidad}"
+						},
+						{
+							"KeyName": "ciudad",
+							"Value": "{ciudad}"
+						},
+						{
+							"KeyName": "universidad",
+							"Value": "{universidad}"
+						},
+						{
+							"KeyName": "fabricante",
+							"Value": "{fabricante}"
+						},
+						{
+							"KeyName": "imagen",
+							"Value": "{imagen}"
+						},
+						{
+							"KeyName": "generico1",
+							"Value": "{generico1}"
+						},
+						{
+							"KeyName": "generico2",
+							"Value": "{generico2}"
+						},
+						{
+							"KeyName": "generico3",
+							"Value": "{generico3}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Producto_Detail",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,164 @@
+{
+	"Caption": "Update Aspirante Detail",
+	"DesignTimeTarget": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Aspirante",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/DreamsBank/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "identificacion",
+							"_Name": "identificacion",
+							"Value": "{identificacion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "nombre",
+							"_Name": "nombre",
+							"Value": "{nombre}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "edad",
+							"_Name": "edad",
+							"Value": "{edad}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ciudad",
+							"_Name": "ciudad",
+							"Value": "{ciudad}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "imagen",
+							"_Name": "imagen",
+							"Value": "{imagen}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "semestre",
+							"_Name": "semestre",
+							"Value": "{semestre}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "carrera",
+							"_Name": "carrera",
+							"Value": "{carrera}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Date",
+							"_Name": "fechaNacimiento",
+							"Value": "{fechaNacimiento}",
+							"Caption": "fechaNacimiento",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "ciudadNacimiento",
+							"_Name": "ciudadNacimiento",
+							"Value": "{ciudadNacimiento}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "telefono",
+							"_Name": "telefono",
+							"Value": "{telefono}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "correo",
+							"_Name": "correo",
+							"Value": "{correo}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "direccion",
+							"_Name": "direccion",
+							"Value": "{direccion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "contrasena",
+							"_Name": "contrasena",
+							"Value": "{contrasena}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "idProducto_id",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{id}",
+								"ReturnValue": "{id}",
+								"Target": {
+									"EntitySet": "Producto",
+									"Service": "/DreamsBank/Services/dreamsbankmov.service"
+								}
+							},
+							"Value": "{idProducto_id}",
+							"_Name": "idProducto_id",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"_Name": "haDonado",
+							"Caption": "haDonado",
+							"Value": "{haDonado}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "generico1",
+							"_Name": "generico1",
+							"Value": "{generico1}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "generico2",
+							"_Name": "generico2",
+							"Value": "{generico2}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "generico3",
+							"_Name": "generico3",
+							"Value": "{generico3}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Aspirante_Edit",
+	"PrefersLargeCaption": true
+}

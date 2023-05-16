@@ -1,0 +1,53 @@
+{
+	"Credential": "cf",
+	"Template": {
+		"Id": "@ext-mdkvsc-npm-dev/generator-mdk",
+		"Name": "CRUD",
+		"Version": "0.0.1"
+	},
+	"CF": {
+		"Target": "https://api.cf.us10-001.hana.ondemand.com",
+		"Organization": "5dfaa0b5-2862-4dc9-a9a0-d820134da8d5",
+		"Space": "fa59d10d-4ea7-4bfb-8bec-2468695cbbb9",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"Runtime": "",
+				"URL": ""
+			},
+			"Destination": [
+				{
+					"CF": "",
+					"MDK": "dreamsbankmov",
+					"URL": ""
+				}
+			]
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/5dfaa0b5-2862-4dc9-a9a0-d820134da8d5/space/fa59d10d-4ea7-4bfb-8bec-2468695cbbb9",
+		"AppId": "dreamsbankmov",
+		"Destination": [
+			"dreamsbankmov"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=dreamsbankmov&ClientId=6706e7aa-7d69-46ec-88c8-a15f4023f456&ServerUrl=https://dc129020trial-dev-dreamsbankmov.cfapps.us10-001.hana.ondemand.com&SapCloudPlatformEndpoint=https://dc129020trial-dev-dreamsbankmov.cfapps.us10-001.hana.ondemand.com&AuthorizationEndpointUrl=https://dc129020trial-dev-dreamsbankmov.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://dc129020trial-dev-dreamsbankmov.cfapps.us10-001.hana.ondemand.com&TokenUrl=https://dc129020trial-dev-dreamsbankmov.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/token&multiUser=false"
+	},
+	"LCAP": {
+		"FullName": "",
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": true,
+		"TSTarget": "es6",
+		"WMF": true
+	}
+}

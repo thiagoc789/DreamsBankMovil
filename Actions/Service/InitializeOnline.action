@@ -1,0 +1,10 @@
+{
+    "Service": "/DreamsBank/Services/dreamsbankmov.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnSuccess": "/DreamsBank/Actions/Service/InitializeOnlineSuccessMessage.action",
+    "OnFailure": "/DreamsBank/Actions/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}

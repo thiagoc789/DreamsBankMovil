@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/DreamsBank/Pages/KnowledgePeople/Datos Maestros/Producto/Producto_Create.page",
+    "_Type": "Action.Type.Navigation"
+}

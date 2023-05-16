@@ -1,0 +1,8 @@
+{
+    "_Type": "Action.Type.ApplicationUpdate",
+    "ActionResult": {
+        "_Name": "AppUpdate"
+    },
+    "OnFailure": "/DreamsBank/Rules/AppUpdateFailure.js",
+    "OnSuccess": "/DreamsBank/Rules/AppUpdateSuccess.js"
+}
