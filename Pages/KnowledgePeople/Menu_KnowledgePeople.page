@@ -5,8 +5,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ObjectHeader",
-					"_Name": "SectionObjectHeader0",
 					"ObjectHeader": {
 						"DetailImage": "/DreamsBank/Images/innovar.png",
 						"DetailImageIsCircular": false,
@@ -15,13 +13,11 @@
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading"
 					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
 					"Visible": true
 				},
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -29,8 +25,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -41,7 +35,7 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"Image": "/DreamsBank/Images/innovar.png",
+							"Image": "sap-icon://add-contact",
 							"ImagePosition": "Leading",
 							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/NavTo_MenuDatosMaestros.action"
 						},
@@ -54,7 +48,7 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"Image": "res://mdk_logo.png",
+							"Image": "sap-icon://manager",
 							"ImagePosition": "Leading"
 						},
 						{
@@ -66,10 +60,16 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"Image": "res://mdk_logo.png",
+							"Image": "sap-icon://information",
 							"ImagePosition": "Leading"
 						}
-					]
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				}
 			]
 		}

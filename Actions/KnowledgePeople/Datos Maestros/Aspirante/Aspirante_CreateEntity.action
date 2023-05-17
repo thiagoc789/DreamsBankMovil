@@ -1,33 +1,27 @@
 {
-    "CreateLinks": [],
-    "OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
-    "OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
-    "Properties": {
-        "identificacion": "#Control:identificacion/#Value",
-        "nombre": "#Control:nombre/#Value",
-        "edad": "#Control:edad/#Value",
-        "ciudad": "#Control:ciudad/#Value",
-        "imagen": "#Control:imagen/#Value",
-        "semestre": "#Control:semestre/#Value",
-        "carrera": "#Control:carrera/#Value",
-        "fechaNacimiento": "#Control:fechaNacimiento/#Value",
-        "ciudadNacimiento": "#Control:ciudadNacimiento/#Value",
-        "telefono": "#Control:telefono/#Value",
-        "correo": "#Control:correo/#Value",
-        "direccion": "#Control:direccion/#Value",
-        "contrasena": "#Control:contrasena/#Value",
-        "idProducto_id": "#Control:idProducto_id/#SelectedValue",
-        "haDonado": "#Control:haDonado/#Value",
-        "generico1": "#Control:generico1/#Value",
-        "generico2": "#Control:generico2/#Value",
-        "generico3": "#Control:generico3/#Value"
-    },
-    "Target": {
-        "EntitySet": "Aspirante",
-        "Service": "/DreamsBank/Services/dreamsbankmov.service"
-    },
-    "ActionResult": {
-        "_Name": "create"
-    },
-    "_Type": "Action.Type.ODataService.CreateEntity"
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"EntitySet": "Aspirante",
+		"Service": "/DreamsBank/Services/dreamsbankmov.service"
+	},
+	"Properties": {
+		"identificacion": "#Control:identificacion/#Value",
+		"nombre": "#Control:nombre/#Value",
+		"edad": "#Control:edad/#Value",
+		"ciudad": "#Control:ciudad/#Value",
+		"semestre": "#Control:semestre/#Value",
+		"carrera": "#Control:carrera/#Value",
+		"fechaNacimiento": "#Control:fechaNacimiento/#Value",
+		"ciudadNacimiento": "#Control:ciudadNacimiento/#Value",
+		"telefono": "#Control:telefono/#Value",
+		"correo": "#Control:correo/#Value",
+		"direccion": "#Control:direccion/#Value",
+		"contrasena": "#Control:contrasena/#Value",
+		"generico1": "#Control:generico1/#Value"
+	}
 }

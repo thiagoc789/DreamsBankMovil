@@ -1,28 +1,23 @@
 {
-    "CreateLinks": [],
-    "OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
-    "OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
-    "Properties": {
-        "id": "#Control:id/#Value",
-        "nombre_producto": "#Control:nombre_producto/#Value",
-        "descripcion": "#Control:descripcion/#Value",
-        "valor": "#Control:valor/#Value",
-        "tipo": "#Control:tipo/#Value",
-        "modalidad": "#Control:modalidad/#Value",
-        "ciudad": "#Control:ciudad/#Value",
-        "universidad": "#Control:universidad/#Value",
-        "fabricante": "#Control:fabricante/#Value",
-        "imagen": "#Control:imagen/#Value",
-        "generico1": "#Control:generico1/#Value",
-        "generico2": "#Control:generico2/#Value",
-        "generico3": "#Control:generico3/#Value"
-    },
-    "Target": {
-        "EntitySet": "Producto",
-        "Service": "/DreamsBank/Services/dreamsbankmov.service"
-    },
-    "ActionResult": {
-        "_Name": "create"
-    },
-    "_Type": "Action.Type.ODataService.CreateEntity"
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"EntitySet": "Producto",
+		"Service": "/DreamsBank/Services/dreamsbankmov.service"
+	},
+	"Properties": {
+		"id": "#Control:id/#Value",
+		"nombre_producto": "#Control:nombre_producto/#Value",
+		"descripcion": "#Control:descripcion/#Value",
+		"valor": "#Control:valor/#Value",
+		"tipo": "#Control:FormCellListPicker0/#SelectedValue",
+		"modalidad": "#Control:modalidad/#Value",
+		"ciudad": "#Control:ciudad/#Value",
+		"universidad": "#Control:universidad/#Value",
+		"fabricante": "#Control:fabricante/#Value"
+	}
 }

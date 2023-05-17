@@ -1,33 +1,26 @@
 {
-    "CreateLinks": [],
-    "OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
-    "OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
-    "Properties": {
-        "identificacion": "#Control:identificacion/#Value",
-        "tipo": "#Control:tipo/#Value",
-        "nombre": "#Control:nombre/#Value",
-        "edad": "#Control:edad/#Value",
-        "ciudad": "#Control:ciudad/#Value",
-        "empresa": "#Control:empresa/#Value",
-        "telefono": "#Control:telefono/#Value",
-        "correo": "#Control:correo/#Value",
-        "imagen": "#Control:imagen/#Value",
-        "web": "#Control:web/#Value",
-        "direccion": "#Control:direccion/#Value",
-        "contrasena": "#Control:contrasena/#Value",
-        "fechaNacimiento": "#Control:fechaNacimiento/#Value",
-        "idProducto_id": "#Control:idProducto_id/#SelectedValue",
-        "haDonado": "#Control:haDonado/#Value",
-        "generico1": "#Control:generico1/#Value",
-        "generico2": "#Control:generico2/#Value",
-        "generico3": "#Control:generico3/#Value"
-    },
-    "Target": {
-        "EntitySet": "Donante",
-        "Service": "/DreamsBank/Services/dreamsbankmov.service"
-    },
-    "ActionResult": {
-        "_Name": "create"
-    },
-    "_Type": "Action.Type.ODataService.CreateEntity"
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"EntitySet": "Donante",
+		"Service": "/DreamsBank/Services/dreamsbankmov.service"
+	},
+	"Properties": {
+		"identificacion": "#Control:identificacion/#Value",
+		"tipo": "#Control:tipoPersona/#SelectedValue",
+		"nombre": "#Control:nombre/#Value",
+		"edad": "#Control:edad/#Value",
+		"ciudad": "#Control:ciudad/#Value",
+		"empresa": "#Control:empresa/#Value",
+		"telefono": "#Control:telefono/#Value",
+		"correo": "#Control:correo/#Value",
+		"web": "#Control:web/#Value",
+		"direccion": "#Control:direccion/#Value",
+		"contrasena": "#Control:contrasena/#Value",
+		"fechaNacimiento": "#Control:fechaNacimiento/#Value"
+	}
 }

@@ -1,44 +1,48 @@
 {
-	"Caption": "Producto",
-	"ActionBar": {
-		"Items": [
-			{
-				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Producto/NavToProducto_Create.action",
-				"Position": "Right",
-				"SystemItem": "Add"
-			}
-		]
-	},
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
 			"Sections": [
 				{
 					"Header": {
+						"_Name": "SectionHeader0",
 						"UseTopPadding": false
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "Producto",
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectTable0",
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
+						"Title": "{nombre_producto}",
+						"Subhead": "Valor: ${valor}",
+						"Footnote": "Tipo: {tipo}",
 						"Description": "{descripcion}",
+						"StatusText": "Id: {id}",
+						"SubstatusText": "{modalidad}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "disclosureIndicator",
+						"Tags": [],
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": ""
+									"Image": "{imagen}"
 								}
 							],
 							"ImageIsCircular": false
 						},
-						"Icons": [],
 						"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Producto/NavToProducto_Detail.action",
-						"StatusImage": "",
-						"Title": "{id}",
-						"Footnote": "{valor}",
-						"PreserveIconStackSpacing": false,
-						"StatusText": "{tipo}",
-						"Subhead": "{nombre_producto}",
-						"SubstatusText": "{modalidad}"
-					},
-					"EmptySection": {
-						"Caption": "No record found!"
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						}
 					},
 					"Search": {
 						"Enabled": true,
@@ -50,24 +54,30 @@
 					"DataPaging": {
 						"ShowLoadingIndicator": true,
 						"LoadingIndicatorText": "Loading more items, please wait..."
-					},
-					"Target": {
-						"EntitySet": "Producto",
-						"Service": "/DreamsBank/Services/dreamsbankmov.service",
-						"QueryOptions": ""
-					},
-					"_Type": "Section.Type.ObjectTable"
+					}
 				}
 			],
 			"LoadingIndicator": {
 				"Enabled": true,
 				"Text": "Loading, please wait..."
-			},
-			"_Type": "Control.Type.SectionedTable",
-			"_Name": "SectionedTable"
+			}
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Producto_List",
-	"PrefersLargeCaption": true
+	"Caption": "Producto",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Producto/NavToProducto_Create.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

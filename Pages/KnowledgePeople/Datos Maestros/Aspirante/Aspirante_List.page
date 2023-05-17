@@ -1,44 +1,48 @@
 {
-	"Caption": "Aspirante",
-	"ActionBar": {
-		"Items": [
-			{
-				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/NavToAspirante_Create.action",
-				"Position": "Right",
-				"SystemItem": "Add"
-			}
-		]
-	},
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
 			"Sections": [
 				{
 					"Header": {
+						"_Name": "SectionHeader0",
 						"UseTopPadding": false
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "Aspirante",
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectTable0",
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
 					"ObjectCell": {
+						"Title": "{nombre}",
+						"Subhead": "Cedula: {identificacion}",
+						"Footnote": "Universidad: {generico1}",
+						"Description": "Edad: {edad}",
+						"StatusText": "{telefono}",
+						"SubstatusText": "{correo}",
+						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
-						"Description": "{nombre}",
+						"Tags": [],
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": ""
+									"Image": "{imagen}"
 								}
 							],
 							"ImageIsCircular": false
 						},
-						"Icons": [],
 						"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/NavToAspirante_Detail.action",
-						"StatusImage": "",
-						"Title": "{idProducto_id}",
-						"Footnote": "{edad}",
-						"PreserveIconStackSpacing": false,
-						"StatusText": "{ciudad}",
-						"Subhead": "{identificacion}",
-						"SubstatusText": "{imagen}"
-					},
-					"EmptySection": {
-						"Caption": "No record found!"
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						}
 					},
 					"Search": {
 						"Enabled": true,
@@ -50,24 +54,30 @@
 					"DataPaging": {
 						"ShowLoadingIndicator": true,
 						"LoadingIndicatorText": "Loading more items, please wait..."
-					},
-					"Target": {
-						"EntitySet": "Aspirante",
-						"Service": "/DreamsBank/Services/dreamsbankmov.service",
-						"QueryOptions": ""
-					},
-					"_Type": "Section.Type.ObjectTable"
+					}
 				}
 			],
 			"LoadingIndicator": {
 				"Enabled": true,
 				"Text": "Loading, please wait..."
-			},
-			"_Type": "Control.Type.SectionedTable",
-			"_Name": "SectionedTable"
+			}
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Aspirante_List",
-	"PrefersLargeCaption": true
+	"Caption": "Aspirante",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/NavToAspirante_Create.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

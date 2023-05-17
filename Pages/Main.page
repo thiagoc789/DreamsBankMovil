@@ -5,8 +5,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ObjectHeader",
-					"_Name": "SectionObjectHeader0",
 					"ObjectHeader": {
 						"Subhead": "Banco de sueños",
 						"Footnote": "0.0.1",
@@ -18,13 +16,11 @@
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading"
 					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
 					"Visible": true
 				},
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -32,8 +28,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -44,11 +38,21 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"Image": "res://mdk_logo.png",
+							"Image": "/DreamsBank/Images/innovar.png",
 							"ImagePosition": "Leading",
+							"ImageSize": {
+								"Height": 30,
+								"Width": 30
+							},
 							"OnPress": "/DreamsBank/Actions/KnowledgePeople/NavTo_KnowledgePeople.action"
 						}
-					]
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				}
 			]
 		}

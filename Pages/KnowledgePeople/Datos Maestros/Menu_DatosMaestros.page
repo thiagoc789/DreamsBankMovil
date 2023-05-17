@@ -17,6 +17,12 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
+							"Image": "https://cdn-icons-png.flaticon.com/512/3523/3523407.png",
+							"ImagePosition": "Leading",
+							"ImageSize": {
+								"Height": 30,
+								"Width": 30
+							},
 							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/NavToAspirante_List.action"
 						},
 						{
@@ -25,6 +31,12 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
+							"Image": "https://cdn-icons-png.flaticon.com/512/610/610120.png",
+							"ImagePosition": "Leading",
+							"ImageSize": {
+								"Height": 30,
+								"Width": 30
+							},
 							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Donante/NavToDonante_List.action"
 						},
 						{
@@ -33,6 +45,12 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
+							"Image": "https://cdn-icons-png.flaticon.com/512/4762/4762311.png",
+							"ImagePosition": "Leading",
+							"ImageSize": {
+								"Height": 30,
+								"Width": 30
+							},
 							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Producto/NavToProducto_List.action"
 						}
 					]
@@ -41,7 +59,7 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Main",
-	"Caption": "Main",
+	"_Name": "Menu_DatosMaestros",
+	"Caption": "Registrarse",
 	"PrefersLargeCaption": true
 }

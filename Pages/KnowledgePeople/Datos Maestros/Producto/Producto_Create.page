@@ -1,100 +1,146 @@
 {
-	"ActionBar": {
-		"Items": [
-			{
-				"OnPress": "/DreamsBank/Actions/CloseModalPage_Cancel.action",
-				"Position": "Left",
-				"SystemItem": "Cancel"
-			},
-			{
-				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Producto/Producto_CreateEntity.action",
-				"Position": "Right",
-				"SystemItem": "Save"
-			}
-		]
-	},
-	"Caption": "Create Producto Detail",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
-					"Visible": true,
 					"Controls": [
 						{
-							"Caption": "id",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "id",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"Caption": "id",
+							"KeyboardType": "Number"
 						},
 						{
-							"Caption": "nombre_producto",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "nombre_producto",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"Caption": "nombre producto"
 						},
 						{
-							"Caption": "descripcion",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "descripcion",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"Caption": "descripcion"
 						},
 						{
-							"Caption": "valor",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "valor",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"Caption": "valor",
+							"KeyboardType": "Number"
 						},
 						{
-							"Caption": "tipo",
-							"_Name": "tipo",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "modalidad",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "modalidad",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"Caption": "modalidad"
 						},
 						{
-							"Caption": "ciudad",
-							"_Name": "ciudad",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
+							"Value": [],
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "tipo de producto",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select one single item",
+							"OnValueChange": "/DreamsBank/Rules/KnowledgePeople/Datos Maestros/Producto/tipoProducto.js",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"PickerItems": [
+								"Curso",
+								"Matricula"
+							]
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "fabricanteCont",
+					"Controls": [
 						{
-							"Caption": "universidad",
-							"_Name": "universidad",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "fabricante",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "fabricante",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"Caption": "fabricante"
+						}
+					]
+				},
+				{
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "universidadCont",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "ciudad",
+							"Caption": "ciudad"
 						},
 						{
-							"Caption": "imagen",
-							"_Name": "imagen",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "generico1",
-							"_Name": "generico1",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "generico2",
-							"_Name": "generico2",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "generico3",
-							"_Name": "generico3",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "universidad",
+							"Caption": "universidad"
 						}
 					]
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Producto_Create",
-	"PrefersLargeCaption": true
+	"Caption": "Create Producto Detail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Producto/Producto_CreateEntity.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

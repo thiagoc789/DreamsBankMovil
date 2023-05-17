@@ -1,44 +1,48 @@
 {
-	"Caption": "Donante",
-	"ActionBar": {
-		"Items": [
-			{
-				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Donante/NavToDonante_Create.action",
-				"Position": "Right",
-				"SystemItem": "Add"
-			}
-		]
-	},
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
 			"Sections": [
 				{
 					"Header": {
+						"_Name": "SectionHeader0",
 						"UseTopPadding": false
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "Donante",
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectTable0",
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
 					"ObjectCell": {
+						"Title": "{nombre}",
+						"Subhead": "{empresa}",
+						"Footnote": "{identificacion}",
+						"Description": "Persona: {tipo}",
+						"StatusText": "{correo}",
+						"SubstatusText": "{telefono}",
+						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
-						"Description": "{tipo}",
+						"Tags": [],
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": ""
+									"Image": "{imagen}"
 								}
 							],
 							"ImageIsCircular": false
 						},
-						"Icons": [],
 						"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Donante/NavToDonante_Detail.action",
-						"StatusImage": "",
-						"Title": "{idProducto_id}",
-						"Footnote": "{nombre}",
-						"PreserveIconStackSpacing": false,
-						"StatusText": "{edad}",
-						"Subhead": "{identificacion}",
-						"SubstatusText": "{ciudad}"
-					},
-					"EmptySection": {
-						"Caption": "No record found!"
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						}
 					},
 					"Search": {
 						"Enabled": true,
@@ -50,24 +54,30 @@
 					"DataPaging": {
 						"ShowLoadingIndicator": true,
 						"LoadingIndicatorText": "Loading more items, please wait..."
-					},
-					"Target": {
-						"EntitySet": "Donante",
-						"Service": "/DreamsBank/Services/dreamsbankmov.service",
-						"QueryOptions": ""
-					},
-					"_Type": "Section.Type.ObjectTable"
+					}
 				}
 			],
 			"LoadingIndicator": {
 				"Enabled": true,
 				"Text": "Loading, please wait..."
-			},
-			"_Type": "Control.Type.SectionedTable",
-			"_Name": "SectionedTable"
+			}
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Donante_List",
-	"PrefersLargeCaption": true
+	"Caption": "Donante",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Donante/NavToDonante_Create.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }
