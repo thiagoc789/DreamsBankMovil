@@ -1,0 +1,27 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnFailure": "/DreamsBank/Actions/UpdateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/UpdateEntitySuccessMessage.action",
+	"Target": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Aspirante",
+		"QueryOptions": "$filter=identificacion eq '{{#Page:Aspirar/#Control:idAspirar/#Value}}'"
+	},
+	"Properties": {
+		"idProducto_id": "#Page:Aspirar/#Control:FormCellListPicker0/#SelectedValue",
+		"haDonado": true
+	},
+	"UpdateLinks": [
+		{
+			"Property": "idProducto",
+			"Target": {
+				"EntitySet": "Producto",
+				"QueryOptions": "$filter=id eq '{{#Page:Aspirar/#Control:FormCellListPicker0/#SelectedValue}}'"
+			},
+			"_Enabled": true
+		}
+	]
+}

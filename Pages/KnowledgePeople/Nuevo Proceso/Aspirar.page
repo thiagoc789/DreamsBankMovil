@@ -1,0 +1,93 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "#Page:Login/#Control:identificacion/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "idAspirar",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Identificacion",
+							"Enabled": true
+						},
+						{
+							"Value": "#Page:Menu_proceso/#Control:nombre_proceso/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "nombreAspirar",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Nombre",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Seleccione un producto",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Seleccione el producto al cual va a aspirar",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"Search": {
+								"Enabled": true
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/DreamsBank/Services/dreamsbankmov.service",
+									"EntitySet": "Producto"
+								},
+								"ObjectCell": {
+									"AccessoryType": "none",
+									"Description": "{descripcion}",
+									"DetailImage": "{imagen}",
+									"DetailImageIsCircular": false,
+									"Footnote": "Precio: ${valor}",
+									"Icons": [],
+									"PreserveIconStackSpacing": false,
+									"StatusText": "Id: {id}",
+									"Styles": {},
+									"Subhead": "{tipo}",
+									"SubstatusText": "{modalidad}",
+									"Title": "{nombre_producto}"
+								},
+								"ReturnValue": "{id}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Aspirar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/Aspirar.action"
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Aspirar",
+	"Caption": "Aspirar"
+}

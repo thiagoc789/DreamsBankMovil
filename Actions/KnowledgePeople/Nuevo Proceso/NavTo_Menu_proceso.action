@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_Menu_proceso"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgePeople/Nuevo Proceso/Menu_proceso.page"
+}

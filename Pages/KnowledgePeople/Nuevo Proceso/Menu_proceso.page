@@ -1,0 +1,110 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "nombre_proceso",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Value": "GreenText"
+							},
+							"Caption": "Logueado como: ",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "rol",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Value": "GreenText"
+							},
+							"Caption": "Rol: ",
+							"Enabled": true
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "aspirar",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Aspirar",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Aspirar.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "donar",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Donar",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "asignar",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Asignar",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading"
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Menu_proceso",
+	"Caption": "Nuevo proceso",
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/DreamsBank/Rules/KnowledgePeople/Nuevo Proceso/cargar_nombreRol.js"
+}
