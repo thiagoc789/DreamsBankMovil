@@ -3,5 +3,6 @@
 	"ActionResult": {
 		"_Name": "NavTo_Aspirar"
 	},
-	"PageToOpen": "/DreamsBank/Pages/KnowledgePeople/Nuevo Proceso/Aspirar.page"
+	"PageToOpen": "/DreamsBank/Pages/KnowledgePeople/Nuevo Proceso/Aspirar.page",
+	"ModalPage": false
 }

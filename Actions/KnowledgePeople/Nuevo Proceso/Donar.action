@@ -7,11 +7,11 @@
 	"OnSuccess": "/DreamsBank/Actions/UpdateEntitySuccessMessage.action",
 	"Target": {
 		"Service": "/DreamsBank/Services/dreamsbankmov.service",
-		"EntitySet": "Aspirante",
-		"QueryOptions": "$filter=identificacion eq '{{#Page:Aspirar/#Control:idAspirar/#Value}}'"
+		"EntitySet": "Donante",
+		"QueryOptions": "$filter=identificacion eq '{{#Page:Donar/#Control:identificacion_donar/#Value}}'"
 	},
 	"Properties": {
-		"idProducto_id": "#Page:Aspirar/#Control:FormCellListPicker0/#SelectedValue",
+		"idProducto_id": "#Page:Donar/#Control:listpicker_donar/#SelectedValue",
 		"haDonado": true
 	}
 }

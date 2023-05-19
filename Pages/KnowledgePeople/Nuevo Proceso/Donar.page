@@ -9,7 +9,7 @@
 						{
 							"Value": "#Page:Login/#Control:identificacion/#Value",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "idAspirar",
+							"_Name": "identificacion_donar",
 							"IsEditable": false,
 							"IsVisible": true,
 							"Separator": true,
@@ -19,7 +19,7 @@
 						{
 							"Value": "#Page:Menu_proceso/#Control:nombre_proceso/#Value",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "nombreAspirar",
+							"_Name": "FormCellSimpleProperty1",
 							"IsEditable": false,
 							"IsVisible": true,
 							"Separator": true,
@@ -28,7 +28,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "FormCellListPicker0",
+							"_Name": "listpicker_donar",
 							"IsEditable": true,
 							"IsVisible": true,
 							"Separator": true,
@@ -39,20 +39,17 @@
 								"ShowLoadingIndicator": false,
 								"PageSize": 50
 							},
-							"PickerPrompt": "Seleccione el producto al cual va a aspirar",
+							"PickerPrompt": "Please select one single item",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
 							"AllowDefaultValueIfOneItem": false,
-							"Search": {
-								"Enabled": true
-							},
 							"PickerItems": {
 								"Target": {
 									"Service": "/DreamsBank/Services/dreamsbankmov.service",
 									"EntitySet": "Producto"
 								},
 								"ObjectCell": {
-									"AccessoryType": "none",
 									"Description": "{descripcion}",
 									"DetailImage": "{imagen}",
 									"DetailImageIsCircular": false,
@@ -73,13 +70,13 @@
 							"_Name": "FormCellButton0",
 							"IsVisible": true,
 							"Separator": true,
-							"Title": "Aspirar",
+							"Title": "Donar",
 							"Alignment": "Center",
-							"ButtonType": "Primary",
+							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"Image": "res://mdk_logo.png",
 							"ImagePosition": "Leading",
-							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/Aspirar.action"
+							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/Donar.action"
 						}
 					],
 					"Visible": true
@@ -88,6 +85,6 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Aspirar",
-	"Caption": "Aspirar"
+	"_Name": "Donar",
+	"Caption": "Donar"
 }

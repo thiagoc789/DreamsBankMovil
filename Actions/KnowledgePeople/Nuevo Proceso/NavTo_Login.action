@@ -3,5 +3,6 @@
 	"ActionResult": {
 		"_Name": "NavTo_Login"
 	},
-	"PageToOpen": "/DreamsBank/Pages/KnowledgePeople/Nuevo Proceso/Login.page"
+	"PageToOpen": "/DreamsBank/Pages/KnowledgePeople/Nuevo Proceso/Login.page",
+	"ModalPage": true
 }

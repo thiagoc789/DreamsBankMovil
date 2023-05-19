@@ -46,10 +46,6 @@
 					"_Name": "SectionFormCell0"
 				},
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -57,8 +53,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell1",
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -83,21 +77,40 @@
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Donar.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "asignar_aspirante",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Asignar por aspirante",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
 							"ImagePosition": "Leading"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
-							"_Name": "asignar",
+							"_Name": "asignar_donante",
 							"IsVisible": true,
 							"Separator": true,
-							"Title": "Asignar",
+							"Title": "Asignar por donante",
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"Image": "res://mdk_logo.png",
 							"ImagePosition": "Leading"
 						}
-					]
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
 				}
 			]
 		}
