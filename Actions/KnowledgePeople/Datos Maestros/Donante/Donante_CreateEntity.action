@@ -21,6 +21,7 @@
 		"web": "#Control:web/#Value",
 		"direccion": "#Control:direccion/#Value",
 		"contrasena": "#Control:contrasena/#Value",
-		"fechaNacimiento": "#Control:fechaNacimiento/#Value"
+		"fechaNacimiento": "#Control:fechaNacimiento/#Value",
+		"haDonado": false
 	}
 }

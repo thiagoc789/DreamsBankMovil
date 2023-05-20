@@ -11,7 +11,6 @@
 		"QueryOptions": "$filter=identificacion eq '{{#Page:Donar/#Control:identificacion_donar/#Value}}'"
 	},
 	"Properties": {
-		"idProducto_id": "#Page:Donar/#Control:listpicker_donar/#SelectedValue",
 		"haDonado": true
 	}
 }

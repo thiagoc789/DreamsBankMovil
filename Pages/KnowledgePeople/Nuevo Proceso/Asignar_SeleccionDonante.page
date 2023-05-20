@@ -1,0 +1,135 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"Value": "{aspirante/nombre}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "aspirante_seleccionDonante",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Value": "GreenText"
+							},
+							"Caption": "Aspirante: ",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{producto/nombre_producto}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "producto_asignar",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Value": "GreenText"
+							},
+							"Caption": "Producto:",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{aspirante/identificacion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "id_aspirante",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "id_aspirante",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						}
+					]
+				},
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"EntitySet": "Donacion",
+						"QueryOptions": "$expand=donante,producto&$filter=producto/id eq '{producto/id}'"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{donante/nombre}",
+						"Subhead": "Donando: {producto/nombre_producto}",
+						"Footnote": "{donante/empresa}",
+						"Description": "{donante/ciudad}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "{donante/correo}",
+						"SubstatusText": "Tel: {donante/telefono}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "{donante/imagen}",
+									"ImageText": ""
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Asignar_AspiranteResumen.action",
+						"Styles": {
+							"Subhead": "GreenText"
+						},
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						}
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Asignar_SeleccionDonante",
+	"Caption": "Seleccione un donante",
+	"PrefersLargeCaption": true
+}

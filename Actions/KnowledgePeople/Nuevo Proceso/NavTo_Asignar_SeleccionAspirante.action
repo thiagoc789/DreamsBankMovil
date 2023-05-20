@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_Asignar_SeleccionAspirante"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgePeople/Nuevo Proceso/Asignar_SeleccionAspirante.page"
+}

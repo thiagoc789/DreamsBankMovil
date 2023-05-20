@@ -1,0 +1,16 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Asignacion"
+	},
+	"Properties": {
+		"aspirante_identificacion": "#Page:Asignar_AspiranteResumen/#Control:id_aspiranteResumen/#Value",
+		"donante_identificacion": "#Page:Asignar_AspiranteResumen/#Control:id_donanteResumen/#Value"
+	}
+}

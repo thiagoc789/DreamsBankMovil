@@ -1,132 +1,155 @@
 {
-	"Caption": "Donante Detail",
 	"DesignTimeTarget": {
 		"Service": "/DreamsBank/Services/dreamsbankmov.service",
 		"EntitySet": "Donante",
 		"QueryOptions": ""
 	},
-	"ActionBar": {
-		"Items": [
-			{
-				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Donante/NavToDonante_Edit.action",
-				"Position": "Right",
-				"SystemItem": "Edit"
-			},
-			{
-				"OnPress": "/DreamsBank/Rules/KnowledgePeople/Datos Maestros/Donante/Donante_DeleteConfirmation.js",
-				"Position": "Right",
-				"SystemItem": "Trash"
-			}
-		]
-	},
 	"Controls": [
 		{
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Tags": [],
-						"DetailImage": "",
-						"HeadlineText": "{idProducto_id}",
 						"Subhead": "{identificacion}",
-						"BodyText": "",
 						"Footnote": "{nombre}",
 						"Description": "{tipo}",
 						"StatusText": "{edad}",
-						"StatusImage": "",
-						"SubstatusImage": "",
-						"SubstatusText": "{ciudad}"
+						"SubstatusText": "{ciudad}",
+						"Tags": [],
+						"HeadlineText": "{nombre}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
 					},
-					"_Type": "Section.Type.ObjectHeader"
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0"
 				},
 				{
 					"KeyAndValues": [
 						{
-							"KeyName": "identificacion",
-							"Value": "{identificacion}"
+							"Value": "{identificacion}",
+							"_Name": "KeyValue0",
+							"KeyName": "identificacion"
 						},
 						{
-							"KeyName": "tipo",
-							"Value": "{tipo}"
+							"Value": "{tipo}",
+							"_Name": "KeyValue1",
+							"KeyName": "tipo"
 						},
 						{
-							"KeyName": "nombre",
-							"Value": "{nombre}"
+							"Value": "{nombre}",
+							"_Name": "KeyValue2",
+							"KeyName": "nombre"
 						},
 						{
-							"KeyName": "edad",
-							"Value": "{edad}"
+							"Value": "{edad}",
+							"_Name": "KeyValue3",
+							"KeyName": "edad"
 						},
 						{
-							"KeyName": "ciudad",
-							"Value": "{ciudad}"
+							"Value": "{ciudad}",
+							"_Name": "KeyValue4",
+							"KeyName": "ciudad"
 						},
 						{
-							"KeyName": "empresa",
-							"Value": "{empresa}"
+							"Value": "{empresa}",
+							"_Name": "KeyValue5",
+							"KeyName": "empresa"
 						},
 						{
-							"KeyName": "telefono",
-							"Value": "{telefono}"
+							"Value": "{telefono}",
+							"_Name": "KeyValue6",
+							"KeyName": "telefono"
 						},
 						{
-							"KeyName": "correo",
-							"Value": "{correo}"
+							"Value": "{correo}",
+							"_Name": "KeyValue7",
+							"KeyName": "correo"
 						},
 						{
-							"KeyName": "imagen",
-							"Value": "{imagen}"
+							"Value": "{imagen}",
+							"_Name": "KeyValue8",
+							"KeyName": "imagen"
 						},
 						{
-							"KeyName": "web",
-							"Value": "{web}"
+							"Value": "{web}",
+							"_Name": "KeyValue9",
+							"KeyName": "web"
 						},
 						{
-							"KeyName": "direccion",
-							"Value": "{direccion}"
+							"Value": "{direccion}",
+							"_Name": "KeyValue10",
+							"KeyName": "direccion"
 						},
 						{
-							"KeyName": "contrasena",
-							"Value": "{contrasena}"
+							"Value": "{contrasena}",
+							"_Name": "KeyValue11",
+							"KeyName": "contrasena"
 						},
 						{
-							"KeyName": "fechaNacimiento",
-							"Value": "{fechaNacimiento}"
+							"Value": "{fechaNacimiento}",
+							"_Name": "KeyValue12",
+							"KeyName": "fechaNacimiento"
 						},
 						{
-							"KeyName": "idProducto_id",
-							"Value": "{idProducto_id}"
+							"Value": "{haDonado}",
+							"_Name": "KeyValue14",
+							"KeyName": "haDonado"
 						},
 						{
-							"KeyName": "haDonado",
-							"Value": "{haDonado}"
+							"Value": "{generico1}",
+							"_Name": "KeyValue15",
+							"KeyName": "generico1"
 						},
 						{
-							"KeyName": "generico1",
-							"Value": "{generico1}"
+							"Value": "{generico2}",
+							"_Name": "KeyValue16",
+							"KeyName": "generico2"
 						},
 						{
-							"KeyName": "generico2",
-							"Value": "{generico2}"
-						},
-						{
-							"KeyName": "generico3",
-							"Value": "{generico3}"
+							"Value": "{generico3}",
+							"_Name": "KeyValue17",
+							"KeyName": "generico3"
 						}
 					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 2
-					},
-					"MaxItemCount": 1,
-					"_Name": "SectionKeyValue0",
-					"_Type": "Section.Type.KeyValue"
+					}
 				}
-			],
-			"DataSubscriptions": [],
-			"_Type": "Control.Type.SectionedTable",
-			"_Name": "SectionedTable"
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Donante_Detail",
-	"PrefersLargeCaption": true
+	"Caption": "Donante Detail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Donante/NavToDonante_Edit.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Trash",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Rules/KnowledgePeople/Datos Maestros/Donante/Donante_DeleteConfirmation.js"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

@@ -1,0 +1,83 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "#Page:Asignar_SeleccionDonante/#Control:aspirante_seleccionDonante/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "aspirante_resumen",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Aspirante",
+							"Enabled": true
+						},
+						{
+							"Value": "{donante/nombre}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "donante_resumen",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Donante",
+							"Enabled": true
+						},
+						{
+							"Value": "#Page:Asignar_SeleccionDonante/#Control:producto_asignar/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "producto_resumen",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Producto",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Asignar",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/Asignacion_Create.action"
+						},
+						{
+							"Value": "#Page:Asignar_SeleccionDonante/#Control:id_aspirante/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "id_aspiranteResumen",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "ID aspirante",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{donante/identificacion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "id_donanteResumen",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "ID donante",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Asignar_AspiranteResumen",
+	"Caption": "Asignar_AspiranteResumen"
+}

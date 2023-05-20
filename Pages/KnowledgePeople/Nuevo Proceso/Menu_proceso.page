@@ -90,7 +90,8 @@
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"Image": "res://mdk_logo.png",
-							"ImagePosition": "Leading"
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Asignar_SeleccionAspirante.action"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",

@@ -1,0 +1,16 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/Aspirar.action",
+	"Target": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Aspiracion"
+	},
+	"Properties": {
+		"aspirante_identificacion": "#Page:Aspirar/#Control:idAspirar/#Value",
+		"producto_id": "#Page:Aspirar/#Control:FormCellListPicker0/#SelectedValue"
+	}
+}

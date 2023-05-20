@@ -1,164 +1,156 @@
 {
-	"Caption": "Update Aspirante Detail",
 	"DesignTimeTarget": {
 		"Service": "/DreamsBank/Services/dreamsbankmov.service",
 		"EntitySet": "Aspirante",
 		"QueryOptions": ""
 	},
-	"ActionBar": {
-		"Items": [
-			{
-				"Position": "Left",
-				"SystemItem": "Cancel",
-				"OnPress": "/DreamsBank/Actions/CloseModalPage_Cancel.action"
-			},
-			{
-				"Position": "Right",
-				"SystemItem": "Save",
-				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_UpdateEntity.action"
-			}
-		]
-	},
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
-					"Visible": true,
 					"Controls": [
 						{
-							"Caption": "identificacion",
-							"_Name": "identificacion",
 							"Value": "{identificacion}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"IsEditable": false
+							"_Name": "identificacion",
+							"IsEditable": false,
+							"Caption": "identificacion"
 						},
 						{
-							"Caption": "nombre",
-							"_Name": "nombre",
 							"Value": "{nombre}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "nombre",
+							"Caption": "nombre"
 						},
 						{
-							"Caption": "edad",
-							"_Name": "edad",
 							"Value": "{edad}",
-							"KeyboardType": "Number",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "edad",
+							"Caption": "edad",
+							"KeyboardType": "Number"
 						},
 						{
-							"Caption": "ciudad",
-							"_Name": "ciudad",
 							"Value": "{ciudad}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "ciudad",
+							"Caption": "ciudad"
 						},
 						{
-							"Caption": "imagen",
-							"_Name": "imagen",
 							"Value": "{imagen}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "imagen",
+							"Caption": "imagen"
 						},
 						{
-							"Caption": "semestre",
-							"_Name": "semestre",
 							"Value": "{semestre}",
-							"KeyboardType": "Number",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "semestre",
+							"Caption": "semestre",
+							"KeyboardType": "Number"
 						},
 						{
-							"Caption": "carrera",
-							"_Name": "carrera",
 							"Value": "{carrera}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "carrera",
+							"Caption": "carrera"
 						},
 						{
-							"Mode": "Date",
-							"_Name": "fechaNacimiento",
 							"Value": "{fechaNacimiento}",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "fechaNacimiento",
 							"Caption": "fechaNacimiento",
-							"_Type": "Control.Type.FormCell.DatePicker"
+							"Mode": "Date"
 						},
 						{
-							"Caption": "ciudadNacimiento",
-							"_Name": "ciudadNacimiento",
 							"Value": "{ciudadNacimiento}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "ciudadNacimiento",
+							"Caption": "ciudadNacimiento"
 						},
 						{
-							"Caption": "telefono",
-							"_Name": "telefono",
 							"Value": "{telefono}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "telefono",
+							"Caption": "telefono"
 						},
 						{
-							"Caption": "correo",
-							"_Name": "correo",
 							"Value": "{correo}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "correo",
+							"Caption": "correo"
 						},
 						{
-							"Caption": "direccion",
-							"_Name": "direccion",
 							"Value": "{direccion}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "direccion",
+							"Caption": "direccion"
 						},
 						{
-							"Caption": "contrasena",
-							"_Name": "contrasena",
 							"Value": "{contrasena}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "contrasena",
+							"Caption": "contrasena"
 						},
 						{
-							"Caption": "idProducto_id",
-							"AllowMultipleSelection": false,
-							"AllowEmptySelection": true,
-							"IsPickerDismissedOnSelection": true,
-							"IsSelectedSectionEnabled": true,
-							"PickerItems": {
-								"DisplayValue": "{id}",
-								"ReturnValue": "{id}",
-								"Target": {
-									"EntitySet": "Producto",
-									"Service": "/DreamsBank/Services/dreamsbankmov.service"
-								}
-							},
-							"Value": "{idProducto_id}",
-							"_Name": "idProducto_id",
-							"_Type": "Control.Type.FormCell.ListPicker"
-						},
-						{
-							"_Name": "haDonado",
-							"Caption": "haDonado",
 							"Value": "{haDonado}",
-							"_Type": "Control.Type.FormCell.Switch"
+							"_Type": "Control.Type.FormCell.Switch",
+							"_Name": "haDonado",
+							"Caption": "haDonado"
 						},
 						{
-							"Caption": "generico1",
-							"_Name": "generico1",
 							"Value": "{generico1}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "generico1",
+							"Caption": "generico1"
 						},
 						{
-							"Caption": "generico2",
-							"_Name": "generico2",
 							"Value": "{generico2}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "generico2",
+							"Caption": "generico2"
 						},
 						{
-							"Caption": "generico3",
-							"_Name": "generico3",
 							"Value": "{generico3}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "generico3",
+							"Caption": "generico3"
 						}
-					]
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Aspirante_Edit",
-	"PrefersLargeCaption": true
+	"Caption": "Update Aspirante Detail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_UpdateEntity.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

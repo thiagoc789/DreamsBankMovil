@@ -76,7 +76,7 @@
 							"Semantic": "Tint",
 							"Image": "res://mdk_logo.png",
 							"ImagePosition": "Leading",
-							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/Donar.action"
+							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/Donacion_Create.action"
 						}
 					],
 					"Visible": true

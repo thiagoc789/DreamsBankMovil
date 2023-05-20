@@ -1,0 +1,16 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/Donar.action",
+	"Target": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Donacion"
+	},
+	"Properties": {
+		"donante_identificacion": "#Page:Donar/#Control:identificacion_donar/#Value",
+		"producto_id": "#Page:Donar/#Control:listpicker_donar/#SelectedValue"
+	}
+}

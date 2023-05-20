@@ -9,13 +9,21 @@
     <edmx:DataServices>
         <Schema Namespace="DreamsBankService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
             <EntityContainer Name="EntityContainer">
-                <EntitySet Name="Aspirante" EntityType="DreamsBankService.Aspirante">
-                    <NavigationPropertyBinding Path="idProducto" Target="Producto"/>
-                </EntitySet>
-                <EntitySet Name="Donante" EntityType="DreamsBankService.Donante">
-                    <NavigationPropertyBinding Path="idProducto" Target="Producto"/>
-                </EntitySet>
+                <EntitySet Name="Aspirante" EntityType="DreamsBankService.Aspirante"/>
+                <EntitySet Name="Donante" EntityType="DreamsBankService.Donante"/>
                 <EntitySet Name="Producto" EntityType="DreamsBankService.Producto"/>
+                <EntitySet Name="Aspiracion" EntityType="DreamsBankService.Aspiracion">
+                    <NavigationPropertyBinding Path="aspirante" Target="Aspirante"/>
+                    <NavigationPropertyBinding Path="producto" Target="Producto"/>
+                </EntitySet>
+                <EntitySet Name="Donacion" EntityType="DreamsBankService.Donacion">
+                    <NavigationPropertyBinding Path="donante" Target="Donante"/>
+                    <NavigationPropertyBinding Path="producto" Target="Producto"/>
+                </EntitySet>
+                <EntitySet Name="Asignacion" EntityType="DreamsBankService.Asignacion">
+                    <NavigationPropertyBinding Path="aspirante" Target="Aspirante"/>
+                    <NavigationPropertyBinding Path="donante" Target="Donante"/>
+                </EntitySet>
             </EntityContainer>
             <EntityType Name="Aspirante">
                 <Key>
@@ -34,11 +42,8 @@
                 <Property Name="correo" Type="Edm.String" MaxLength="100"/>
                 <Property Name="direccion" Type="Edm.String" MaxLength="100"/>
                 <Property Name="contrasena" Type="Edm.String" MaxLength="100"/>
-                <NavigationProperty Name="idProducto" Type="DreamsBankService.Producto">
-                    <ReferentialConstraint Property="idProducto_id" ReferencedProperty="id"/>
-                </NavigationProperty>
-                <Property Name="idProducto_id" Type="Edm.String" MaxLength="50"/>
                 <Property Name="haDonado" Type="Edm.Boolean"/>
+                <Property Name="numeroAspiraciones" Type="Edm.Int32" DefaultValue="0"/>
                 <Property Name="generico1" Type="Edm.String" MaxLength="100"/>
                 <Property Name="generico2" Type="Edm.String" MaxLength="100"/>
                 <Property Name="generico3" Type="Edm.String" MaxLength="100"/>
@@ -60,11 +65,8 @@
                 <Property Name="direccion" Type="Edm.String" MaxLength="500"/>
                 <Property Name="contrasena" Type="Edm.String" MaxLength="100"/>
                 <Property Name="fechaNacimiento" Type="Edm.Date"/>
-                <NavigationProperty Name="idProducto" Type="DreamsBankService.Producto">
-                    <ReferentialConstraint Property="idProducto_id" ReferencedProperty="id"/>
-                </NavigationProperty>
-                <Property Name="idProducto_id" Type="Edm.String" MaxLength="50"/>
                 <Property Name="haDonado" Type="Edm.Boolean"/>
+                <Property Name="numeroDonaciones" Type="Edm.Int32" DefaultValue="0"/>
                 <Property Name="generico1" Type="Edm.String" MaxLength="100"/>
                 <Property Name="generico2" Type="Edm.String" MaxLength="100"/>
                 <Property Name="generico3" Type="Edm.String" MaxLength="100"/>
@@ -86,6 +88,48 @@
                 <Property Name="generico1" Type="Edm.String" MaxLength="100"/>
                 <Property Name="generico2" Type="Edm.String" MaxLength="100"/>
                 <Property Name="generico3" Type="Edm.String" MaxLength="100"/>
+            </EntityType>
+            <EntityType Name="Aspiracion">
+                <Key>
+                    <PropertyRef Name="id_aspiracion"/>
+                </Key>
+                <Property Name="id_aspiracion" Type="Edm.Guid" Nullable="false"/>
+                <NavigationProperty Name="aspirante" Type="DreamsBankService.Aspirante">
+                    <ReferentialConstraint Property="aspirante_identificacion" ReferencedProperty="identificacion"/>
+                </NavigationProperty>
+                <Property Name="aspirante_identificacion" Type="Edm.String" MaxLength="100"/>
+                <NavigationProperty Name="producto" Type="DreamsBankService.Producto">
+                    <ReferentialConstraint Property="producto_id" ReferencedProperty="id"/>
+                </NavigationProperty>
+                <Property Name="producto_id" Type="Edm.String" MaxLength="50"/>
+            </EntityType>
+            <EntityType Name="Donacion">
+                <Key>
+                    <PropertyRef Name="id_donacion"/>
+                </Key>
+                <Property Name="id_donacion" Type="Edm.Guid" Nullable="false"/>
+                <NavigationProperty Name="donante" Type="DreamsBankService.Donante">
+                    <ReferentialConstraint Property="donante_identificacion" ReferencedProperty="identificacion"/>
+                </NavigationProperty>
+                <Property Name="donante_identificacion" Type="Edm.String" MaxLength="100"/>
+                <NavigationProperty Name="producto" Type="DreamsBankService.Producto">
+                    <ReferentialConstraint Property="producto_id" ReferencedProperty="id"/>
+                </NavigationProperty>
+                <Property Name="producto_id" Type="Edm.String" MaxLength="50"/>
+            </EntityType>
+            <EntityType Name="Asignacion">
+                <Key>
+                    <PropertyRef Name="id_asignacion"/>
+                </Key>
+                <Property Name="id_asignacion" Type="Edm.Guid" Nullable="false"/>
+                <NavigationProperty Name="aspirante" Type="DreamsBankService.Aspirante">
+                    <ReferentialConstraint Property="aspirante_identificacion" ReferencedProperty="identificacion"/>
+                </NavigationProperty>
+                <Property Name="aspirante_identificacion" Type="Edm.String" MaxLength="100"/>
+                <NavigationProperty Name="donante" Type="DreamsBankService.Donante">
+                    <ReferentialConstraint Property="donante_identificacion" ReferencedProperty="identificacion"/>
+                </NavigationProperty>
+                <Property Name="donante_identificacion" Type="Edm.String" MaxLength="100"/>
             </EntityType>
         </Schema>
     </edmx:DataServices>

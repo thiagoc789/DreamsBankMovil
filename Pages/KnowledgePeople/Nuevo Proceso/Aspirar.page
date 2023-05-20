@@ -79,7 +79,7 @@
 							"Semantic": "Tint",
 							"Image": "res://mdk_logo.png",
 							"ImagePosition": "Leading",
-							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/Aspirar.action"
+							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/Aspiracion_Create.action"
 						}
 					],
 					"Visible": true
