@@ -12,7 +12,6 @@
 							"_Name": "aspirante_resumen",
 							"IsEditable": false,
 							"IsVisible": true,
-							"Separator": true,
 							"Caption": "Aspirante",
 							"Enabled": true
 						},
@@ -22,7 +21,6 @@
 							"_Name": "donante_resumen",
 							"IsEditable": false,
 							"IsVisible": true,
-							"Separator": true,
 							"Caption": "Donante",
 							"Enabled": true
 						},
@@ -32,7 +30,6 @@
 							"_Name": "producto_resumen",
 							"IsEditable": false,
 							"IsVisible": true,
-							"Separator": true,
 							"Caption": "Producto",
 							"Enabled": true
 						},
@@ -40,7 +37,6 @@
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "FormCellButton0",
 							"IsVisible": true,
-							"Separator": true,
 							"Title": "Asignar",
 							"Alignment": "Center",
 							"ButtonType": "Text",
@@ -55,7 +51,6 @@
 							"_Name": "id_aspiranteResumen",
 							"IsEditable": true,
 							"IsVisible": false,
-							"Separator": true,
 							"Caption": "ID aspirante",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
@@ -66,7 +61,6 @@
 							"_Name": "id_donanteResumen",
 							"IsEditable": true,
 							"IsVisible": false,
-							"Separator": true,
 							"Caption": "ID donante",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
@@ -79,5 +73,5 @@
 	],
 	"_Type": "Page",
 	"_Name": "Asignar_AspiranteResumen",
-	"Caption": "Asignar_AspiranteResumen"
+	"Caption": "Resumen"
 }

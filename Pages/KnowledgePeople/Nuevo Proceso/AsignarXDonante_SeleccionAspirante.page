@@ -14,16 +14,13 @@
 					},
 					"Controls": [
 						{
-							"Value": "{aspirante/nombre}",
+							"Value": "{donante/nombre}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "aspirante_seleccionDonante",
+							"_Name": "donante_asignar",
 							"IsEditable": false,
 							"IsVisible": true,
 							"Separator": true,
-							"Styles": {
-								"Value": "GreenText"
-							},
-							"Caption": "Aspirante: ",
+							"Caption": "Donante:",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						},
@@ -31,24 +28,21 @@
 							"Value": "{producto/nombre_producto}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "producto_asignar",
-							"IsEditable": true,
+							"IsEditable": false,
 							"IsVisible": true,
 							"Separator": true,
-							"Styles": {
-								"Value": "GreenText"
-							},
-							"Caption": "Producto:",
+							"Caption": "Producto",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						},
 						{
-							"Value": "{aspirante/identificacion}",
+							"Value": "{donante/identificacion}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "id_aspirante",
+							"_Name": "id_donante_asignar",
 							"IsEditable": true,
 							"IsVisible": false,
 							"Separator": true,
-							"Caption": "id_aspirante",
+							"Caption": "ID donante",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						}
@@ -71,8 +65,8 @@
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/DreamsBank/Services/dreamsbankmov.service",
-						"EntitySet": "Donacion",
-						"QueryOptions": "$expand=donante,producto&$filter=producto/id eq '{producto/id}'"
+						"EntitySet": "Aspiracion",
+						"QueryOptions": "$expand=aspirante,producto&$filter=producto_id eq '{producto/id}'"
 					},
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
@@ -84,20 +78,20 @@
 							"Items": [],
 							"PerformFirstActionWithFullSwipe": true
 						},
-						"Title": "{donante/nombre}",
-						"Subhead": "Donando: {producto/nombre_producto}",
-						"Footnote": "{donante/empresa}",
-						"Description": "{donante/ciudad}",
+						"Title": "{aspirante/nombre}",
+						"Subhead": "Aspirando a: {producto/nombre_producto}",
+						"Footnote": "Carrera: {aspirante/carrera}",
+						"Description": "Universidad: {aspirante/generico1}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{donante/correo}",
-						"SubstatusText": "Tel: {donante/telefono}",
+						"StatusText": "{aspirante/correo}",
+						"SubstatusText": "Tel: {aspirante/telefono}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": "{donante/imagen}",
+									"Image": "{aspirante/imagen}",
 									"ImageText": ""
 								}
 							],
@@ -108,7 +102,7 @@
 							"Avatars": [],
 							"ImageIsCircular": true
 						},
-						"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Asignar_AspiranteResumen.action",
+						"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_AsignarXDonante_Resumen.action",
 						"Styles": {
 							"Subhead": "GreenText"
 						},
@@ -129,7 +123,7 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Asignar_SeleccionDonante",
-	"Caption": "Seleccione un donante",
+	"_Name": "AsignarXDonante_SeleccionAspirante",
+	"Caption": "Seleccione un aspirante",
 	"PrefersLargeCaption": true
 }

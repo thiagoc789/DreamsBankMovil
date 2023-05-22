@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_AsignarXDonante_Resumen"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgePeople/Nuevo Proceso/AsignarXDonante_Resumen.page"
+}
