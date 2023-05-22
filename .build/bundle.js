@@ -607,6 +607,26 @@ module.exports = function cssWithMappingToString(item) {
 
 /***/ }),
 
+/***/ 4904:
+/*!***********************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgePeople/Consultas/Consultas_Aspirante.page ***!
+  \***********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectTable","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"Aspiracion","QueryOptions":"$expand=aspirante,producto"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"Title":"{aspirante/nombre}","Subhead":"Aspirando a: {producto/nombre_producto}","Footnote":"Carrera: {aspirante/carrera}","Description":"Universidad: {aspirante/generico1}","DisplayDescriptionInMobile":true,"StatusText":"{aspirante/correo}","SubstatusText":"Tel: {aspirante/telefono}","PreserveIconStackSpacing":false,"AccessoryType":"none","Tags":[],"AvatarStack":{"Avatars":[{"Image":"{aspirante/imagen}","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"Styles":{"Subhead":"GreenText"},"Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true}},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Consultas_Aspirante","Caption":"Consultas_Aspirante","PrefersLargeCaption":true}
+
+/***/ }),
+
+/***/ 792:
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgePeople/Consultas/Menu_Consultas.page ***!
+  \******************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Consultar por aspirante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgePeople/Consultas/NavTo_consultas_aspirante.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Title":"Consultar por donante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Title":"Consultar por producto","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading"}]}]}],"_Type":"Page","_Name":"Menu_Consultas","Caption":"Consultas","PrefersLargeCaption":true}
+
+/***/ }),
+
 /***/ 8303:
 /*!***********************************************************************************************************!*\
   !*** ./build.definitions/DreamsBank/Pages/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_Create.page ***!
@@ -743,7 +763,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \**************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImage":"/DreamsBank/Images/innovar.png","DetailImageIsCircular":false,"HeadlineText":"Aportes economicos o de conocimiento a Aspirantes","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Title":"Datos Maestros","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://add-contact","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgePeople/Datos Maestros/NavTo_MenuDatosMaestros.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Nuevo Proceso","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://manager","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Login.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Title":"Consultas","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://information","ImagePosition":"Leading"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Menu_KnowledgePeople","Caption":"Knowledge People","PrefersLargeCaption":true}
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImage":"/DreamsBank/Images/innovar.png","DetailImageIsCircular":false,"HeadlineText":"Aportes economicos o de conocimiento a Aspirantes","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Title":"Datos Maestros","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://add-contact","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgePeople/Datos Maestros/NavTo_MenuDatosMaestros.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Nuevo Proceso","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://manager","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Login.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Title":"Consultas","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://information","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgePeople/Consultas/NavTo_MenuConsultas.action"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Menu_KnowledgePeople","Caption":"Knowledge People","PrefersLargeCaption":true}
 
 /***/ }),
 
@@ -984,6 +1004,26 @@ module.exports = {"Message":"Delete entity failure - {#ActionResults:delete/erro
 /***/ ((module) => {
 
 module.exports = {"Animated":true,"Duration":2,"Message":"Entity deleted","Icon":"","IsIconHidden":false,"NumberOfLines":2,"OnSuccess":"/DreamsBank/Actions/CloseModalPage_Complete.action","_Type":"Action.Type.ToastMessage"}
+
+/***/ }),
+
+/***/ 3226:
+/*!***************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgePeople/Consultas/NavTo_MenuConsultas.action ***!
+  \***************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_MenuConsultas"},"PageToOpen":"/DreamsBank/Pages/KnowledgePeople/Consultas/Menu_Consultas.page"}
+
+/***/ }),
+
+/***/ 3582:
+/*!*********************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgePeople/Consultas/NavTo_consultas_aspirante.action ***!
+  \*********************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_consultas_aspirante"},"PageToOpen":"/DreamsBank/Pages/KnowledgePeople/Consultas/Consultas_Aspirante.page"}
 
 /***/ }),
 
@@ -1526,6 +1566,8 @@ let dreamsbank_actions_createentitysuccessmessage_action = __webpack_require__(/
 let dreamsbank_actions_deleteconfirmation_action = __webpack_require__(/*! ./DreamsBank/Actions/DeleteConfirmation.action */ 9517)
 let dreamsbank_actions_deleteentityfailuremessage_action = __webpack_require__(/*! ./DreamsBank/Actions/DeleteEntityFailureMessage.action */ 2866)
 let dreamsbank_actions_deleteentitysuccessmessage_action = __webpack_require__(/*! ./DreamsBank/Actions/DeleteEntitySuccessMessage.action */ 452)
+let dreamsbank_actions_knowledgepeople_consultas_navto_consultas_aspirante_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Consultas/NavTo_consultas_aspirante.action */ 3582)
+let dreamsbank_actions_knowledgepeople_consultas_navto_menuconsultas_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Consultas/NavTo_MenuConsultas.action */ 3226)
 let dreamsbank_actions_knowledgepeople_datos_maestros_aspirante_aspirante_createentity_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_CreateEntity.action */ 2399)
 let dreamsbank_actions_knowledgepeople_datos_maestros_aspirante_aspirante_deleteentity_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_DeleteEntity.action */ 2339)
 let dreamsbank_actions_knowledgepeople_datos_maestros_aspirante_aspirante_updateentity_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_UpdateEntity.action */ 9316)
@@ -1578,6 +1620,8 @@ let dreamsbank_i18n_i18n_properties = __webpack_require__(/*! ./DreamsBank/i18n/
 let dreamsbank_images_dreamsbank_jpg = __webpack_require__(/*! ./DreamsBank/Images/dreamsbank.jpg */ 2993)
 let dreamsbank_images_innovar_png = __webpack_require__(/*! ./DreamsBank/Images/innovar.png */ 1177)
 let dreamsbank_jsconfig_json = __webpack_require__(/*! ./DreamsBank/jsconfig.json */ 8300)
+let dreamsbank_pages_knowledgepeople_consultas_consultas_aspirante_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Consultas/Consultas_Aspirante.page */ 4904)
+let dreamsbank_pages_knowledgepeople_consultas_menu_consultas_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Consultas/Menu_Consultas.page */ 792)
 let dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_create_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_Create.page */ 8303)
 let dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_detail_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_Detail.page */ 1317)
 let dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_edit_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_Edit.page */ 3921)
@@ -1637,6 +1681,8 @@ module.exports = {
 	dreamsbank_actions_deleteconfirmation_action : dreamsbank_actions_deleteconfirmation_action,
 	dreamsbank_actions_deleteentityfailuremessage_action : dreamsbank_actions_deleteentityfailuremessage_action,
 	dreamsbank_actions_deleteentitysuccessmessage_action : dreamsbank_actions_deleteentitysuccessmessage_action,
+	dreamsbank_actions_knowledgepeople_consultas_navto_consultas_aspirante_action : dreamsbank_actions_knowledgepeople_consultas_navto_consultas_aspirante_action,
+	dreamsbank_actions_knowledgepeople_consultas_navto_menuconsultas_action : dreamsbank_actions_knowledgepeople_consultas_navto_menuconsultas_action,
 	dreamsbank_actions_knowledgepeople_datos_maestros_aspirante_aspirante_createentity_action : dreamsbank_actions_knowledgepeople_datos_maestros_aspirante_aspirante_createentity_action,
 	dreamsbank_actions_knowledgepeople_datos_maestros_aspirante_aspirante_deleteentity_action : dreamsbank_actions_knowledgepeople_datos_maestros_aspirante_aspirante_deleteentity_action,
 	dreamsbank_actions_knowledgepeople_datos_maestros_aspirante_aspirante_updateentity_action : dreamsbank_actions_knowledgepeople_datos_maestros_aspirante_aspirante_updateentity_action,
@@ -1689,6 +1735,8 @@ module.exports = {
 	dreamsbank_images_dreamsbank_jpg : dreamsbank_images_dreamsbank_jpg,
 	dreamsbank_images_innovar_png : dreamsbank_images_innovar_png,
 	dreamsbank_jsconfig_json : dreamsbank_jsconfig_json,
+	dreamsbank_pages_knowledgepeople_consultas_consultas_aspirante_page : dreamsbank_pages_knowledgepeople_consultas_consultas_aspirante_page,
+	dreamsbank_pages_knowledgepeople_consultas_menu_consultas_page : dreamsbank_pages_knowledgepeople_consultas_menu_consultas_page,
 	dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_create_page : dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_create_page,
 	dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_detail_page : dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_detail_page,
 	dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_edit_page : dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_edit_page,

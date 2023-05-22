@@ -62,7 +62,8 @@
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"Image": "sap-icon://information",
-							"ImagePosition": "Leading"
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Consultas/NavTo_MenuConsultas.action"
 						}
 					],
 					"Visible": true,

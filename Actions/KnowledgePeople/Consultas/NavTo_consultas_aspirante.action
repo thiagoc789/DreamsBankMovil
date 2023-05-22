@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_consultas_aspirante"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgePeople/Consultas/Consultas_Aspirante.page"
+}

@@ -1,0 +1,82 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"EntitySet": "Aspiracion",
+						"QueryOptions": "$expand=aspirante,producto"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{aspirante/nombre}",
+						"Subhead": "Aspirando a: {producto/nombre_producto}",
+						"Footnote": "Carrera: {aspirante/carrera}",
+						"Description": "Universidad: {aspirante/generico1}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "{aspirante/correo}",
+						"SubstatusText": "Tel: {aspirante/telefono}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "{aspirante/imagen}",
+									"ImageText": ""
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"Styles": {
+							"Subhead": "GreenText"
+						},
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						}
+					},
+					"Search": {
+						"Enabled": true,
+						"BarcodeScanner": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Consultas_Aspirante",
+	"Caption": "Aspirantes",
+	"PrefersLargeCaption": true
+}
