@@ -22,6 +22,7 @@
 		"correo": "#Control:correo/#Value",
 		"direccion": "#Control:direccion/#Value",
 		"contrasena": "#Control:contrasena/#Value",
-		"generico1": "#Control:generico1/#Value"
+		"universidad": "#Control:generico1/#Value",
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js"
 	}
 }

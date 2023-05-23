@@ -36,6 +36,17 @@
 							"Enabled": true
 						},
 						{
+							"Value": "{producto/id}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "id_asignarXDonante",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
 							"Value": "{donante/identificacion}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "id_donante_asignar",

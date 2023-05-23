@@ -18,6 +18,7 @@
 		"modalidad": "#Control:modalidad/#Value",
 		"ciudad": "#Control:ciudad/#Value",
 		"universidad": "#Control:universidad/#Value",
-		"fabricante": "#Control:fabricante/#Value"
+		"fabricante": "#Control:fabricante/#Value",
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js"
 	}
 }

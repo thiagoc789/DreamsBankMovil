@@ -42,6 +42,17 @@
 							"Enabled": true
 						},
 						{
+							"Value": "{producto/id}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "id_producto_asignar",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "IdProducto",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
 							"Value": "{aspirante/identificacion}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "id_aspirante",

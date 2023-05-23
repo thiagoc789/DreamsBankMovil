@@ -11,6 +11,7 @@
 	},
 	"Properties": {
 		"donante_identificacion": "#Page:Donar/#Control:identificacion_donar/#Value",
-		"producto_id": "#Page:Donar/#Control:listpicker_donar/#SelectedValue"
+		"producto_id": "#Page:Donar/#Control:listpicker_donar/#SelectedValue",
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js"
 	}
 }

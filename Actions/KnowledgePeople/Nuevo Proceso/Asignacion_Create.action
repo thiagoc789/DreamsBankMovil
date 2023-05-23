@@ -11,6 +11,8 @@
 	},
 	"Properties": {
 		"aspirante_identificacion": "#Page:Asignar_AspiranteResumen/#Control:id_aspiranteResumen/#Value",
-		"donante_identificacion": "#Page:Asignar_AspiranteResumen/#Control:id_donanteResumen/#Value"
+		"donante_identificacion": "#Page:Asignar_AspiranteResumen/#Control:id_donanteResumen/#Value",
+		"producto_id": "#Page:Asignar_AspiranteResumen/#Control:FormCellSimpleProperty0/#Value",
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js"
 	}
 }

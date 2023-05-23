@@ -11,6 +11,7 @@
 	},
 	"Properties": {
 		"aspirante_identificacion": "#Page:Aspirar/#Control:idAspirar/#Value",
-		"producto_id": "#Page:Aspirar/#Control:FormCellListPicker0/#SelectedValue"
+		"producto_id": "#Page:Aspirar/#Control:FormCellListPicker0/#SelectedValue",
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js"
 	}
 }

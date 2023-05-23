@@ -62,7 +62,8 @@
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"Image": "sap-icon://combine",
-							"ImagePosition": "Leading"
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Consultas/NavTo_Consultas_Asignaciones.action"
 						}
 					],
 					"Visible": true,

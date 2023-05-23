@@ -64,6 +64,16 @@
 							"Caption": "ID donante",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
+						},
+						{
+							"Value": "#Page:Asignar_SeleccionDonante/#Control:id_producto_asignar/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
 						}
 					],
 					"Visible": true

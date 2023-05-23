@@ -23,6 +23,7 @@
                 <EntitySet Name="Asignacion" EntityType="DreamsBankService.Asignacion">
                     <NavigationPropertyBinding Path="aspirante" Target="Aspirante"/>
                     <NavigationPropertyBinding Path="donante" Target="Donante"/>
+                    <NavigationPropertyBinding Path="producto" Target="Producto"/>
                 </EntitySet>
             </EntityContainer>
             <EntityType Name="Aspirante">
@@ -47,6 +48,9 @@
                 <Property Name="generico1" Type="Edm.String" MaxLength="100"/>
                 <Property Name="generico2" Type="Edm.String" MaxLength="100"/>
                 <Property Name="generico3" Type="Edm.String" MaxLength="100"/>
+                <Property Name="universidad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
             </EntityType>
             <EntityType Name="Donante">
                 <Key>
@@ -70,6 +74,8 @@
                 <Property Name="generico1" Type="Edm.String" MaxLength="100"/>
                 <Property Name="generico2" Type="Edm.String" MaxLength="100"/>
                 <Property Name="generico3" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
             </EntityType>
             <EntityType Name="Producto">
                 <Key>
@@ -88,6 +94,8 @@
                 <Property Name="generico1" Type="Edm.String" MaxLength="100"/>
                 <Property Name="generico2" Type="Edm.String" MaxLength="100"/>
                 <Property Name="generico3" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
             </EntityType>
             <EntityType Name="Aspiracion">
                 <Key>
@@ -102,6 +110,8 @@
                     <ReferentialConstraint Property="producto_id" ReferencedProperty="id"/>
                 </NavigationProperty>
                 <Property Name="producto_id" Type="Edm.String" MaxLength="50"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
             </EntityType>
             <EntityType Name="Donacion">
                 <Key>
@@ -116,6 +126,8 @@
                     <ReferentialConstraint Property="producto_id" ReferencedProperty="id"/>
                 </NavigationProperty>
                 <Property Name="producto_id" Type="Edm.String" MaxLength="50"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
             </EntityType>
             <EntityType Name="Asignacion">
                 <Key>
@@ -130,7 +142,31 @@
                     <ReferentialConstraint Property="donante_identificacion" ReferencedProperty="identificacion"/>
                 </NavigationProperty>
                 <Property Name="donante_identificacion" Type="Edm.String" MaxLength="100"/>
+                <NavigationProperty Name="producto" Type="DreamsBankService.Producto">
+                    <ReferentialConstraint Property="producto_id" ReferencedProperty="id"/>
+                </NavigationProperty>
+                <Property Name="producto_id" Type="Edm.String" MaxLength="50"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
             </EntityType>
+            <Annotations Target="DreamsBankService.Aspirante/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.Donante/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.Producto/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.Aspiracion/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.Donacion/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.Asignacion/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>

@@ -97,6 +97,17 @@
 							"Caption": "Id donante",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
+						},
+						{
+							"Value": "#Page:AsignarXDonante_SeleccionAspirante/#Control:id_asignarXDonante/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty3",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
 						}
 					],
 					"Visible": false,

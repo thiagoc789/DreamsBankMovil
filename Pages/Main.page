@@ -61,6 +61,7 @@
 	"_Name": "Main",
 	"Caption": "Main",
 	"PrefersLargeCaption": true,
+	"OnLoaded": "/DreamsBank/Rules/traer_fecha.js",
 	"ToolBar": {
 		"Items": [
 			{
