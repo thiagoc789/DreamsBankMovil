@@ -5,10 +5,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -16,8 +12,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -28,7 +22,7 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"Image": "res://mdk_logo.png",
+							"Image": "sap-icon://education",
 							"ImagePosition": "Leading",
 							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Consultas/NavTo_consultas_aspirante.action"
 						},
@@ -41,8 +35,9 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"Image": "res://mdk_logo.png",
-							"ImagePosition": "Leading"
+							"Image": "sap-icon://suitcase",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Consultas_Donante.action"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -53,10 +48,29 @@
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"Image": "res://mdk_logo.png",
+							"Image": "sap-icon://product",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Consultas_Producto.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton3",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Ver asignaciones",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://combine",
 							"ImagePosition": "Leading"
 						}
-					]
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				}
 			]
 		}

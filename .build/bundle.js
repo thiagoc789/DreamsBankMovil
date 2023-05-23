@@ -123,6 +123,74 @@ function AppUpdateSuccess(clientAPI) {
 
 /***/ }),
 
+/***/ 7729:
+/*!****************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Rules/KnowledgePeople/Consultas/filtroProducto.js ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ filtroProducto)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function filtroProducto(clientAPI) {
+  var dialog = clientAPI.nativescript.uiDialogsModule;
+  var producto = clientAPI.evaluateTargetPath('#Page:Consultas_Producto/#Control:FormCellListPicker0/#SelectedValue');
+  dialog.alert(producto);
+  if (producto == 'Select') {
+    var query = '$expand=aspirante,producto';
+    var query2 = '$expand=donante,producto';
+  } else {
+    var query = '$expand=aspirante,producto&$filter=producto_id eq ' + "'" + producto + "'";
+    var query2 = '$expand=donante,producto&$filter=producto_id eq ' + "'" + producto + "'";
+  }
+  var objectTableAspirantes = clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionObjectTable0');
+  var objectTableDonantes = clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionObjectTable1');
+  var specifier = objectTableAspirantes.getTargetSpecifier();
+  specifier.setQueryOptions(query);
+  objectTableAspirantes.setTargetSpecifier(specifier);
+  var specifier2 = objectTableDonantes.getTargetSpecifier();
+  specifier2.setQueryOptions(query2);
+  objectTableDonantes.setTargetSpecifier(specifier2);
+}
+
+/***/ }),
+
+/***/ 5454:
+/*!**********************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Rules/KnowledgePeople/Consultas/verTodos.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ verTodos)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function verTodos(clientAPI) {
+  var query = '$expand=aspirante,producto';
+  var query2 = '$expand=donante,producto';
+  var objectTableAspirantes = clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionObjectTable0');
+  var objectTableDonantes = clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionObjectTable1');
+  var specifier = objectTableAspirantes.getTargetSpecifier();
+  specifier.setQueryOptions(query);
+  objectTableAspirantes.setTargetSpecifier(specifier);
+  var specifier2 = objectTableDonantes.getTargetSpecifier();
+  specifier2.setQueryOptions(query2);
+  objectTableDonantes.setTargetSpecifier(specifier2);
+}
+
+/***/ }),
+
 /***/ 825:
 /*!*********************************************************************************************************************!*\
   !*** ./build.definitions/DreamsBank/Rules/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_DeleteConfirmation.js ***!
@@ -428,7 +496,7 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../extbin/local/openvscode-server/extensions/mdk-vsc-wing-23.5.0/node_modules/css-loader/dist/runtime/api.js */ 4308);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n.GreenText {\n  color: #258029;\n}\n", "",{"version":3,"sources":["webpack://./build.definitions/DreamsBank/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;AACD;EACE,cAAc;AAChB","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n.GreenText {\n  color: #258029;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n.GreenText {\n  color: #258029;\n}\n.RedText {\n  color: #912a2a;\n}\n.Header {\n  color: #000000;\n}\n.Header2 {\n  color: aquamarine;\n}\n", "",{"version":3,"sources":["webpack://./build.definitions/DreamsBank/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;AACD;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,iBAAiB;AACnB","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n.GreenText {\n  color: #258029;\n}\n.RedText {\n  color: #912a2a;\n}\n.Header {\n  color: #000000;\n}\n.Header2 {\n  color: aquamarine;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -446,7 +514,7 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../extbin/local/openvscode-server/extensions/mdk-vsc-wing-23.5.0/node_modules/css-loader/dist/runtime/api.js */ 4308);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n\n.GreenText{\n    color:rgb(37, 128, 41)\n}", "",{"version":3,"sources":["webpack://./build.definitions/DreamsBank/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;;AAED;IACI;AACJ","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n\n.GreenText{\n    color:rgb(37, 128, 41)\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n\n.GreenText{\n    color:rgb(37, 128, 41)\n}\n\n.RedText{\n    color:rgb(145, 42, 42)\n\n}\n\n.Header{\n    color: rgb(0, 0, 0);\n\n\n}\n\n.Header2{\n    color: aquamarine;\n}", "",{"version":3,"sources":["webpack://./build.definitions/DreamsBank/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;;AAED;IACI;AACJ;;AAEA;IACI;;AAEJ;;AAEA;IACI,mBAAmB;;;AAGvB;;AAEA;IACI,iBAAiB;AACrB","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n\n.GreenText{\n    color:rgb(37, 128, 41)\n}\n\n.RedText{\n    color:rgb(145, 42, 42)\n\n}\n\n.Header{\n    color: rgb(0, 0, 0);\n\n\n}\n\n.Header2{\n    color: aquamarine;\n}"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -464,7 +532,7 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../extbin/local/openvscode-server/extensions/mdk-vsc-wing-23.5.0/node_modules/css-loader/dist/runtime/api.js */ 4308);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".ns-light .GreenText {\n\tcolor: #258029;\n}\n", "",{"version":3,"sources":["webpack://./build.definitions/DreamsBank/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,cAAc;AACf","sourcesContent":[".ns-light .GreenText {\n\tcolor: #258029;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".ns-light .GreenText {\n\tcolor: #258029;\n}\n.ns-light .RedText {\n\tcolor: #912a2a;\n}\n.ns-light .Header {\n\tcolor: #000000;\n}\n.ns-light .Header2 {\n\tcolor: aquamarine;\n}\n", "",{"version":3,"sources":["webpack://./build.definitions/DreamsBank/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,cAAc;AACf;AACA;CACC,cAAc;AACf;AACA;CACC,cAAc;AACf;AACA;CACC,iBAAiB;AAClB","sourcesContent":[".ns-light .GreenText {\n\tcolor: #258029;\n}\n.ns-light .RedText {\n\tcolor: #912a2a;\n}\n.ns-light .Header {\n\tcolor: #000000;\n}\n.ns-light .Header2 {\n\tcolor: aquamarine;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -482,7 +550,7 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../extbin/local/openvscode-server/extensions/mdk-vsc-wing-23.5.0/node_modules/css-loader/dist/runtime/api.js */ 4308);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "GreenText {\n\tfont-color: #258029;\n}\n", "",{"version":3,"sources":["webpack://./build.definitions/DreamsBank/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA;CACC,mBAAmB;AACpB","sourcesContent":["GreenText {\n\tfont-color: #258029;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "GreenText {\n\tfont-color: #258029;\n}\nRedText {\n\tfont-color: #912a2a;\n}\nHeader {\n\tfont-color: #000000;\n}\nHeader2 {\n\tfont-color: aquamarine;\n}\n", "",{"version":3,"sources":["webpack://./build.definitions/DreamsBank/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,sBAAsB;AACvB","sourcesContent":["GreenText {\n\tfont-color: #258029;\n}\nRedText {\n\tfont-color: #912a2a;\n}\nHeader {\n\tfont-color: #000000;\n}\nHeader2 {\n\tfont-color: aquamarine;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -613,7 +681,27 @@ module.exports = function cssWithMappingToString(item) {
   \***********************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectTable","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"Aspiracion","QueryOptions":"$expand=aspirante,producto"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"Title":"{aspirante/nombre}","Subhead":"Aspirando a: {producto/nombre_producto}","Footnote":"Carrera: {aspirante/carrera}","Description":"Universidad: {aspirante/generico1}","DisplayDescriptionInMobile":true,"StatusText":"{aspirante/correo}","SubstatusText":"Tel: {aspirante/telefono}","PreserveIconStackSpacing":false,"AccessoryType":"none","Tags":[],"AvatarStack":{"Avatars":[{"Image":"{aspirante/imagen}","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"Styles":{"Subhead":"GreenText"},"Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true}},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Consultas_Aspirante","Caption":"Consultas_Aspirante","PrefersLargeCaption":true}
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"Aspiracion","QueryOptions":"$expand=aspirante,producto"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true},"Title":"{aspirante/nombre}","Subhead":"Aspirando a: {producto/nombre_producto}","Footnote":"Carrera: {aspirante/carrera}","Description":"Universidad: {aspirante/generico1}","DisplayDescriptionInMobile":true,"StatusText":"{aspirante/correo}","SubstatusText":"Tel: {aspirante/telefono}","PreserveIconStackSpacing":false,"AccessoryType":"none","Tags":[],"AvatarStack":{"Avatars":[{"Image":"{aspirante/imagen}","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"Styles":{"Subhead":"GreenText"},"Selected":false},"Search":{"Enabled":true,"BarcodeScanner":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}],"FilterFeedbackBar":{"ShowAllFilters":true,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Consultas_Aspirante","Caption":"Aspirantes","PrefersLargeCaption":true}
+
+/***/ }),
+
+/***/ 3899:
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgePeople/Consultas/Consultas_Donante.page ***!
+  \*********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectTable","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"Donacion","QueryOptions":"$expand=donante,producto"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"Title":"{donante/nombre}","Subhead":"Donando: {producto/nombre_producto}","Footnote":"{donante/empresa}","Description":"{donante/ciudad}","DisplayDescriptionInMobile":true,"StatusText":"{donante/correo}","SubstatusText":"Tel: {donante/telefono}","PreserveIconStackSpacing":false,"AccessoryType":"none","Tags":[],"AvatarStack":{"Avatars":[{"Image":"{donante/imagen}","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"Styles":{"Subhead":"GreenText"},"Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true}},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Consultas_Donante","Caption":"Consultas_Donante","PrefersLargeCaption":true}
+
+/***/ }),
+
+/***/ 9969:
+/*!**********************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgePeople/Consultas/Consultas_Producto.page ***!
+  \**********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker0","IsEditable":true,"IsVisible":true,"Separator":false,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Seleccione un producto","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Seleccione un producto","OnValueChange":"/DreamsBank/Rules/KnowledgePeople/Consultas/filtroProducto.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":true,"PickerItems":{"Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"Producto"},"DisplayValue":"{nombre_producto}","ReturnValue":"{id}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":false,"Title":"Ver todos","Alignment":"Left","ButtonType":"Text","Semantic":"Normal","Image":"res://mdk_logo.png","ImagePosition":"Leading","OnPress":"/DreamsBank/Rules/KnowledgePeople/Consultas/verTodos.js"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":true,"FooterSeparator":false,"ControlSeparator":false},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"Aspiracion","QueryOptions":"$expand=aspirante,producto"},"_Name":"SectionObjectTable0","Header":{"_Name":"Header1","AccessoryType":"none","UseTopPadding":true,"Styles":{"Caption":"Header"},"Caption":"Aspirantes"},"Visible":true,"EmptySection":{"Caption":"No se encontraron aspirantes","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true},"Title":"{aspirante/nombre}","Subhead":"Aspirando a: {producto/nombre_producto}","Footnote":"Carrera: {aspirante/carrera}","Description":"Aspirante","DisplayDescriptionInMobile":true,"StatusText":"{aspirante/correo}","SubstatusText":"Tel: {aspirante/telefono}","PreserveIconStackSpacing":false,"AccessoryType":"none","Tags":[],"AvatarStack":{"Avatars":[{"Image":"{aspirante/imagen}","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"Styles":{"Subhead":"GreenText","Description":"RedText"},"Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}},{"Separators":{"TopSectionSeparator":true,"BottomSectionSeparator":false,"HeaderSeparator":true,"FooterSeparator":false,"ControlSeparator":false},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"Donacion","QueryOptions":"$expand=donante,producto"},"_Name":"SectionObjectTable1","Header":{"_Name":"Header","AccessoryType":"none","UseTopPadding":true,"Styles":{"Header":"Header2"},"Caption":"Donantes"},"Visible":true,"EmptySection":{"Caption":"No se encontraron donantes","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true},"Title":"{donante/nombre}","Subhead":"Donando: {producto/nombre_producto}","Footnote":"{donante/empresa}","Description":"Donante","DisplayDescriptionInMobile":true,"StatusText":"{donante/correo}","SubstatusText":"Tel: {donante/telefono}","PreserveIconStackSpacing":false,"AccessoryType":"none","Tags":[],"AvatarStack":{"Avatars":[{"Image":"{donante/imagen}","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"Styles":{"Subhead":"GreenText","Description":"RedText"},"Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Consultas_Producto","Caption":"Consultas por producto","PrefersLargeCaption":true}
 
 /***/ }),
 
@@ -623,7 +711,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \******************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Consultar por aspirante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgePeople/Consultas/NavTo_consultas_aspirante.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Title":"Consultar por donante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Title":"Consultar por producto","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading"}]}]}],"_Type":"Page","_Name":"Menu_Consultas","Caption":"Consultas","PrefersLargeCaption":true}
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Consultar por aspirante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://education","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgePeople/Consultas/NavTo_consultas_aspirante.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Title":"Consultar por donante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://suitcase","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Consultas_Donante.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Title":"Consultar por producto","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://product","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Consultas_Producto.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton3","IsVisible":true,"Separator":true,"Title":"Ver asignaciones","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://combine","ImagePosition":"Leading"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Menu_Consultas","Caption":"Consultas","PrefersLargeCaption":true}
 
 /***/ }),
 
@@ -1387,6 +1475,26 @@ module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavT
 
 /***/ }),
 
+/***/ 8775:
+/*!***********************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Consultas_Donante.action ***!
+  \***********************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_Consultas_Donante"},"PageToOpen":"/DreamsBank/Pages/KnowledgePeople/Consultas/Consultas_Donante.page"}
+
+/***/ }),
+
+/***/ 2027:
+/*!************************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Consultas_Producto.action ***!
+  \************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_Consultas_Producto"},"PageToOpen":"/DreamsBank/Pages/KnowledgePeople/Consultas/Consultas_Producto.page"}
+
+/***/ }),
+
 /***/ 2899:
 /*!***********************************************************************************************!*\
   !*** ./build.definitions/DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Donar.action ***!
@@ -1604,6 +1712,8 @@ let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_asignarxdonante_resum
 let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_asignarxdonante_seleccionaspirante_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_AsignarXDonante_SeleccionAspirante.action */ 5435)
 let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_asignarxdonante_selecciondonante_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_AsignarXDonante_SeleccionDonante.action */ 2294)
 let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_aspirar_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Aspirar.action */ 8279)
+let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_consultas_donante_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Consultas_Donante.action */ 8775)
+let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_consultas_producto_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Consultas_Producto.action */ 2027)
 let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_donar_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Donar.action */ 2899)
 let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_login_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Login.action */ 3278)
 let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_menu_proceso_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Menu_proceso.action */ 378)
@@ -1621,6 +1731,8 @@ let dreamsbank_images_dreamsbank_jpg = __webpack_require__(/*! ./DreamsBank/Imag
 let dreamsbank_images_innovar_png = __webpack_require__(/*! ./DreamsBank/Images/innovar.png */ 1177)
 let dreamsbank_jsconfig_json = __webpack_require__(/*! ./DreamsBank/jsconfig.json */ 8300)
 let dreamsbank_pages_knowledgepeople_consultas_consultas_aspirante_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Consultas/Consultas_Aspirante.page */ 4904)
+let dreamsbank_pages_knowledgepeople_consultas_consultas_donante_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Consultas/Consultas_Donante.page */ 3899)
+let dreamsbank_pages_knowledgepeople_consultas_consultas_producto_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Consultas/Consultas_Producto.page */ 9969)
 let dreamsbank_pages_knowledgepeople_consultas_menu_consultas_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Consultas/Menu_Consultas.page */ 792)
 let dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_create_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_Create.page */ 8303)
 let dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_detail_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_Detail.page */ 1317)
@@ -1649,6 +1761,8 @@ let dreamsbank_pages_knowledgepeople_nuevo_proceso_menu_proceso_page = __webpack
 let dreamsbank_pages_main_page = __webpack_require__(/*! ./DreamsBank/Pages/Main.page */ 1817)
 let dreamsbank_rules_appupdatefailure_js = __webpack_require__(/*! ./DreamsBank/Rules/AppUpdateFailure.js */ 702)
 let dreamsbank_rules_appupdatesuccess_js = __webpack_require__(/*! ./DreamsBank/Rules/AppUpdateSuccess.js */ 2463)
+let dreamsbank_rules_knowledgepeople_consultas_filtroproducto_js = __webpack_require__(/*! ./DreamsBank/Rules/KnowledgePeople/Consultas/filtroProducto.js */ 7729)
+let dreamsbank_rules_knowledgepeople_consultas_vertodos_js = __webpack_require__(/*! ./DreamsBank/Rules/KnowledgePeople/Consultas/verTodos.js */ 5454)
 let dreamsbank_rules_knowledgepeople_datos_maestros_aspirante_aspirante_deleteconfirmation_js = __webpack_require__(/*! ./DreamsBank/Rules/KnowledgePeople/Datos Maestros/Aspirante/Aspirante_DeleteConfirmation.js */ 825)
 let dreamsbank_rules_knowledgepeople_datos_maestros_donante_donante_deleteconfirmation_js = __webpack_require__(/*! ./DreamsBank/Rules/KnowledgePeople/Datos Maestros/Donante/Donante_DeleteConfirmation.js */ 6074)
 let dreamsbank_rules_knowledgepeople_datos_maestros_donante_selecciontipopersonadonante_js = __webpack_require__(/*! ./DreamsBank/Rules/KnowledgePeople/Datos Maestros/Donante/seleccionTipoPersonaDonante.js */ 733)
@@ -1719,6 +1833,8 @@ module.exports = {
 	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_asignarxdonante_seleccionaspirante_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_asignarxdonante_seleccionaspirante_action,
 	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_asignarxdonante_selecciondonante_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_asignarxdonante_selecciondonante_action,
 	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_aspirar_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_aspirar_action,
+	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_consultas_donante_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_consultas_donante_action,
+	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_consultas_producto_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_consultas_producto_action,
 	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_donar_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_donar_action,
 	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_login_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_login_action,
 	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_menu_proceso_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_menu_proceso_action,
@@ -1736,6 +1852,8 @@ module.exports = {
 	dreamsbank_images_innovar_png : dreamsbank_images_innovar_png,
 	dreamsbank_jsconfig_json : dreamsbank_jsconfig_json,
 	dreamsbank_pages_knowledgepeople_consultas_consultas_aspirante_page : dreamsbank_pages_knowledgepeople_consultas_consultas_aspirante_page,
+	dreamsbank_pages_knowledgepeople_consultas_consultas_donante_page : dreamsbank_pages_knowledgepeople_consultas_consultas_donante_page,
+	dreamsbank_pages_knowledgepeople_consultas_consultas_producto_page : dreamsbank_pages_knowledgepeople_consultas_consultas_producto_page,
 	dreamsbank_pages_knowledgepeople_consultas_menu_consultas_page : dreamsbank_pages_knowledgepeople_consultas_menu_consultas_page,
 	dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_create_page : dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_create_page,
 	dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_detail_page : dreamsbank_pages_knowledgepeople_datos_maestros_aspirante_aspirante_detail_page,
@@ -1764,6 +1882,8 @@ module.exports = {
 	dreamsbank_pages_main_page : dreamsbank_pages_main_page,
 	dreamsbank_rules_appupdatefailure_js : dreamsbank_rules_appupdatefailure_js,
 	dreamsbank_rules_appupdatesuccess_js : dreamsbank_rules_appupdatesuccess_js,
+	dreamsbank_rules_knowledgepeople_consultas_filtroproducto_js : dreamsbank_rules_knowledgepeople_consultas_filtroproducto_js,
+	dreamsbank_rules_knowledgepeople_consultas_vertodos_js : dreamsbank_rules_knowledgepeople_consultas_vertodos_js,
 	dreamsbank_rules_knowledgepeople_datos_maestros_aspirante_aspirante_deleteconfirmation_js : dreamsbank_rules_knowledgepeople_datos_maestros_aspirante_aspirante_deleteconfirmation_js,
 	dreamsbank_rules_knowledgepeople_datos_maestros_donante_donante_deleteconfirmation_js : dreamsbank_rules_knowledgepeople_datos_maestros_donante_donante_deleteconfirmation_js,
 	dreamsbank_rules_knowledgepeople_datos_maestros_donante_selecciontipopersonadonante_js : dreamsbank_rules_knowledgepeople_datos_maestros_donante_selecciontipopersonadonante_js,
@@ -1833,7 +1953,7 @@ __webpack_require__.d(exports, {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"GreenText":{"font-color":"#258029"}}');
+module.exports = JSON.parse('{"GreenText":{"font-color":"#258029"},"RedText":{"font-color":"#912a2a"},"Header":{"font-color":"#000000"},"Header2":{"font-color":"aquamarine"}}');
 
 /***/ }),
 

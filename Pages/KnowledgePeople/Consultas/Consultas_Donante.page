@@ -5,6 +5,17 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"EntitySet": "Donacion",
+						"QueryOptions": "$expand=donante,producto"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -12,36 +23,21 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/DreamsBank/Services/dreamsbankmov.service",
-						"EntitySet": "Aspiracion",
-						"QueryOptions": "$expand=aspirante,producto"
-					},
-					"_Name": "SectionObjectTable0",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true
-						},
-						"Title": "{aspirante/nombre}",
-						"Subhead": "Aspirando a: {producto/nombre_producto}",
-						"Footnote": "Carrera: {aspirante/carrera}",
-						"Description": "Universidad: {aspirante/generico1}",
+						"Title": "{donante/nombre}",
+						"Subhead": "Donando: {producto/nombre_producto}",
+						"Footnote": "{donante/empresa}",
+						"Description": "{donante/ciudad}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{aspirante/correo}",
-						"SubstatusText": "Tel: {aspirante/telefono}",
+						"StatusText": "{donante/correo}",
+						"SubstatusText": "Tel: {donante/telefono}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": "{aspirante/imagen}",
+									"Image": "{donante/imagen}",
 									"ImageText": ""
 								}
 							],
@@ -55,11 +51,11 @@
 						"Styles": {
 							"Subhead": "GreenText"
 						},
-						"Selected": false
-					},
-					"Search": {
-						"Enabled": true,
-						"BarcodeScanner": true
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						}
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -72,15 +68,11 @@
 						"Mode": "None"
 					}
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": true,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Consultas_Aspirante",
-	"Caption": "Aspirantes",
+	"_Name": "Consultas_Donante",
+	"Caption": "Consultas_Donante",
 	"PrefersLargeCaption": true
 }
