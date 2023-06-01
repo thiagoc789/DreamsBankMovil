@@ -2,7 +2,7 @@
 	"Controls": [
 		{
 			"_Type": "Control.Type.SectionedTable",
-			"_Name": "SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
 					"Header": {
@@ -14,7 +14,7 @@
 					"Target": {
 						"Service": "/DreamsBank/Services/dreamsbankmov.service",
 						"EntitySet": "Aspirante",
-						"QueryOptions": "$filter=modulo eq 'KPP'"
+						"QueryOptions": "$filter=modulo eq 'KR'"
 					},
 					"_Name": "SectionObjectTable0",
 					"EmptySection": {
@@ -66,17 +66,18 @@
 	],
 	"_Type": "Page",
 	"_Name": "Aspirante_List",
-	"Caption": "Aspirante",
+	"Caption": "Aspirantes",
 	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
 				"_Name": "ActionBarItem0",
-				"Caption": "",
-				"SystemItem": "Add",
+				"Caption": "Item",
+				"Icon": "sap-icon://add",
 				"Position": "Right",
 				"IsIconCircular": false,
-				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/NavToAspirante_Create.action"
+				"Visible": true,
+				"OnPress": "/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/Aspirante/NavTo_AspirantesCreateKR.action"
 			}
 		],
 		"_Name": "ActionBar1"

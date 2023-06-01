@@ -37,7 +37,7 @@
 							"Semantic": "Tint",
 							"Image": "sap-icon://add-contact",
 							"ImagePosition": "Leading",
-							"OnPress": "/DreamsBank/Actions/KnowledgeRun/NavTo_MenuDatosMaestros.action"
+							"OnPress": "/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_MenuDatosMaestros.action"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",

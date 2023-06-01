@@ -2,19 +2,18 @@
 	"Controls": [
 		{
 			"_Type": "Control.Type.SectionedTable",
-			"_Name": "SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
 					"Header": {
 						"_Name": "SectionHeader0",
-						"AccessoryType": "none",
 						"UseTopPadding": false
 					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/DreamsBank/Services/dreamsbankmov.service",
-						"EntitySet": "Aspirante",
-						"QueryOptions": "$filter=modulo eq 'KPP'"
+						"EntitySet": "Donante",
+						"QueryOptions": "$filter=modulo eq 'KR'"
 					},
 					"_Name": "SectionObjectTable0",
 					"EmptySection": {
@@ -27,11 +26,11 @@
 							"PerformFirstActionWithFullSwipe": true
 						},
 						"Title": "{nombre}",
-						"Subhead": "Cedula: {identificacion}",
-						"Footnote": "Universidad: {universidad}",
-						"Description": "Edad: {edad}",
-						"StatusText": "{telefono}",
-						"SubstatusText": "{correo}",
+						"Subhead": "{empresa}",
+						"Footnote": "{identificacion}",
+						"Description": "Persona: {tipo}",
+						"StatusText": "{correo}",
+						"SubstatusText": "{telefono}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
 						"Tags": [],
@@ -43,7 +42,7 @@
 							],
 							"ImageIsCircular": false
 						},
-						"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/NavToAspirante_Detail.action"
+						"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Donante/NavToDonante_Detail.action"
 					},
 					"Search": {
 						"Enabled": true,
@@ -65,18 +64,19 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Aspirante_List",
-	"Caption": "Aspirante",
+	"_Name": "Empresa_List",
+	"Caption": "Empresas",
 	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
 				"_Name": "ActionBarItem0",
-				"Caption": "",
-				"SystemItem": "Add",
+				"Caption": "Item",
+				"Icon": "sap-icon://add",
 				"Position": "Right",
 				"IsIconCircular": false,
-				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/NavToAspirante_Create.action"
+				"Visible": true,
+				"OnPress": "/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/Empresa/NavTo_EmpresaCreate.action"
 			}
 		],
 		"_Name": "ActionBar1"

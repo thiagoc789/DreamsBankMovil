@@ -3,6 +3,6 @@
 	"ActionResult": {
 		"_Name": "NavTo_AspirantesCreateKR"
 	},
-	"PageToOpen": "/DreamsBank/Pages/KnowledgeRun/Datos maestros/Aspirante_Create.page",
+	"PageToOpen": "/DreamsBank/Pages/KnowledgeRun/Datos maestros/Aspirante/Aspirante_Create.page",
 	"ModalPage": true
 }

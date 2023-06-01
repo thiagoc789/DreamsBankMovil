@@ -24,7 +24,7 @@
 							"Semantic": "Tint",
 							"Image": "sap-icon://study-leave",
 							"ImagePosition": "Leading",
-							"OnPress": "/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_AspirantesCreateKR.action"
+							"OnPress": "/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/Aspirante/NavTo_AspiranteList.action"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -37,7 +37,7 @@
 							"Semantic": "Tint",
 							"Image": "sap-icon://business-by-design",
 							"ImagePosition": "Leading",
-							"OnPress": "/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_EmpresaCreate.action"
+							"OnPress": "/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/Empresa/NavTo_EmpresaList.action"
 						}
 					],
 					"Visible": true,

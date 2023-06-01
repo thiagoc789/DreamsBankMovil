@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_EmpresaList"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgeRun/Datos maestros/Empresa/Empresa_List.page"
+}

@@ -3,6 +3,6 @@
 	"ActionResult": {
 		"_Name": "NavTo_EmpresaCreate"
 	},
-	"PageToOpen": "/DreamsBank/Pages/KnowledgeRun/Datos maestros/Empresa_Create.page",
+	"PageToOpen": "/DreamsBank/Pages/KnowledgeRun/Datos maestros/Empresa/Empresa_Create.page",
 	"ModalPage": true
 }

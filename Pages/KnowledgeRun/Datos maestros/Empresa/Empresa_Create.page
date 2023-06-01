@@ -59,17 +59,6 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "web",
 							"Caption": "web"
-						},
-						{
-							"Value": "KR",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "modulo",
-							"IsEditable": true,
-							"IsVisible": true,
-							"Separator": true,
-							"Caption": "Modulo",
-							"PlaceHolder": "PlaceHolder",
-							"Enabled": true
 						}
 					],
 					"Visible": true,
@@ -102,7 +91,7 @@
 				"SystemItem": "Save",
 				"Position": "Right",
 				"IsIconCircular": false,
-				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Donante/Donante_CreateEntity.action"
+				"OnPress": "/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/Empresa/Create_empresa.action"
 			}
 		],
 		"_Name": "ActionBar1"

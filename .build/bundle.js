@@ -788,7 +788,7 @@ module.exports = {"DesignTimeTarget":{"Service":"/DreamsBank/Services/dreamsbank
   \*********************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable","Sections":[{"Header":{"_Name":"SectionHeader0","UseTopPadding":false},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"Aspirante","QueryOptions":"$filter=modulo eq 'KPP'"},"_Name":"SectionObjectTable0","EmptySection":{"Caption":"No record found!","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true},"Title":"{nombre}","Subhead":"Cedula: {identificacion}","Footnote":"Universidad: {universidad}","Description":"Edad: {edad}","StatusText":"{telefono}","SubstatusText":"{correo}","PreserveIconStackSpacing":false,"AccessoryType":"disclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[{"Image":"{imagen}"}],"ImageIsCircular":false},"OnPress":"/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/NavToAspirante_Detail.action"},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."}}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."}}],"_Type":"Page","_Name":"Aspirante_List","Caption":"Aspirante","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"","SystemItem":"Add","Position":"Right","IsIconCircular":false,"OnPress":"/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/NavToAspirante_Create.action"}],"_Name":"ActionBar1"}}
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable","Sections":[{"Header":{"_Name":"SectionHeader0","AccessoryType":"none","UseTopPadding":false},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"Aspirante","QueryOptions":"$filter=modulo eq 'KPP'"},"_Name":"SectionObjectTable0","EmptySection":{"Caption":"No record found!","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true},"Title":"{nombre}","Subhead":"Cedula: {identificacion}","Footnote":"Universidad: {universidad}","Description":"Edad: {edad}","StatusText":"{telefono}","SubstatusText":"{correo}","PreserveIconStackSpacing":false,"AccessoryType":"disclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[{"Image":"{imagen}"}],"ImageIsCircular":false},"OnPress":"/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/NavToAspirante_Detail.action"},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."}}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."}}],"_Type":"Page","_Name":"Aspirante_List","Caption":"Aspirante","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"","SystemItem":"Add","Position":"Right","IsIconCircular":false,"OnPress":"/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/NavToAspirante_Create.action"}],"_Name":"ActionBar1"}}
 
 /***/ }),
 
@@ -1002,13 +1002,33 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
 
 /***/ }),
 
+/***/ 4683:
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgeRun/Datos maestros/Aspirante_List.page ***!
+  \********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Name":"SectionHeader0","AccessoryType":"none","UseTopPadding":false},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"Aspirante","QueryOptions":"$filter=modulo eq 'KR'"},"_Name":"SectionObjectTable0","EmptySection":{"Caption":"No record found!","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true},"Title":"{nombre}","Subhead":"Cedula: {identificacion}","Footnote":"Universidad: {universidad}","Description":"Edad: {edad}","StatusText":"{telefono}","SubstatusText":"{correo}","PreserveIconStackSpacing":false,"AccessoryType":"disclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[{"Image":"{imagen}"}],"ImageIsCircular":false},"OnPress":"/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Aspirante/NavToAspirante_Detail.action"},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."}}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."}}],"_Type":"Page","_Name":"Aspirante_List","Caption":"Aspirantes","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_AspirantesCreateKR.action"}],"_Name":"ActionBar1"}}
+
+/***/ }),
+
 /***/ 7454:
 /*!********************************************************************************************!*\
   !*** ./build.definitions/DreamsBank/Pages/KnowledgeRun/Datos maestros/Empresa_Create.page ***!
   \********************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"identificacion","Caption":"identificacion","KeyboardType":"Number"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"contrasena","Caption":"contrasena","KeyboardType":"Password"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"nombre","Caption":"empresa"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"direccion","Caption":"direccion"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"ciudad","Caption":"ciudad"},{"_Type":"Control.Type.FormCell.DatePicker","_Name":"fechaNacimiento","Caption":"fecha de fundacion","Mode":"Date"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"empresa","Caption":"contacto empresa"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"telefono","Caption":"telefono","KeyboardType":"Number"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"correo","Caption":"correo"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"web","Caption":"web"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2"}]}],"_Type":"Page","_Name":"Empresa_Create","Caption":"Empresa_Create","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"OnPress":"/DreamsBank/Actions/CloseModalPage_Cancel.action"},{"_Name":"ActionBarItem1","Caption":"","SystemItem":"Save","Position":"Right","IsIconCircular":false,"OnPress":"/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Donante/Donante_CreateEntity.action"}],"_Name":"ActionBar1"}}
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"identificacion","Caption":"identificacion","KeyboardType":"Number"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"contrasena","Caption":"contrasena","KeyboardType":"Password"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"nombre","Caption":"empresa"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"direccion","Caption":"direccion"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"ciudad","Caption":"ciudad"},{"_Type":"Control.Type.FormCell.DatePicker","_Name":"fechaNacimiento","Caption":"fecha de fundacion","Mode":"Date"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"empresa","Caption":"contacto empresa"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"telefono","Caption":"telefono","KeyboardType":"Number"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"correo","Caption":"correo"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"web","Caption":"web"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2"}]}],"_Type":"Page","_Name":"Empresa_Create","Caption":"Empresa_Create","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"OnPress":"/DreamsBank/Actions/CloseModalPage_Cancel.action"},{"_Name":"ActionBarItem1","Caption":"","SystemItem":"Save","Position":"Right","IsIconCircular":false,"OnPress":"/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/Create_empresa.action"}],"_Name":"ActionBar1"}}
+
+/***/ }),
+
+/***/ 102:
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgeRun/Datos maestros/Empresa_List.page ***!
+  \******************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Name":"SectionHeader0","UseTopPadding":false},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"Donante","QueryOptions":"$filter=modulo eq 'KR'"},"_Name":"SectionObjectTable0","EmptySection":{"Caption":"No record found!","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true},"Title":"{nombre}","Subhead":"{empresa}","Footnote":"{identificacion}","Description":"Persona: {tipo}","StatusText":"{correo}","SubstatusText":"{telefono}","PreserveIconStackSpacing":false,"AccessoryType":"disclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[{"Image":"{imagen}"}],"ImageIsCircular":false},"OnPress":"/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Donante/NavToDonante_Detail.action"},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."}}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."}}],"_Type":"Page","_Name":"Empresa_List","Caption":"Empresas","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_EmpresaCreate.action"}],"_Name":"ActionBar1"}}
 
 /***/ }),
 
@@ -1018,7 +1038,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Aspirante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://study-leave","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_AspirantesCreateKR.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Title":"Empresa","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://business-by-design","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_EmpresaCreate.action"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Menu_DatosMaestros","Caption":"Registrarse","PrefersLargeCaption":true}
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Aspirante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://study-leave","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_AspiranteList.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Title":"Empresa","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://business-by-design","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_EmpresaList.action"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Menu_DatosMaestros","Caption":"Registrarse","PrefersLargeCaption":true}
 
 /***/ }),
 
@@ -1208,7 +1228,7 @@ module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavT
   \*********************************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"create"},"OnFailure":"/DreamsBank/Actions/CreateEntityFailureMessage.action","OnSuccess":"/DreamsBank/Actions/CreateEntitySuccessMessage.action","Target":{"EntitySet":"Aspirante","Service":"/DreamsBank/Services/dreamsbankmov.service"},"Properties":{"identificacion":"#Control:identificacion/#Value","nombre":"#Control:nombre/#Value","edad":"#Control:edad/#Value","ciudad":"#Control:ciudad/#Value","semestre":"#Control:semestre/#Value","carrera":"#Control:carrera/#Value","fechaNacimiento":"#Control:fechaNacimiento/#Value","ciudadNacimiento":"#Control:ciudadNacimiento/#Value","telefono":"#Control:telefono/#Value","correo":"#Control:correo/#Value","direccion":"#Control:direccion/#Value","contrasena":"#Control:contrasena/#Value","universidad":"#Control:universidad/#Value","fecha_creacion":"/DreamsBank/Rules/traer_fecha.js","modulo":"#Control:modulo/#Value"}}
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"create"},"OnFailure":"/DreamsBank/Actions/CreateEntityFailureMessage.action","OnSuccess":"/DreamsBank/Actions/CreateEntitySuccessMessage.action","Target":{"EntitySet":"Aspirante","Service":"/DreamsBank/Services/dreamsbankmov.service"},"Properties":{"identificacion":"#Control:identificacion/#Value","nombre":"#Control:nombre/#Value","edad":"#Control:edad/#Value","ciudad":"#Control:ciudad/#Value","semestre":"#Control:semestre/#Value","carrera":"#Control:carrera/#Value","fechaNacimiento":"#Control:fechaNacimiento/#Value","ciudadNacimiento":"#Control:ciudadNacimiento/#Value","telefono":"#Control:telefono/#Value","correo":"#Control:correo/#Value","direccion":"#Control:direccion/#Value","contrasena":"#Control:contrasena/#Value","haAspirado":false,"universidad":"#Control:universidad/#Value","fecha_creacion":"/DreamsBank/Rules/traer_fecha.js","modulo":"#Control:modulo/#Value"}}
 
 /***/ }),
 
@@ -1622,6 +1642,16 @@ module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult"
 
 /***/ }),
 
+/***/ 4240:
+/*!*****************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_AspiranteList.action ***!
+  \*****************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_AspiranteList"},"PageToOpen":"/DreamsBank/Pages/KnowledgeRun/Datos maestros/Aspirante_List.page"}
+
+/***/ }),
+
 /***/ 3933:
 /*!**********************************************************************************************************!*\
   !*** ./build.definitions/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_AspirantesCreateKR.action ***!
@@ -1639,6 +1669,16 @@ module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavT
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_EmpresaCreate"},"PageToOpen":"/DreamsBank/Pages/KnowledgeRun/Datos maestros/Empresa_Create.page","ModalPage":true}
+
+/***/ }),
+
+/***/ 1953:
+/*!***************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_EmpresaList.action ***!
+  \***************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_EmpresaList"},"PageToOpen":"/DreamsBank/Pages/KnowledgeRun/Datos maestros/Empresa_List.page"}
 
 /***/ }),
 
@@ -1866,8 +1906,10 @@ let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_donar_action = __webp
 let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_login_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Login.action */ 3278)
 let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_menu_proceso_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Menu_proceso.action */ 378)
 let dreamsbank_actions_knowledgerun_datos_maestros_create_empresa_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeRun/Datos_Maestros/Create_empresa.action */ 8830)
+let dreamsbank_actions_knowledgerun_datos_maestros_navto_aspirantelist_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_AspiranteList.action */ 4240)
 let dreamsbank_actions_knowledgerun_datos_maestros_navto_aspirantescreatekr_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_AspirantesCreateKR.action */ 3933)
 let dreamsbank_actions_knowledgerun_datos_maestros_navto_empresacreate_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_EmpresaCreate.action */ 6699)
+let dreamsbank_actions_knowledgerun_datos_maestros_navto_empresalist_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_EmpresaList.action */ 1953)
 let dreamsbank_actions_knowledgerun_navto_menu_knowledgerun_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeRun/NavTo_Menu_KnowledgeRun.action */ 1244)
 let dreamsbank_actions_knowledgerun_navto_menudatosmaestros_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeRun/NavTo_MenuDatosMaestros.action */ 1750)
 let dreamsbank_actions_logout_action = __webpack_require__(/*! ./DreamsBank/Actions/Logout.action */ 6034)
@@ -1914,7 +1956,9 @@ let dreamsbank_pages_knowledgepeople_nuevo_proceso_donar_page = __webpack_requir
 let dreamsbank_pages_knowledgepeople_nuevo_proceso_login_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Nuevo Proceso/Login.page */ 941)
 let dreamsbank_pages_knowledgepeople_nuevo_proceso_menu_proceso_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Nuevo Proceso/Menu_proceso.page */ 1581)
 let dreamsbank_pages_knowledgerun_datos_maestros_aspirante_create_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeRun/Datos maestros/Aspirante_Create.page */ 1729)
+let dreamsbank_pages_knowledgerun_datos_maestros_aspirante_list_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeRun/Datos maestros/Aspirante_List.page */ 4683)
 let dreamsbank_pages_knowledgerun_datos_maestros_empresa_create_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeRun/Datos maestros/Empresa_Create.page */ 7454)
+let dreamsbank_pages_knowledgerun_datos_maestros_empresa_list_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeRun/Datos maestros/Empresa_List.page */ 102)
 let dreamsbank_pages_knowledgerun_datos_maestros_menu_datosmaestros_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeRun/Datos maestros/Menu_DatosMaestros.page */ 8341)
 let dreamsbank_pages_knowledgerun_menu_knowledgerun_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeRun/Menu_KnowledgeRun.page */ 4126)
 let dreamsbank_pages_main_page = __webpack_require__(/*! ./DreamsBank/Pages/Main.page */ 1817)
@@ -2000,8 +2044,10 @@ module.exports = {
 	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_login_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_login_action,
 	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_menu_proceso_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_menu_proceso_action,
 	dreamsbank_actions_knowledgerun_datos_maestros_create_empresa_action : dreamsbank_actions_knowledgerun_datos_maestros_create_empresa_action,
+	dreamsbank_actions_knowledgerun_datos_maestros_navto_aspirantelist_action : dreamsbank_actions_knowledgerun_datos_maestros_navto_aspirantelist_action,
 	dreamsbank_actions_knowledgerun_datos_maestros_navto_aspirantescreatekr_action : dreamsbank_actions_knowledgerun_datos_maestros_navto_aspirantescreatekr_action,
 	dreamsbank_actions_knowledgerun_datos_maestros_navto_empresacreate_action : dreamsbank_actions_knowledgerun_datos_maestros_navto_empresacreate_action,
+	dreamsbank_actions_knowledgerun_datos_maestros_navto_empresalist_action : dreamsbank_actions_knowledgerun_datos_maestros_navto_empresalist_action,
 	dreamsbank_actions_knowledgerun_navto_menu_knowledgerun_action : dreamsbank_actions_knowledgerun_navto_menu_knowledgerun_action,
 	dreamsbank_actions_knowledgerun_navto_menudatosmaestros_action : dreamsbank_actions_knowledgerun_navto_menudatosmaestros_action,
 	dreamsbank_actions_logout_action : dreamsbank_actions_logout_action,
@@ -2048,7 +2094,9 @@ module.exports = {
 	dreamsbank_pages_knowledgepeople_nuevo_proceso_login_page : dreamsbank_pages_knowledgepeople_nuevo_proceso_login_page,
 	dreamsbank_pages_knowledgepeople_nuevo_proceso_menu_proceso_page : dreamsbank_pages_knowledgepeople_nuevo_proceso_menu_proceso_page,
 	dreamsbank_pages_knowledgerun_datos_maestros_aspirante_create_page : dreamsbank_pages_knowledgerun_datos_maestros_aspirante_create_page,
+	dreamsbank_pages_knowledgerun_datos_maestros_aspirante_list_page : dreamsbank_pages_knowledgerun_datos_maestros_aspirante_list_page,
 	dreamsbank_pages_knowledgerun_datos_maestros_empresa_create_page : dreamsbank_pages_knowledgerun_datos_maestros_empresa_create_page,
+	dreamsbank_pages_knowledgerun_datos_maestros_empresa_list_page : dreamsbank_pages_knowledgerun_datos_maestros_empresa_list_page,
 	dreamsbank_pages_knowledgerun_datos_maestros_menu_datosmaestros_page : dreamsbank_pages_knowledgerun_datos_maestros_menu_datosmaestros_page,
 	dreamsbank_pages_knowledgerun_menu_knowledgerun_page : dreamsbank_pages_knowledgerun_menu_knowledgerun_page,
 	dreamsbank_pages_main_page : dreamsbank_pages_main_page,
