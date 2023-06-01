@@ -1,0 +1,57 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton1",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Aspirante",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://study-leave",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_AspirantesCreateKR.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton2",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Empresa",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://business-by-design",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgeRun/Datos_Maestros/NavTo_EmpresaCreate.action"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Menu_DatosMaestros",
+	"Caption": "Registrarse",
+	"PrefersLargeCaption": true
+}

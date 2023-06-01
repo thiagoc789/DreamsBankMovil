@@ -94,29 +94,12 @@
 							"Caption": "contrasena"
 						},
 						{
-							"Value": "{haDonado}",
+							"Value": "{haAspirado}",
 							"_Type": "Control.Type.FormCell.Switch",
 							"_Name": "haDonado",
 							"Caption": "haDonado"
-						},
-						{
-							"Value": "{generico1}",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "generico1",
-							"Caption": "generico1"
-						},
-						{
-							"Value": "{generico2}",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "generico2",
-							"Caption": "generico2"
-						},
-						{
-							"Value": "{generico3}",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "generico3",
-							"Caption": "generico3"
 						}
+
 					],
 					"Visible": true,
 					"EmptySection": {

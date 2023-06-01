@@ -92,7 +92,7 @@
 						"Title": "{aspirante/nombre}",
 						"Subhead": "Aspirando a: {producto/nombre_producto}",
 						"Footnote": "Carrera: {aspirante/carrera}",
-						"Description": "Universidad: {aspirante/generico1}",
+						"Description": "Universidad: {aspirante/universidad}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "{aspirante/correo}",
 						"SubstatusText": "Tel: {aspirante/telefono}",

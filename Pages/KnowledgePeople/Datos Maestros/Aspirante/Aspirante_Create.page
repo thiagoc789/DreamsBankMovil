@@ -76,6 +76,17 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "carrera",
 							"Caption": "carrera"
+						},
+						{
+							"Value": "KPP",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "modulo",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Modulo",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
 						}
 					],
 					"Visible": true,
@@ -90,7 +101,7 @@
 	],
 	"_Type": "Page",
 	"_Name": "Aspirante_Create",
-	"Caption": "Create Aspirante Detail",
+	"Caption": "Crear un Aspirante ",
 	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [

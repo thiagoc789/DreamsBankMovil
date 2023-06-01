@@ -1,29 +1,29 @@
 {
-	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"_Type": "Action.Type.ODataService.CreateEntity",
 	"ActionResult": {
-		"_Name": "update"
+		"_Name": "create"
 	},
-	"OnFailure": "/DreamsBank/Actions/UpdateEntityFailureMessage.action",
-	"OnSuccess": "/DreamsBank/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
 	"Target": {
-		"EntitySet": "Donante",
 		"Service": "/DreamsBank/Services/dreamsbankmov.service",
-		"ReadLink": "{@odata.readLink}"
+		"EntitySet": "Donante"
 	},
 	"Properties": {
 		"identificacion": "#Control:identificacion/#Value",
-		"tipo": "#Control:tipo/#Value",
+		"tipo": "Juridica",
 		"nombre": "#Control:nombre/#Value",
-		"edad": "#Control:edad/#Value",
 		"ciudad": "#Control:ciudad/#Value",
 		"empresa": "#Control:empresa/#Value",
 		"telefono": "#Control:telefono/#Value",
 		"correo": "#Control:correo/#Value",
-		"imagen": "#Control:imagen/#Value",
+		"imagen": "",
 		"web": "#Control:web/#Value",
 		"direccion": "#Control:direccion/#Value",
 		"contrasena": "#Control:contrasena/#Value",
 		"fechaNacimiento": "#Control:fechaNacimiento/#Value",
-		"haDonado": "#Control:haDonado/#Value"
+		"haDonado": false,
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js",
+		"modulo": "KR"
 	}
 }

@@ -11,6 +11,6 @@
 		"QueryOptions": "$filter=identificacion eq '{{#Page:Aspirar/#Control:idAspirar/#Value}}'"
 	},
 	"Properties": {
-		"haDonado": true
+		"haAspirado": true
 	}
 }

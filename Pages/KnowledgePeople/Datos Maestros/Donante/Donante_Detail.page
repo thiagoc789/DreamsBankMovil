@@ -69,11 +69,6 @@
 							"KeyName": "correo"
 						},
 						{
-							"Value": "{imagen}",
-							"_Name": "KeyValue8",
-							"KeyName": "imagen"
-						},
-						{
 							"Value": "{web}",
 							"_Name": "KeyValue9",
 							"KeyName": "web"
@@ -84,34 +79,9 @@
 							"KeyName": "direccion"
 						},
 						{
-							"Value": "{contrasena}",
-							"_Name": "KeyValue11",
-							"KeyName": "contrasena"
-						},
-						{
 							"Value": "{fechaNacimiento}",
 							"_Name": "KeyValue12",
 							"KeyName": "fechaNacimiento"
-						},
-						{
-							"Value": "{haDonado}",
-							"_Name": "KeyValue14",
-							"KeyName": "haDonado"
-						},
-						{
-							"Value": "{generico1}",
-							"_Name": "KeyValue15",
-							"KeyName": "generico1"
-						},
-						{
-							"Value": "{generico2}",
-							"_Name": "KeyValue16",
-							"KeyName": "generico2"
-						},
-						{
-							"Value": "{generico3}",
-							"_Name": "KeyValue17",
-							"KeyName": "generico3"
 						}
 					],
 					"MaxItemCount": 1,

@@ -23,6 +23,7 @@
 		"contrasena": "#Control:contrasena/#Value",
 		"fechaNacimiento": "#Control:fechaNacimiento/#Value",
 		"haDonado": false,
-		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js"
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js",
+		"modulo": "#Control:modulo/#Value"
 	}
 }

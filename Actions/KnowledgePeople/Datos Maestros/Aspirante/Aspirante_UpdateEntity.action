@@ -23,10 +23,6 @@
 		"telefono": "#Control:telefono/#Value",
 		"correo": "#Control:correo/#Value",
 		"direccion": "#Control:direccion/#Value",
-		"contrasena": "#Control:contrasena/#Value",
-		"haDonado": "#Control:haDonado/#Value",
-		"generico1": "#Control:generico1/#Value",
-		"generico2": "#Control:generico2/#Value",
-		"generico3": "#Control:generico3/#Value"
+		"contrasena": "#Control:contrasena/#Value"
 	}
 }

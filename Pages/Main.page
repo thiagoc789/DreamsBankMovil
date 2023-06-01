@@ -45,6 +45,23 @@
 								"Width": 30
 							},
 							"OnPress": "/DreamsBank/Actions/KnowledgePeople/NavTo_KnowledgePeople.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton1",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Knowledge Run",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "/DreamsBank/Images/area_trabajo.png",
+							"ImagePosition": "Leading",
+							"ImageSize": {
+								"Height": 30,
+								"Width": 30
+							},
+							"OnPress": "/DreamsBank/Actions/KnowledgeRun/NavTo_Menu_KnowledgeRun.action"
 						}
 					],
 					"Visible": true,

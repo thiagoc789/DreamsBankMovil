@@ -49,11 +49,6 @@
 							"KeyName": "ciudad"
 						},
 						{
-							"Value": "{imagen}",
-							"_Name": "KeyValue4",
-							"KeyName": "imagen"
-						},
-						{
 							"Value": "{semestre}",
 							"_Name": "KeyValue5",
 							"KeyName": "semestre"
@@ -87,32 +82,8 @@
 							"Value": "{direccion}",
 							"_Name": "KeyValue11",
 							"KeyName": "direccion"
-						},
-						{
-							"Value": "{contrasena}",
-							"_Name": "KeyValue12",
-							"KeyName": "contrasena"
-						},
-						{
-							"Value": "{haDonado}",
-							"_Name": "KeyValue14",
-							"KeyName": "haDonado"
-						},
-						{
-							"Value": "{generico1}",
-							"_Name": "KeyValue15",
-							"KeyName": "generico1"
-						},
-						{
-							"Value": "{generico2}",
-							"_Name": "KeyValue16",
-							"KeyName": "generico2"
-						},
-						{
-							"Value": "{generico3}",
-							"_Name": "KeyValue17",
-							"KeyName": "generico3"
 						}
+
 					],
 					"MaxItemCount": 1,
 					"_Type": "Section.Type.KeyValue",

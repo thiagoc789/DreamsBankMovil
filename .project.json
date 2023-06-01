@@ -8,21 +8,7 @@
 	"CF": {
 		"Target": "https://api.cf.us10-001.hana.ondemand.com",
 		"Organization": "5dfaa0b5-2862-4dc9-a9a0-d820134da8d5",
-		"Space": "fa59d10d-4ea7-4bfb-8bec-2468695cbbb9",
-		"Deploy": {
-			"Description": "",
-			"WebClient": {
-				"Runtime": "",
-				"URL": ""
-			},
-			"Destination": [
-				{
-					"CF": "",
-					"MDK": "dreamsbankmov",
-					"URL": ""
-				}
-			]
-		}
+		"Space": "fa59d10d-4ea7-4bfb-8bec-2468695cbbb9"
 	},
 	"MobileService": {
 		"Type": "standard",

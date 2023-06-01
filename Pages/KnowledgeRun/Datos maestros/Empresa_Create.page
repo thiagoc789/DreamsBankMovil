@@ -5,47 +5,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
-					"Controls": [
-						{
-							"Value": [],
-							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "tipoPersona",
-							"IsEditable": true,
-							"IsVisible": true,
-							"Separator": true,
-							"AllowMultipleSelection": false,
-							"AllowEmptySelection": false,
-							"Caption": "Tipo de persona",
-							"DataPaging": {
-								"ShowLoadingIndicator": false,
-								"PageSize": 50
-							},
-							"PickerPrompt": "Please select one single item",
-							"OnValueChange": "/DreamsBank/Rules/KnowledgePeople/Datos Maestros/Donante/seleccionTipoPersonaDonante.js",
-							"IsSelectedSectionEnabled": false,
-							"IsPickerDismissedOnSelection": true,
-							"AllowDefaultValueIfOneItem": false,
-							"PickerItems": [
-								"Natural",
-								"Juridica"
-							]
-						}
-					],
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell1"
-				},
-				{
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
@@ -62,7 +21,7 @@
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "nombre",
-							"Caption": "nombre"
+							"Caption": "empresa"
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
@@ -77,19 +36,13 @@
 						{
 							"_Type": "Control.Type.FormCell.DatePicker",
 							"_Name": "fechaNacimiento",
-							"Caption": "fecha de nacimiento",
+							"Caption": "fecha de fundacion",
 							"Mode": "Date"
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "edad",
-							"Caption": "edad",
-							"KeyboardType": "Number"
-						},
-						{
-							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "empresa",
-							"Caption": "empresa"
+							"Caption": "contacto empresa"
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
@@ -108,18 +61,18 @@
 							"Caption": "web"
 						},
 						{
-							"Value": "KPP",
+							"Value": "KR",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "modulo",
 							"IsEditable": true,
-							"IsVisible": false,
+							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Modulo",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						}
 					],
-					"Visible": false,
+					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -130,8 +83,8 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Donante_Create",
-	"Caption": "Crear un donante",
+	"_Name": "Empresa_Create",
+	"Caption": "Empresa_Create",
 	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [

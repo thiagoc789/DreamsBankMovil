@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_MenuDatosMaestros"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgeRun/Datos maestros/Menu_DatosMaestros.page"
+}
