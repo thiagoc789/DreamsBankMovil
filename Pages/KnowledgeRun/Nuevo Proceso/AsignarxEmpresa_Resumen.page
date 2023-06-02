@@ -5,6 +5,10 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -12,23 +16,14 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
-							"Value": "#Page:AsignarXaspirante_SeleccionEmpresa/#Control:aspirante_nombre/#Value",
+							"Value": "#Page:AsignarXEmpresa_seleccionaspirante/#Control:empresa_asignarxempresa/#Value",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "FormCellSimpleProperty0",
-							"IsEditable": true,
-							"IsVisible": true,
-							"Separator": true,
-							"Caption": "Aspirante",
-							"PlaceHolder": "PlaceHolder",
-							"Enabled": true
-						},
-						{
-							"Value": "{empresa/nombre}",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "nombre_empresa",
-							"IsEditable": true,
+							"_Name": "empresa_resumen",
+							"IsEditable": false,
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Empresa:",
@@ -36,10 +31,21 @@
 							"Enabled": true
 						},
 						{
+							"Value": "{aspirante/nombre}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "aspirante_resumen",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Aspirante:",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
 							"Value": "{tipo}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "tipo_asignar",
-							"IsEditable": true,
+							"_Name": "tipo_resumen",
+							"IsEditable": false,
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Tipo:",
@@ -49,22 +55,22 @@
 						{
 							"Value": "{area}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "area_asignar",
-							"IsEditable": true,
+							"_Name": "area_resumen",
+							"IsEditable": false,
 							"IsVisible": true,
 							"Separator": true,
-							"Caption": "Area",
+							"Caption": "Area:",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						},
 						{
-							"Value": "{empresa/identificacion}",
+							"Value": "{aspirante/identificacion}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "id_empresa",
+							"_Name": "aspirante_identificacion_resumen",
 							"IsEditable": true,
 							"IsVisible": true,
 							"Separator": true,
-							"Caption": "idEmpresa",
+							"Caption": "aspiranteID",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						},
@@ -79,21 +85,15 @@
 							"Semantic": "Tint",
 							"Image": "res://mdk_logo.png",
 							"ImagePosition": "Leading",
-							"OnPress": "/DreamsBank/Actions/KnowledgeRun/Nuevo Proceso/AsignacionxAspiranteKR_Create.action"
+							"OnPress": "/DreamsBank/Actions/KnowledgeRun/Nuevo Proceso/AsignacionXEmpresaKR_Create.action"
 						}
-					],
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0"
+					]
 				}
 			]
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Asignarxaspirante_Resumen",
+	"_Name": "AsignarxEmpresa_Resumen",
 	"Caption": "Resumen",
 	"PrefersLargeCaption": true
 }

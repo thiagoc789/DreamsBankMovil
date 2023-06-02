@@ -14,21 +14,21 @@
 					},
 					"Controls": [
 						{
-							"Value": "{aspirante/nombre}",
+							"Value": "{empresa/nombre}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "aspirante_nombre",
-							"IsEditable": false,
+							"_Name": "empresa_asignarxempresa",
+							"IsEditable": true,
 							"IsVisible": true,
 							"Separator": true,
-							"Caption": "Aspirante:",
+							"Caption": "Empresa:",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						},
 						{
 							"Value": "{tipo}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "FormCellSimpleProperty2",
-							"IsEditable": false,
+							"_Name": "tipo_asignarxempresa",
+							"IsEditable": true,
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Tipo:",
@@ -38,8 +38,8 @@
 						{
 							"Value": "{area}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "FormCellSimpleProperty3",
-							"IsEditable": false,
+							"_Name": "area_asignarxempresa",
+							"IsEditable": true,
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Area:",
@@ -47,13 +47,13 @@
 							"Enabled": true
 						},
 						{
-							"Value": "{aspirante/identificacion}",
+							"Value": "{empresa/identificacion}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "idAspirante",
+							"_Name": "idEmpresa_xempresa",
 							"IsEditable": true,
 							"IsVisible": true,
 							"Separator": true,
-							"Caption": "Id_aspirante",
+							"Caption": "IdEmpresa:",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						}
@@ -76,8 +76,8 @@
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/DreamsBank/Services/dreamsbankmov.service",
-						"EntitySet": "Donacion_KR",
-						"QueryOptions": "$expand=empresa&$filter=tipo eq '{tipo}' and area eq '{area}'"
+						"EntitySet": "Aspiracion_KR",
+						"QueryOptions": "$expand=aspirante&$filter=tipo eq '{tipo}' and area eq '{area}'"
 					},
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
@@ -89,19 +89,19 @@
 							"Items": [],
 							"PerformFirstActionWithFullSwipe": true
 						},
-						"Title": "{empresa/nombre}",
-						"Subhead": "Buscando: {tipo}",
+						"Title": "{aspirante/nombre}",
+						"Subhead": "Aspirando a: {tipo}",
 						"Footnote": "Area: {area}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{empresa/telefono}",
-						"SubstatusText": "{empresa/correo}",
+						"StatusText": "{aspirante/telefono}",
+						"SubstatusText": "{aspirante/correo}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": "{empresa/imagen}",
+									"Image": "{aspirante/imagen}",
 									"ImageText": ""
 								}
 							],
@@ -112,7 +112,11 @@
 							"Avatars": [],
 							"ImageIsCircular": true
 						},
-						"OnPress": "/DreamsBank/Actions/KnowledgeRun/Nuevo Proceso/NavTo_AsignarxaspiranteResumen.action",
+						"OnPress": "/DreamsBank/Actions/KnowledgeRun/Nuevo Proceso/NavTo_AsignarxEmpresaResumen.action",
+						"Styles": {
+							"Subhead": "GreenText",
+							"Footnote": "GreenText"
+						},
 						"Selected": false
 					},
 					"DataPaging": {
@@ -130,7 +134,7 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "AsignarXaspirante_SeleccionEmpresa",
-	"Caption": "Seleccion de empresa",
+	"_Name": "AsignarXEmpresa_seleccionaspirante",
+	"Caption": "Seleccionar aspirante",
 	"PrefersLargeCaption": true
 }

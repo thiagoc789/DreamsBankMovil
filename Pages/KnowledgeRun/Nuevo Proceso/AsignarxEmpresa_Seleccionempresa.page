@@ -1,0 +1,75 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"EntitySet": "Donacion_KR",
+						"QueryOptions": "$expand=empresa"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{empresa/nombre}",
+						"Subhead": "Buscando: {tipo}",
+						"Footnote": "Area: {area}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "{empresa/telefono}",
+						"SubstatusText": "{empresa/correo}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "{empresa/imagen}",
+									"ImageText": ""
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": "/DreamsBank/Actions/KnowledgeRun/Nuevo Proceso/NavTo_AsignarXEmpresa_Seleccionaspirante.action",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "AsignarXEmpresa_SeleccionEmpresa",
+	"Caption": "Seleccion de empresa",
+	"PrefersLargeCaption": true
+}

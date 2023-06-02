@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_AsignarXEmpresa_Seleccionaspirante"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgeRun/Nuevo Proceso/AsignarxEmpresa_Seleccionaspirante.page"
+}
