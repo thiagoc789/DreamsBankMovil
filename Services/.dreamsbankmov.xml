@@ -28,19 +28,13 @@
                 <EntitySet Name="Area" EntityType="DreamsBankService.Area"/>
                 <EntitySet Name="Aspiracion_KR" EntityType="DreamsBankService.Aspiracion_KR">
                     <NavigationPropertyBinding Path="aspirante" Target="Aspirante"/>
-                    <NavigationPropertyBinding Path="producto" Target="Producto"/>
-                    <NavigationPropertyBinding Path="area" Target="Area"/>
                 </EntitySet>
                 <EntitySet Name="Donacion_KR" EntityType="DreamsBankService.Donacion_KR">
-                    <NavigationPropertyBinding Path="donante" Target="Donante"/>
-                    <NavigationPropertyBinding Path="producto" Target="Producto"/>
-                    <NavigationPropertyBinding Path="area" Target="Area"/>
+                    <NavigationPropertyBinding Path="empresa" Target="Donante"/>
                 </EntitySet>
                 <EntitySet Name="Asignacion_KR" EntityType="DreamsBankService.Asignacion_KR">
                     <NavigationPropertyBinding Path="aspirante" Target="Aspirante"/>
-                    <NavigationPropertyBinding Path="donante" Target="Donante"/>
-                    <NavigationPropertyBinding Path="producto" Target="Producto"/>
-                    <NavigationPropertyBinding Path="area" Target="Area"/>
+                    <NavigationPropertyBinding Path="empresa" Target="Donante"/>
                 </EntitySet>
             </EntityContainer>
             <EntityType Name="Aspirante">
@@ -180,14 +174,8 @@
                     <ReferentialConstraint Property="aspirante_identificacion" ReferencedProperty="identificacion"/>
                 </NavigationProperty>
                 <Property Name="aspirante_identificacion" Type="Edm.String" MaxLength="100"/>
-                <NavigationProperty Name="producto" Type="DreamsBankService.Producto">
-                    <ReferentialConstraint Property="producto_id" ReferencedProperty="id"/>
-                </NavigationProperty>
-                <Property Name="producto_id" Type="Edm.String" MaxLength="50"/>
-                <NavigationProperty Name="area" Type="DreamsBankService.Area">
-                    <ReferentialConstraint Property="area_id" ReferencedProperty="id"/>
-                </NavigationProperty>
-                <Property Name="area_id" Type="Edm.Guid"/>
+                <Property Name="tipo" Type="Edm.String" MaxLength="100"/>
+                <Property Name="area" Type="Edm.String" MaxLength="100"/>
                 <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
                 <Property Name="fecha_creacion" Type="Edm.Date"/>
             </EntityType>
@@ -196,18 +184,12 @@
                     <PropertyRef Name="id_donacion"/>
                 </Key>
                 <Property Name="id_donacion" Type="Edm.Guid" Nullable="false"/>
-                <NavigationProperty Name="donante" Type="DreamsBankService.Donante">
-                    <ReferentialConstraint Property="donante_identificacion" ReferencedProperty="identificacion"/>
+                <NavigationProperty Name="empresa" Type="DreamsBankService.Donante">
+                    <ReferentialConstraint Property="empresa_identificacion" ReferencedProperty="identificacion"/>
                 </NavigationProperty>
-                <Property Name="donante_identificacion" Type="Edm.String" MaxLength="100"/>
-                <NavigationProperty Name="producto" Type="DreamsBankService.Producto">
-                    <ReferentialConstraint Property="producto_id" ReferencedProperty="id"/>
-                </NavigationProperty>
-                <Property Name="producto_id" Type="Edm.String" MaxLength="50"/>
-                <NavigationProperty Name="area" Type="DreamsBankService.Area">
-                    <ReferentialConstraint Property="area_id" ReferencedProperty="id"/>
-                </NavigationProperty>
-                <Property Name="area_id" Type="Edm.Guid"/>
+                <Property Name="empresa_identificacion" Type="Edm.String" MaxLength="100"/>
+                <Property Name="tipo" Type="Edm.String" MaxLength="100"/>
+                <Property Name="area" Type="Edm.String" MaxLength="100"/>
                 <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
                 <Property Name="fecha_creacion" Type="Edm.Date"/>
             </EntityType>
@@ -220,18 +202,12 @@
                     <ReferentialConstraint Property="aspirante_identificacion" ReferencedProperty="identificacion"/>
                 </NavigationProperty>
                 <Property Name="aspirante_identificacion" Type="Edm.String" MaxLength="100"/>
-                <NavigationProperty Name="donante" Type="DreamsBankService.Donante">
-                    <ReferentialConstraint Property="donante_identificacion" ReferencedProperty="identificacion"/>
+                <NavigationProperty Name="empresa" Type="DreamsBankService.Donante">
+                    <ReferentialConstraint Property="empresa_identificacion" ReferencedProperty="identificacion"/>
                 </NavigationProperty>
-                <Property Name="donante_identificacion" Type="Edm.String" MaxLength="100"/>
-                <NavigationProperty Name="producto" Type="DreamsBankService.Producto">
-                    <ReferentialConstraint Property="producto_id" ReferencedProperty="id"/>
-                </NavigationProperty>
-                <Property Name="producto_id" Type="Edm.String" MaxLength="50"/>
-                <NavigationProperty Name="area" Type="DreamsBankService.Area">
-                    <ReferentialConstraint Property="area_id" ReferencedProperty="id"/>
-                </NavigationProperty>
-                <Property Name="area_id" Type="Edm.Guid"/>
+                <Property Name="empresa_identificacion" Type="Edm.String" MaxLength="100"/>
+                <Property Name="tipo" Type="Edm.String" MaxLength="100"/>
+                <Property Name="area" Type="Edm.String" MaxLength="100"/>
                 <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
                 <Property Name="fecha_creacion" Type="Edm.Date"/>
             </EntityType>

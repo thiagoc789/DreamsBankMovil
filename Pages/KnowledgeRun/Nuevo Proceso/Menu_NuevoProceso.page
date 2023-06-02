@@ -1,0 +1,109 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "nombre",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Value": "GreenText"
+							},
+							"Caption": "Logueado como:",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "rol",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Value": "GreenText"
+							},
+							"Caption": "Rol:",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "aspirar",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Aspirar",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgeRun/Nuevo Proceso/NavTo_Aspirar.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "donar",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Buscar talentos",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgeRun/Nuevo Proceso/NavTo_BuscarTalentos.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "asignarxaspirante",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Asignar por aspirante",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgeRun/Nuevo Proceso/NavTo_asignarxaspirante.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "asignarxempresa",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Asignar por empresa",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "NuevoProceso",
+	"Caption": "Nuevo Proceso",
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/DreamsBank/Rules/KnowledgeRun/NuevoProceso/cargar_datos_menu.js"
+}

@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Asignacion_KR"
+	},
+	"Properties": {
+		"aspirante_identificacion": "#Page:AsignarXaspirante_SeleccionEmpresa/#Control:idAspirante/#Value",
+		"empresa_identificacion": "#Page:Asignarxaspirante_Resumen/#Control:id_empresa/#Value",
+		"tipo": "#Page:Asignarxaspirante_Resumen/#Control:tipo_asignar/#Value",
+		"area": "#Page:Asignarxaspirante_Resumen/#Control:area_asignar/#Value",
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js"
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Aspiracion_KR"
+	},
+	"Properties": {
+		"aspirante_identificacion": "#Control:identificacion/#Value",
+		"tipo": "#Control:tipo/#SelectedValue",
+		"area": "#Control:area/#SelectedValue",
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js"
+	}
+}
