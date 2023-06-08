@@ -5,6 +5,17 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"EntitySet": "Asignacion_KR",
+						"QueryOptions": "$expand=aspirante,empresa"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -12,39 +23,18 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/DreamsBank/Services/dreamsbankmov.service",
-						"EntitySet": "Donacion",
-						"QueryOptions": "$expand=donante,producto"
-					},
-					"_Name": "SectionObjectTable0",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true
-						},
-						"Title": "{donante/nombre}",
-						"Subhead": "Donando: {producto/nombre_producto}",
-						"Footnote": "{donante/empresa}",
-						"Description": "{donante/ciudad}",
+						"Title": "Aspirante: {aspirante/nombre}",
+						"Subhead": "Empresa: {empresa/nombre}",
+						"Footnote": "Tipo: {tipo}",
+						"Description": "Area: {area}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{donante/correo}",
-						"SubstatusText": "Tel: {donante/telefono}",
+						"StatusText": "fecha: {fecha_creacion}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],
 						"AvatarStack": {
-							"Avatars": [
-								{
-									"Image": "{donante/imagen}",
-									"ImageText": ""
-								}
-							],
+							"Avatars": [],
 							"ImageIsCircular": true,
 							"ImageHasBorder": false
 						},
@@ -52,10 +42,11 @@
 							"Avatars": [],
 							"ImageIsCircular": true
 						},
-						"Styles": {
-							"Subhead": "GreenText"
-						},
-						"Selected": false
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						}
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -72,7 +63,7 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Consultas_Donante",
-	"Caption": "Donantes",
+	"_Name": "ConsultasPorAsignacion",
+	"Caption": "ConsultasPorAsignacion",
 	"PrefersLargeCaption": true
 }

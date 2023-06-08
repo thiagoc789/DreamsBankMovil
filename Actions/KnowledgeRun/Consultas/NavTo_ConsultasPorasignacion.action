@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_ConsultasPorasignacion"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgeRun/Consultas/ConsultasPorAsignacion.page"
+}

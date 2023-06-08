@@ -15,8 +15,8 @@
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/DreamsBank/Services/dreamsbankmov.service",
-						"EntitySet": "Donacion",
-						"QueryOptions": "$expand=donante,producto"
+						"EntitySet": "Donacion_KR",
+						"QueryOptions": "$expand=empresa"
 					},
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
@@ -28,20 +28,20 @@
 							"Items": [],
 							"PerformFirstActionWithFullSwipe": true
 						},
-						"Title": "{donante/nombre}",
-						"Subhead": "Donando: {producto/nombre_producto}",
-						"Footnote": "{donante/empresa}",
-						"Description": "{donante/ciudad}",
+						"Title": "{empresa/nombre}",
+						"Subhead": "Buscando: {tipo}",
+						"Footnote": "Area: {area}",
+						"Description": "{fecha_creacion}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{donante/correo}",
-						"SubstatusText": "Tel: {donante/telefono}",
+						"StatusText": "{empresa/correo}",
+						"SubstatusText": "{empresa/telefono}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": "{donante/imagen}",
+									"Image": "{empresa/imagen}",
 									"ImageText": ""
 								}
 							],
@@ -51,9 +51,6 @@
 						"AvatarGrid": {
 							"Avatars": [],
 							"ImageIsCircular": true
-						},
-						"Styles": {
-							"Subhead": "GreenText"
 						},
 						"Selected": false
 					},
@@ -72,7 +69,7 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Consultas_Donante",
-	"Caption": "Donantes",
+	"_Name": "ConsultasPorEmpresa",
+	"Caption": "ConsultasPorEmpresa",
 	"PrefersLargeCaption": true
 }

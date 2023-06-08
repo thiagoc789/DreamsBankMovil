@@ -1,0 +1,252 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"FastFilters": [
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter0",
+						"Label": "Aspirantes",
+						"DisplayValue": "Aspirantes",
+						"ReturnValue": "Aspirantes",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter1",
+						"Label": "Empresas",
+						"DisplayValue": "Empresas",
+						"ReturnValue": "Empresas",
+						"FilterType": "Filter"
+					}
+				],
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"Value": [],
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Seleccione un tipo",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Seleccione un tipo de aspiración para filtrar",
+							"OnValueChange": "/DreamsBank/Rules/KnowledgePeople/Consultas/filtrartipo.js",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"PickerItems": [
+								"Pasantia",
+								"Practica",
+								"Primer Empleo"
+							]
+						},
+						{
+							"Value": [
+								"{nombre}"
+							],
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker1",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Seleccione un area",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select one single item",
+							"OnValueChange": "/DreamsBank/Rules/KnowledgePeople/Consultas/filtrararea.js",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"PickerItems": {
+								"Target": {
+									"Service": "/DreamsBank/Services/dreamsbankmov.service",
+									"EntitySet": "Area"
+								},
+								"DisplayValue": "{nombre}",
+								"ReturnValue": "{nombre}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Ver todos",
+							"Alignment": "Left",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Header": {
+						"_Name": "SectionHeader0",
+						"AccessoryType": "none",
+						"UseTopPadding": true,
+						"Caption": "Aspirantes"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"EntitySet": "Aspiracion_KR",
+						"QueryOptions": "$expand=aspirante"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{aspirante/nombre}",
+						"Subhead": "{tipo}",
+						"Footnote": "{area}",
+						"Description": "Aspirantes",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "{fecha_creacion}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "{aspirante/imagen}",
+									"ImageText": ""
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				},
+				{
+					"Header": {
+						"_Name": "SectionHeader1",
+						"AccessoryType": "none",
+						"UseTopPadding": true,
+						"Caption": "Empresas"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"EntitySet": "Donacion_KR",
+						"QueryOptions": "$expand=empresa"
+					},
+					"_Name": "SectionObjectTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{empresa/nombre}",
+						"Subhead": "{tipo}",
+						"Footnote": "{area}",
+						"Description": "Empresas",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "{fecha_creacion}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "{empresa/imagen}",
+									"ImageText": ""
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ConsultasPorProducto",
+	"Caption": "Consultar por producto",
+	"PrefersLargeCaption": true
+}

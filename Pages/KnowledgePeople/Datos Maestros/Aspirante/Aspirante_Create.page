@@ -63,7 +63,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "generico1",
+							"_Name": "universidad",
 							"Caption": "universidad"
 						},
 						{
