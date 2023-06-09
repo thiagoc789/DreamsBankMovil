@@ -13,10 +13,11 @@
 				{
 					"ObjectHeader": {
 						"Subhead": "{identificacion}",
-						"Footnote": "{edad}",
-						"Description": "{nombre}",
-						"StatusText": "{ciudad}",
-						"SubstatusText": "{imagen}",
+						"Footnote": "{ciudad}",
+						"Description": "Edad: {edad}",
+						"StatusText": "{correo}",
+						"SubstatusText": "{telefono}",
+						"DetailImage": "{imagen}",
 						"Tags": [],
 						"HeadlineText": "{nombre}",
 						"StatusPosition": "Stacked",
@@ -61,12 +62,7 @@
 						{
 							"Value": "{fechaNacimiento}",
 							"_Name": "KeyValue7",
-							"KeyName": "fechaNacimiento"
-						},
-						{
-							"Value": "{ciudadNacimiento}",
-							"_Name": "KeyValue8",
-							"KeyName": "ciudadNacimiento"
+							"KeyName": "Fecha de nacimiento"
 						},
 						{
 							"Value": "{telefono}",
@@ -82,8 +78,13 @@
 							"Value": "{direccion}",
 							"_Name": "KeyValue11",
 							"KeyName": "direccion"
+						},
+						{
+							"Value": "{universidad}",
+							"_Name": "KeyValue12",
+							"KeyName": "universidad",
+							"Visible": true
 						}
-
 					],
 					"MaxItemCount": 1,
 					"_Type": "Section.Type.KeyValue",

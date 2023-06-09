@@ -12,18 +12,14 @@
 	},
 	"Properties": {
 		"identificacion": "#Control:identificacion/#Value",
-		"tipo": "#Control:tipo/#Value",
 		"nombre": "#Control:nombre/#Value",
 		"edad": "#Control:edad/#Value",
 		"ciudad": "#Control:ciudad/#Value",
 		"empresa": "#Control:empresa/#Value",
 		"telefono": "#Control:telefono/#Value",
 		"correo": "#Control:correo/#Value",
-		"imagen": "#Control:imagen/#Value",
 		"web": "#Control:web/#Value",
 		"direccion": "#Control:direccion/#Value",
-		"contrasena": "#Control:contrasena/#Value",
-		"fechaNacimiento": "#Control:fechaNacimiento/#Value",
-		"haDonado": "#Control:haDonado/#Value"
+		"fechaNacimiento": "#Control:fechaNacimiento/#Value"
 	}
 }

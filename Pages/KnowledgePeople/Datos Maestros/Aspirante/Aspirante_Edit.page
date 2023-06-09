@@ -38,10 +38,15 @@
 							"Caption": "ciudad"
 						},
 						{
-							"Value": "{imagen}",
+							"Value": "{universidad}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "imagen",
-							"Caption": "imagen"
+							"_Name": "universidad",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "universidad",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
 						},
 						{
 							"Value": "{semestre}",
@@ -86,20 +91,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "direccion",
 							"Caption": "direccion"
-						},
-						{
-							"Value": "{contrasena}",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "contrasena",
-							"Caption": "contrasena"
-						},
-						{
-							"Value": "{haAspirado}",
-							"_Type": "Control.Type.FormCell.Switch",
-							"_Name": "haDonado",
-							"Caption": "haDonado"
 						}
-
 					],
 					"Visible": true,
 					"EmptySection": {

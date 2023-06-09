@@ -33,8 +33,6 @@
 						"Footnote": "Area: {area}",
 						"Description": "{fecha_creacion}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{aspirante/correo}",
-						"SubstatusText": "{aspirante/telefono}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],
@@ -70,6 +68,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "ConsultaPorAspirante",
-	"Caption": "ConsultaPorAspirante",
+	"Caption": "Consulta por aspirante",
 	"PrefersLargeCaption": true
 }

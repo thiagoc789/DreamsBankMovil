@@ -19,12 +19,6 @@
 							"Caption": "identificacion"
 						},
 						{
-							"Value": "{tipo}",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "tipo",
-							"Caption": "tipo"
-						},
-						{
 							"Value": "{nombre}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "nombre",
@@ -62,12 +56,6 @@
 							"Caption": "correo"
 						},
 						{
-							"Value": "{imagen}",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "imagen",
-							"Caption": "imagen"
-						},
-						{
 							"Value": "{web}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "web",
@@ -80,23 +68,11 @@
 							"Caption": "direccion"
 						},
 						{
-							"Value": "{contrasena}",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "contrasena",
-							"Caption": "contrasena"
-						},
-						{
 							"Value": "{fechaNacimiento}",
 							"_Type": "Control.Type.FormCell.DatePicker",
 							"_Name": "fechaNacimiento",
 							"Caption": "fechaNacimiento",
 							"Mode": "Date"
-						},
-						{
-							"Value": "{haDonado}",
-							"_Type": "Control.Type.FormCell.Switch",
-							"_Name": "haDonado",
-							"Caption": "haDonado"
 						}
 					],
 					"Visible": true,

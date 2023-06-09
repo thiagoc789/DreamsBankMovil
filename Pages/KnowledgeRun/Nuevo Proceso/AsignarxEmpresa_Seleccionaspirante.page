@@ -93,8 +93,6 @@
 						"Subhead": "Aspirando a: {tipo}",
 						"Footnote": "Area: {area}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{aspirante/telefono}",
-						"SubstatusText": "{aspirante/correo}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],

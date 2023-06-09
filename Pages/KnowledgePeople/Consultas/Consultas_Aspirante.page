@@ -1,6 +1,10 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": true,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
@@ -33,8 +37,6 @@
 						"Footnote": "Carrera: {aspirante/carrera}",
 						"Description": "Universidad: {aspirante/universidad}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{aspirante/correo}",
-						"SubstatusText": "Tel: {aspirante/telefono}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],
@@ -72,11 +74,7 @@
 						"Mode": "None"
 					}
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": true,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",

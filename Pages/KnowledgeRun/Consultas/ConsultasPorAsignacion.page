@@ -5,6 +5,13 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/DreamsBank/Services/dreamsbankmov.service",
@@ -16,20 +23,16 @@
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
 					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
 						"Title": "Aspirante: {aspirante/nombre}",
 						"Subhead": "Empresa: {empresa/nombre}",
 						"Footnote": "Tipo: {tipo}",
 						"Description": "Area: {area}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "fecha: {fecha_creacion}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],
@@ -42,11 +45,7 @@
 							"Avatars": [],
 							"ImageIsCircular": true
 						},
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true
-						}
+						"Selected": false
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -64,6 +63,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "ConsultasPorAsignacion",
-	"Caption": "ConsultasPorAsignacion",
+	"Caption": "Consulta por asignación",
 	"PrefersLargeCaption": true
 }

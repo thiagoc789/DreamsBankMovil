@@ -94,8 +94,6 @@
 						"Footnote": "Carrera: {aspirante/carrera}",
 						"Description": "Universidad: {aspirante/universidad}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{aspirante/correo}",
-						"SubstatusText": "Tel: {aspirante/telefono}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],

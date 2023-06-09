@@ -32,8 +32,6 @@
 						"Subhead": "Buscando: {tipo}",
 						"Footnote": "Area: {area}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{empresa/telefono}",
-						"SubstatusText": "{empresa/correo}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],

@@ -33,8 +33,6 @@
 						"Footnote": "{donante/empresa}",
 						"Description": "{donante/ciudad}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{donante/correo}",
-						"SubstatusText": "Tel: {donante/telefono}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],

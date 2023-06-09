@@ -1,112 +1,115 @@
 {
-	"Caption": "Producto Detail",
 	"DesignTimeTarget": {
 		"Service": "/DreamsBank/Services/dreamsbankmov.service",
 		"EntitySet": "Producto",
 		"QueryOptions": ""
 	},
-	"ActionBar": {
-		"Items": [
-			{
-				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Producto/NavToProducto_Edit.action",
-				"Position": "Right",
-				"SystemItem": "Edit"
-			},
-			{
-				"OnPress": "/DreamsBank/Rules/KnowledgePeople/Datos Maestros/Producto/Producto_DeleteConfirmation.js",
-				"Position": "Right",
-				"SystemItem": "Trash"
-			}
-		]
-	},
 	"Controls": [
 		{
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Tags": [],
-						"DetailImage": "",
-						"HeadlineText": "{id}",
-						"Subhead": "{nombre_producto}",
-						"BodyText": "",
-						"Footnote": "{valor}",
+						"Subhead": "Valor: ${valor}",
+						"Footnote": "Id: {id}",
 						"Description": "{descripcion}",
 						"StatusText": "{tipo}",
-						"StatusImage": "",
-						"SubstatusImage": "",
-						"SubstatusText": "{modalidad}"
+						"SubstatusText": "{modalidad}",
+						"Tags": [],
+						"HeadlineText": "{nombre_producto}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
 					},
-					"_Type": "Section.Type.ObjectHeader"
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0"
 				},
 				{
 					"KeyAndValues": [
 						{
-							"KeyName": "id",
-							"Value": "{id}"
+							"Value": "{id}",
+							"_Name": "KeyValue0",
+							"KeyName": "id"
 						},
 						{
-							"KeyName": "nombre_producto",
-							"Value": "{nombre_producto}"
+							"Value": "{nombre_producto}",
+							"_Name": "KeyValue1",
+							"KeyName": "nombre_producto"
 						},
 						{
-							"KeyName": "descripcion",
-							"Value": "{descripcion}"
+							"Value": "{descripcion}",
+							"_Name": "KeyValue2",
+							"KeyName": "descripcion"
 						},
 						{
-							"KeyName": "valor",
-							"Value": "{valor}"
+							"Value": "{valor}",
+							"_Name": "KeyValue3",
+							"KeyName": "valor"
 						},
 						{
-							"KeyName": "tipo",
-							"Value": "{tipo}"
+							"Value": "{tipo}",
+							"_Name": "KeyValue4",
+							"KeyName": "tipo"
 						},
 						{
-							"KeyName": "modalidad",
-							"Value": "{modalidad}"
+							"Value": "{modalidad}",
+							"_Name": "KeyValue5",
+							"KeyName": "modalidad"
 						},
 						{
-							"KeyName": "ciudad",
-							"Value": "{ciudad}"
+							"Value": "{ciudad}",
+							"_Name": "KeyValue6",
+							"KeyName": "ciudad"
 						},
 						{
-							"KeyName": "universidad",
-							"Value": "{universidad}"
+							"Value": "{universidad}",
+							"_Name": "KeyValue7",
+							"KeyName": "universidad"
 						},
 						{
-							"KeyName": "fabricante",
-							"Value": "{fabricante}"
-						},
-						{
-							"KeyName": "imagen",
-							"Value": "{imagen}"
-						},
-						{
-							"KeyName": "generico1",
-							"Value": "{generico1}"
-						},
-						{
-							"KeyName": "generico2",
-							"Value": "{generico2}"
-						},
-						{
-							"KeyName": "generico3",
-							"Value": "{generico3}"
+							"Value": "{fabricante}",
+							"_Name": "KeyValue8",
+							"KeyName": "fabricante"
 						}
 					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 2
-					},
-					"MaxItemCount": 1,
-					"_Name": "SectionKeyValue0",
-					"_Type": "Section.Type.KeyValue"
+					}
 				}
-			],
-			"DataSubscriptions": [],
-			"_Type": "Control.Type.SectionedTable",
-			"_Name": "SectionedTable"
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Producto_Detail",
-	"PrefersLargeCaption": true
+	"Caption": "Producto Detail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Producto/NavToProducto_Edit.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Trash",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Rules/KnowledgePeople/Datos Maestros/Producto/Producto_DeleteConfirmation.js"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

@@ -1,119 +1,105 @@
 {
-	"Caption": "Update Producto Detail",
 	"DesignTimeTarget": {
 		"Service": "/DreamsBank/Services/dreamsbankmov.service",
 		"EntitySet": "Producto",
 		"QueryOptions": ""
 	},
-	"ActionBar": {
-		"Items": [
-			{
-				"Position": "Left",
-				"SystemItem": "Cancel",
-				"OnPress": "/DreamsBank/Actions/CloseModalPage_Cancel.action"
-			},
-			{
-				"Position": "Right",
-				"SystemItem": "Save",
-				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Producto/Producto_UpdateEntity.action"
-			}
-		]
-	},
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
-					"Visible": true,
 					"Controls": [
 						{
-							"Caption": "id",
-							"_Name": "id",
 							"Value": "{id}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"IsEditable": false
+							"_Name": "id",
+							"IsEditable": false,
+							"Caption": "id"
 						},
 						{
-							"Caption": "nombre_producto",
-							"_Name": "nombre_producto",
 							"Value": "{nombre_producto}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "nombre_producto",
+							"Caption": "nombre_producto"
 						},
 						{
-							"Caption": "descripcion",
-							"_Name": "descripcion",
 							"Value": "{descripcion}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "descripcion",
+							"Caption": "descripcion"
 						},
 						{
-							"Caption": "valor",
-							"_Name": "valor",
 							"Value": "{valor}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "valor",
+							"Caption": "valor"
 						},
 						{
-							"Caption": "tipo",
-							"_Name": "tipo",
 							"Value": "{tipo}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "tipo",
+							"Caption": "tipo"
 						},
 						{
-							"Caption": "modalidad",
-							"_Name": "modalidad",
 							"Value": "{modalidad}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "modalidad",
+							"Caption": "modalidad"
 						},
 						{
-							"Caption": "ciudad",
-							"_Name": "ciudad",
 							"Value": "{ciudad}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "ciudad",
+							"Caption": "ciudad"
 						},
 						{
-							"Caption": "universidad",
-							"_Name": "universidad",
 							"Value": "{universidad}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "universidad",
+							"Caption": "universidad"
 						},
 						{
-							"Caption": "fabricante",
-							"_Name": "fabricante",
 							"Value": "{fabricante}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "imagen",
-							"_Name": "imagen",
-							"Value": "{imagen}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "generico1",
-							"_Name": "generico1",
-							"Value": "{generico1}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "generico2",
-							"_Name": "generico2",
-							"Value": "{generico2}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "generico3",
-							"_Name": "generico3",
-							"Value": "{generico3}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "fabricante",
+							"Caption": "fabricante"
 						}
-					]
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Producto_Edit",
-	"PrefersLargeCaption": true
+	"Caption": "Update Producto Detail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/KnowledgePeople/Datos Maestros/Producto/Producto_UpdateEntity.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

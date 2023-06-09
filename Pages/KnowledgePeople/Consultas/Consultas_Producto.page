@@ -69,6 +69,15 @@
 						"FooterSeparator": false,
 						"ControlSeparator": false
 					},
+					"Header": {
+						"Styles": {
+							"Caption": "Header"
+						},
+						"_Name": "Header1",
+						"AccessoryType": "none",
+						"UseTopPadding": true,
+						"Caption": "Aspirantes"
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/DreamsBank/Services/dreamsbankmov.service",
@@ -76,15 +85,6 @@
 						"QueryOptions": "$expand=aspirante,producto"
 					},
 					"_Name": "SectionObjectTable0",
-					"Header": {
-						"_Name": "Header1",
-						"AccessoryType": "none",
-						"UseTopPadding": true,
-						"Styles": {
-							"Caption": "Header"
-						},
-						"Caption": "Aspirantes"
-					},
 					"Visible": true,
 					"EmptySection": {
 						"Caption": "No se encontraron aspirantes",
@@ -100,8 +100,6 @@
 						"Footnote": "Carrera: {aspirante/carrera}",
 						"Description": "Aspirante",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{aspirante/correo}",
-						"SubstatusText": "Tel: {aspirante/telefono}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],
@@ -144,6 +142,15 @@
 						"FooterSeparator": false,
 						"ControlSeparator": false
 					},
+					"Header": {
+						"Styles": {
+							"Header": "Header2"
+						},
+						"_Name": "Header",
+						"AccessoryType": "none",
+						"UseTopPadding": true,
+						"Caption": "Donantes"
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/DreamsBank/Services/dreamsbankmov.service",
@@ -151,15 +158,6 @@
 						"QueryOptions": "$expand=donante,producto"
 					},
 					"_Name": "SectionObjectTable1",
-					"Header": {
-						"_Name": "Header",
-						"AccessoryType": "none",
-						"UseTopPadding": true,
-						"Styles": {
-							"Header": "Header2"
-						},
-						"Caption": "Donantes"
-					},
 					"Visible": true,
 					"EmptySection": {
 						"Caption": "No se encontraron donantes",
@@ -175,8 +173,6 @@
 						"Footnote": "{donante/empresa}",
 						"Description": "Donante",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{donante/correo}",
-						"SubstatusText": "Tel: {donante/telefono}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Tags": [],

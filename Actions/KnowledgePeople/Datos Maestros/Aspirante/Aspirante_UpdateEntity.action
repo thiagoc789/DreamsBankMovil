@@ -15,7 +15,6 @@
 		"nombre": "#Control:nombre/#Value",
 		"edad": "#Control:edad/#Value",
 		"ciudad": "#Control:ciudad/#Value",
-		"imagen": "#Control:imagen/#Value",
 		"semestre": "#Control:semestre/#Value",
 		"carrera": "#Control:carrera/#Value",
 		"fechaNacimiento": "#Control:fechaNacimiento/#Value",
@@ -23,6 +22,6 @@
 		"telefono": "#Control:telefono/#Value",
 		"correo": "#Control:correo/#Value",
 		"direccion": "#Control:direccion/#Value",
-		"contrasena": "#Control:contrasena/#Value"
+		"universidad": "#Control:universidad/#Value"
 	}
 }

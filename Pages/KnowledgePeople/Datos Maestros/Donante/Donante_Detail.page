@@ -13,10 +13,10 @@
 				{
 					"ObjectHeader": {
 						"Subhead": "{identificacion}",
-						"Footnote": "{nombre}",
-						"Description": "{tipo}",
-						"StatusText": "{edad}",
-						"SubstatusText": "{ciudad}",
+						"Footnote": "{empresa}",
+						"Description": "{ciudad}",
+						"StatusText": "{correo}",
+						"SubstatusText": "{telefono}",
 						"Tags": [],
 						"HeadlineText": "{nombre}",
 						"StatusPosition": "Stacked",
@@ -42,11 +42,6 @@
 							"Value": "{nombre}",
 							"_Name": "KeyValue2",
 							"KeyName": "nombre"
-						},
-						{
-							"Value": "{edad}",
-							"_Name": "KeyValue3",
-							"KeyName": "edad"
 						},
 						{
 							"Value": "{ciudad}",
@@ -77,11 +72,6 @@
 							"Value": "{direccion}",
 							"_Name": "KeyValue10",
 							"KeyName": "direccion"
-						},
-						{
-							"Value": "{fechaNacimiento}",
-							"_Name": "KeyValue12",
-							"KeyName": "fechaNacimiento"
 						}
 					],
 					"MaxItemCount": 1,
