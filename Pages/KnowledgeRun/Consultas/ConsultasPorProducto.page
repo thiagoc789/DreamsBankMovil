@@ -69,7 +69,7 @@
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": false,
-							"AllowEmptySelection": true,
+							"AllowEmptySelection": false,
 							"Caption": "Seleccione un area",
 							"DataPaging": {
 								"ShowLoadingIndicator": false,
@@ -78,7 +78,7 @@
 							"PickerPrompt": "Please select one single item",
 							"OnValueChange": "/DreamsBank/Rules/KnowledgePeople/Consultas/filtrararea.js",
 							"IsSelectedSectionEnabled": false,
-							"IsPickerDismissedOnSelection": false,
+							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": false,
 							"AllowDefaultValueIfOneItem": false,
 							"PickerItems": {
@@ -100,7 +100,8 @@
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"Image": "res://mdk_logo.png",
-							"ImagePosition": "Leading"
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Rules/KnowledgePeople/Consultas/verTodos_KR.js"
 						}
 					],
 					"Visible": true,

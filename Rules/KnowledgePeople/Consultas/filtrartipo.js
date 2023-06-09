@@ -5,17 +5,19 @@
 export default function filtrartipo(clientAPI) {
     var dialog = clientAPI.nativescript.uiDialogsModule;
     var tipo = clientAPI.evaluateTargetPath('#Page:ConsultasPorProducto/#Control:FormCellListPicker0/#SelectedValue')
-    dialog.alert(tipo)
+
 
     if (tipo == 'Select'){
-        var query = '$expand=aspirante,producto'
-        var query2 = '$expand=donante,producto'
+        var query = '$expand=aspirante'
+        var query2 = '$expand=empresa'
     
     }else{
-        var query = '$expand=aspirante,producto&$filter=tipo eq ' + "'" + tipo + "'"
-        var query2 = '$expand=donante,producto&$filter=tipo eq ' + "'" + tipo + "'"
+        var query = '$expand=aspirante&$filter=tipo eq ' + "'" + tipo + "'"
+        var query2 = '$expand=empresa&$filter=tipo eq ' + "'" + tipo + "'"
 
     }
+
+
 
 
     var objectTableAspirantes = clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionObjectTable0');

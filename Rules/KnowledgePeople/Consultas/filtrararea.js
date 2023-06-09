@@ -5,15 +5,15 @@
 export default function filtrararea(clientAPI) {
     var dialog = clientAPI.nativescript.uiDialogsModule;
     var area = clientAPI.evaluateTargetPath('#Page:ConsultasPorProducto/#Control:FormCellListPicker1/#SelectedValue')
-    dialog.alert(area)
+    
 
     if (area == 'Select'){
-        var query = '$expand=aspirante,producto'
-        var query2 = '$expand=donante,producto'
+        var query = '$expand=aspirante'
+        var query2 = '$expand=empresa'
     
     }else{
-        var query = '$expand=aspirante,producto&$filter=area eq ' + "'" + area + "'"
-        var query2 = '$expand=donante,producto&$filter=area eq ' + "'" + area + "'"
+        var query = '$expand=aspirante&$filter=area eq ' + "'" + area + "'"
+        var query2 = '$expand=empresa&$filter=area eq ' + "'" + area + "'"
 
     }
 
