@@ -1,0 +1,12 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Menu_KnowledgeProject",
+	"Caption": "Knowledge Project",
+	"PrefersLargeCaption": true
+}

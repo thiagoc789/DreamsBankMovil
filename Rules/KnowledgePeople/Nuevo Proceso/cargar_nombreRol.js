@@ -7,6 +7,7 @@ export default function cargar_nombreRol(clientAPI) {
     var resultado = clientAPI.evaluateTargetPath('#Page:Login/#Control:lp_rol/#SelectedValue')
     var identificacion = clientAPI.evaluateTargetPath('#Page:Login/#Control:identificacion/#Value')
     var query = "$filter=identificacion eq '" + identificacion + "'";
+    dialog.alert(resultado)
 
     return clientAPI.read('/DreamsBank/Services/dreamsbankmov.service', resultado, [], query).then((results) => {
         if (results.length > 0) {
@@ -15,14 +16,33 @@ export default function cargar_nombreRol(clientAPI) {
             var controlrol = clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell0').getControl('rol'); 
             controlNombre.setValue(nombre) 
             controlrol.setValue(resultado)
+            var buttonDonar= clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell1').getControl('donar');
+            var buttonAsignarD = clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell1').getControl('asignar_donante');
+            var buttonAsignarA = clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell1').getControl('asignar_aspirante');
+            var buttonAspirar= clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell1').getControl('aspirar');
 
-            if(resultado == 'Aspirante'){
-                var buttonDonar= clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell1').getControl('donar');
+            if(resultado =='Aspirante'){
+
                 buttonDonar.setVisible(false)
+                buttonAsignarA.setVisible(false)
+                buttonAsignarD.setVisible(false)
+                buttonAspirar.setVisible(true)
 
-            }else{
-                var buttonAspirar= clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell1').getControl('aspirar');
+            }
+            if(resultado =='Donante'){
+                
                 buttonAspirar.setVisible(false)
+                buttonAsignarA.setVisible(false)
+                buttonAsignarD.setVisible(false)
+                buttonDonar.setVisible(true)
+
+            }
+
+            if(resultado =='Fundacion') {
+                buttonDonar.setVisible(false)
+                buttonAspirar.setVisible(false)
+                buttonAsignarA.setVisible(true)
+                buttonAsignarD.setVisible(true)
             }
 
             

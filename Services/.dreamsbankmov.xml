@@ -9,6 +9,7 @@
     <edmx:DataServices>
         <Schema Namespace="DreamsBankService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
             <EntityContainer Name="EntityContainer">
+                <EntitySet Name="Fundacion" EntityType="DreamsBankService.Fundacion"/>
                 <EntitySet Name="Aspirante" EntityType="DreamsBankService.Aspirante"/>
                 <EntitySet Name="Donante" EntityType="DreamsBankService.Donante"/>
                 <EntitySet Name="Producto" EntityType="DreamsBankService.Producto"/>
@@ -36,7 +37,48 @@
                     <NavigationPropertyBinding Path="aspirante" Target="Aspirante"/>
                     <NavigationPropertyBinding Path="empresa" Target="Donante"/>
                 </EntitySet>
+                <EntitySet Name="Sponsor" EntityType="DreamsBankService.Sponsor"/>
+                <EntitySet Name="ASPIRANTE_KP" EntityType="DreamsBankService.ASPIRANTE_KP"/>
+                <EntitySet Name="DONANTE_KP" EntityType="DreamsBankService.DONANTE_KP"/>
+                <EntitySet Name="FABRICANTE_KP" EntityType="DreamsBankService.FABRICANTE_KP"/>
+                <EntitySet Name="Aspiracion_KProject" EntityType="DreamsBankService.Aspiracion_KProject">
+                    <NavigationPropertyBinding Path="aspirante" Target="ASPIRANTE_KP"/>
+                </EntitySet>
+                <EntitySet Name="Donacion_KProject" EntityType="DreamsBankService.Donacion_KProject">
+                    <NavigationPropertyBinding Path="donante" Target="DONANTE_KP"/>
+                </EntitySet>
+                <EntitySet Name="Asignacion_KProject" EntityType="DreamsBankService.Asignacion_KProject">
+                    <NavigationPropertyBinding Path="aspirante" Target="ASPIRANTE_KP"/>
+                    <NavigationPropertyBinding Path="donante" Target="DONANTE_KP"/>
+                </EntitySet>
+                <EntitySet Name="KF_POSTULANTE" EntityType="DreamsBankService.KF_POSTULANTE"/>
+                <EntitySet Name="KF_CLIENTE" EntityType="DreamsBankService.KF_CLIENTE"/>
+                <EntitySet Name="KF_Postulacion" EntityType="DreamsBankService.KF_Postulacion">
+                    <NavigationPropertyBinding Path="postulante" Target="KF_POSTULANTE"/>
+                </EntitySet>
+                <EntitySet Name="KF_Necesidad" EntityType="DreamsBankService.KF_Necesidad">
+                    <NavigationPropertyBinding Path="donante" Target="KF_CLIENTE"/>
+                </EntitySet>
+                <EntitySet Name="KF_Asignacion" EntityType="DreamsBankService.KF_Asignacion">
+                    <NavigationPropertyBinding Path="aspirante" Target="ASPIRANTE_KP"/>
+                    <NavigationPropertyBinding Path="donante" Target="DONANTE_KP"/>
+                </EntitySet>
             </EntityContainer>
+            <EntityType Name="Fundacion">
+                <Key>
+                    <PropertyRef Name="identificacion"/>
+                </Key>
+                <Property Name="identificacion" Type="Edm.String" MaxLength="100" Nullable="false"/>
+                <Property Name="nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="ciudad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="imagen" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="telefono" Type="Edm.String" MaxLength="100"/>
+                <Property Name="correo" Type="Edm.String" MaxLength="100"/>
+                <Property Name="direccion" Type="Edm.String" MaxLength="100"/>
+                <Property Name="contrasena" Type="Edm.String" MaxLength="100"/>
+                <Property Name="universidad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="modulo" Type="Edm.String" MaxLength="10"/>
+            </EntityType>
             <EntityType Name="Aspirante">
                 <Key>
                     <PropertyRef Name="identificacion"/>
@@ -211,6 +253,211 @@
                 <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
                 <Property Name="fecha_creacion" Type="Edm.Date"/>
             </EntityType>
+            <EntityType Name="Sponsor">
+                <Key>
+                    <PropertyRef Name="identificacion"/>
+                </Key>
+                <Property Name="identificacion" Type="Edm.String" MaxLength="100" Nullable="false"/>
+                <Property Name="nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="ciudad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="CEO" Type="Edm.String" MaxLength="100"/>
+                <Property Name="telefono" Type="Edm.String" MaxLength="100"/>
+                <Property Name="correo" Type="Edm.String" MaxLength="100"/>
+                <Property Name="imagen" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="web" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="direccion" Type="Edm.String" MaxLength="500"/>
+                <Property Name="contrasena" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
+            </EntityType>
+            <EntityType Name="ASPIRANTE_KP">
+                <Key>
+                    <PropertyRef Name="identificacion"/>
+                </Key>
+                <Property Name="identificacion" Type="Edm.String" MaxLength="100" Nullable="false"/>
+                <Property Name="nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="ciudad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="CEO" Type="Edm.String" MaxLength="100"/>
+                <Property Name="telefono" Type="Edm.String" MaxLength="100"/>
+                <Property Name="correo" Type="Edm.String" MaxLength="100"/>
+                <Property Name="imagen" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="web" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="direccion" Type="Edm.String" MaxLength="500"/>
+                <Property Name="contrasena" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
+            </EntityType>
+            <EntityType Name="DONANTE_KP">
+                <Key>
+                    <PropertyRef Name="identificacion"/>
+                </Key>
+                <Property Name="identificacion" Type="Edm.String" MaxLength="100" Nullable="false"/>
+                <Property Name="nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="ciudad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="CEO" Type="Edm.String" MaxLength="100"/>
+                <Property Name="telefono" Type="Edm.String" MaxLength="100"/>
+                <Property Name="correo" Type="Edm.String" MaxLength="100"/>
+                <Property Name="imagen" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="web" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="direccion" Type="Edm.String" MaxLength="500"/>
+                <Property Name="contrasena" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
+            </EntityType>
+            <EntityType Name="FABRICANTE_KP">
+                <Key>
+                    <PropertyRef Name="identificacion"/>
+                </Key>
+                <Property Name="identificacion" Type="Edm.String" MaxLength="100" Nullable="false"/>
+                <Property Name="nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="ciudad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="CEO" Type="Edm.String" MaxLength="100"/>
+                <Property Name="telefono" Type="Edm.String" MaxLength="100"/>
+                <Property Name="correo" Type="Edm.String" MaxLength="100"/>
+                <Property Name="imagen" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="web" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="direccion" Type="Edm.String" MaxLength="500"/>
+                <Property Name="contrasena" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
+            </EntityType>
+            <EntityType Name="Aspiracion_KProject">
+                <Key>
+                    <PropertyRef Name="id"/>
+                </Key>
+                <Property Name="id" Type="Edm.Guid" Nullable="false"/>
+                <NavigationProperty Name="aspirante" Type="DreamsBankService.ASPIRANTE_KP">
+                    <ReferentialConstraint Property="aspirante_identificacion" ReferencedProperty="identificacion"/>
+                </NavigationProperty>
+                <Property Name="aspirante_identificacion" Type="Edm.String" MaxLength="100"/>
+                <Property Name="area" Type="Edm.String" MaxLength="100"/>
+                <Property Name="descripcion" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="presupuesto" Type="Edm.Int32"/>
+                <Property Name="tiempo_estimado" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
+            </EntityType>
+            <EntityType Name="Donacion_KProject">
+                <Key>
+                    <PropertyRef Name="id"/>
+                </Key>
+                <Property Name="id" Type="Edm.Guid" Nullable="false"/>
+                <NavigationProperty Name="donante" Type="DreamsBankService.DONANTE_KP">
+                    <ReferentialConstraint Property="donante_identificacion" ReferencedProperty="identificacion"/>
+                </NavigationProperty>
+                <Property Name="donante_identificacion" Type="Edm.String" MaxLength="100"/>
+                <Property Name="area" Type="Edm.String" MaxLength="100"/>
+                <Property Name="descripcion" Type="Edm.String" MaxLength="100"/>
+                <Property Name="valorTope" Type="Edm.Int32"/>
+                <Property Name="tiempoTope" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
+            </EntityType>
+            <EntityType Name="Asignacion_KProject">
+                <Key>
+                    <PropertyRef Name="id_asignacion"/>
+                </Key>
+                <Property Name="id_asignacion" Type="Edm.Guid" Nullable="false"/>
+                <NavigationProperty Name="aspirante" Type="DreamsBankService.ASPIRANTE_KP">
+                    <ReferentialConstraint Property="aspirante_identificacion" ReferencedProperty="identificacion"/>
+                </NavigationProperty>
+                <Property Name="aspirante_identificacion" Type="Edm.String" MaxLength="100"/>
+                <NavigationProperty Name="donante" Type="DreamsBankService.DONANTE_KP">
+                    <ReferentialConstraint Property="donante_identificacion" ReferencedProperty="identificacion"/>
+                </NavigationProperty>
+                <Property Name="donante_identificacion" Type="Edm.String" MaxLength="100"/>
+                <Property Name="area" Type="Edm.String" MaxLength="100"/>
+                <Property Name="valor" Type="Edm.Int32"/>
+                <Property Name="tiempo" Type="Edm.Int32"/>
+                <Property Name="descripcion" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
+            </EntityType>
+            <EntityType Name="KF_POSTULANTE">
+                <Key>
+                    <PropertyRef Name="identificacion"/>
+                </Key>
+                <Property Name="identificacion" Type="Edm.String" MaxLength="100" Nullable="false"/>
+                <Property Name="nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="ciudad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="CEO" Type="Edm.String" MaxLength="100"/>
+                <Property Name="telefono" Type="Edm.String" MaxLength="100"/>
+                <Property Name="correo" Type="Edm.String" MaxLength="100"/>
+                <Property Name="imagen" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="web" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="direccion" Type="Edm.String" MaxLength="500"/>
+                <Property Name="contrasena" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
+            </EntityType>
+            <EntityType Name="KF_CLIENTE">
+                <Key>
+                    <PropertyRef Name="identificacion"/>
+                </Key>
+                <Property Name="identificacion" Type="Edm.String" MaxLength="100" Nullable="false"/>
+                <Property Name="nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="ciudad" Type="Edm.String" MaxLength="100"/>
+                <Property Name="CEO" Type="Edm.String" MaxLength="100"/>
+                <Property Name="telefono" Type="Edm.String" MaxLength="100"/>
+                <Property Name="correo" Type="Edm.String" MaxLength="100"/>
+                <Property Name="imagen" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="web" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="direccion" Type="Edm.String" MaxLength="500"/>
+                <Property Name="contrasena" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
+            </EntityType>
+            <EntityType Name="KF_Postulacion">
+                <Key>
+                    <PropertyRef Name="id"/>
+                </Key>
+                <Property Name="id" Type="Edm.Guid" Nullable="false"/>
+                <NavigationProperty Name="postulante" Type="DreamsBankService.KF_POSTULANTE">
+                    <ReferentialConstraint Property="postulante_identificacion" ReferencedProperty="identificacion"/>
+                </NavigationProperty>
+                <Property Name="postulante_identificacion" Type="Edm.String" MaxLength="100"/>
+                <Property Name="area" Type="Edm.String" MaxLength="100"/>
+                <Property Name="descripcion" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="valor_estimado" Type="Edm.Int32"/>
+                <Property Name="tiempo_estimado" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
+            </EntityType>
+            <EntityType Name="KF_Necesidad">
+                <Key>
+                    <PropertyRef Name="id"/>
+                </Key>
+                <Property Name="id" Type="Edm.Guid" Nullable="false"/>
+                <NavigationProperty Name="donante" Type="DreamsBankService.KF_CLIENTE">
+                    <ReferentialConstraint Property="donante_identificacion" ReferencedProperty="identificacion"/>
+                </NavigationProperty>
+                <Property Name="donante_identificacion" Type="Edm.String" MaxLength="100"/>
+                <Property Name="area" Type="Edm.String" MaxLength="100"/>
+                <Property Name="descripcion" Type="Edm.String" MaxLength="1000"/>
+                <Property Name="presupuesto" Type="Edm.Int32"/>
+                <Property Name="tiempoTope" Type="Edm.String" MaxLength="100"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
+            </EntityType>
+            <EntityType Name="KF_Asignacion">
+                <Key>
+                    <PropertyRef Name="id_asignacion"/>
+                </Key>
+                <Property Name="id_asignacion" Type="Edm.Guid" Nullable="false"/>
+                <NavigationProperty Name="aspirante" Type="DreamsBankService.ASPIRANTE_KP">
+                    <ReferentialConstraint Property="aspirante_identificacion" ReferencedProperty="identificacion"/>
+                </NavigationProperty>
+                <Property Name="aspirante_identificacion" Type="Edm.String" MaxLength="100"/>
+                <NavigationProperty Name="donante" Type="DreamsBankService.DONANTE_KP">
+                    <ReferentialConstraint Property="donante_identificacion" ReferencedProperty="identificacion"/>
+                </NavigationProperty>
+                <Property Name="donante_identificacion" Type="Edm.String" MaxLength="100"/>
+                <Property Name="area" Type="Edm.String" MaxLength="100"/>
+                <Property Name="valor" Type="Edm.Int32"/>
+                <Property Name="tiempo" Type="Edm.Int32"/>
+                <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+                <Property Name="fecha_creacion" Type="Edm.Date"/>
+            </EntityType>
             <Annotations Target="DreamsBankService.Aspirante/createdAt">
                 <Annotation Term="Core.Computed" Bool="true"/>
             </Annotations>
@@ -236,6 +483,42 @@
                 <Annotation Term="Core.Computed" Bool="true"/>
             </Annotations>
             <Annotations Target="DreamsBankService.Asignacion_KR/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.Sponsor/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.ASPIRANTE_KP/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.DONANTE_KP/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.FABRICANTE_KP/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.Aspiracion_KProject/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.Donacion_KProject/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.Asignacion_KProject/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.KF_POSTULANTE/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.KF_CLIENTE/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.KF_Postulacion/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.KF_Necesidad/createdAt">
+                <Annotation Term="Core.Computed" Bool="true"/>
+            </Annotations>
+            <Annotations Target="DreamsBankService.KF_Asignacion/createdAt">
                 <Annotation Term="Core.Computed" Bool="true"/>
             </Annotations>
         </Schema>

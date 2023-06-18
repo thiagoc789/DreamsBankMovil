@@ -7,7 +7,6 @@
 				{
 					"Controls": [
 						{
-							"Value": [],
 							"_Type": "Control.Type.FormCell.ListPicker",
 							"_Name": "lp_rol",
 							"IsEditable": true,
@@ -25,7 +24,8 @@
 							"AllowDefaultValueIfOneItem": false,
 							"PickerItems": [
 								"Aspirante",
-								"Donante"
+								"Donante",
+								"Fundacion"
 							]
 						},
 						{

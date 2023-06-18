@@ -18,14 +18,33 @@ export default function cargar_datos_menu(clientAPI) {
             var controlrol = clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell0').getControl('rol'); 
             controlNombre.setValue(nombre) 
             controlrol.setValue(resultado)
+            var buttonDonar= clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell0').getControl('donar');
+            var buttonAsignarD = clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell0').getControl('asignarxempresa');
+            var buttonAsignarA = clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell0').getControl('asignarxaspirante');
+            var buttonAspirar= clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell0').getControl('aspirar');
 
-            if(resultado == 'Aspirante'){
-                var buttonDonar= clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell0').getControl('donar');
+            if(resultado =='Aspirante'){
+
                 buttonDonar.setVisible(false)
+                buttonAsignarA.setVisible(false)
+                buttonAsignarD.setVisible(false)
+                buttonAspirar.setVisible(true)
 
-            }else{
-                var buttonAspirar= clientAPI.getPageProxy().getControl('SectionedTable0').getSection('SectionFormCell0').getControl('aspirar');
+            }
+            if(resultado =='Donante'){
+                
                 buttonAspirar.setVisible(false)
+                buttonAsignarA.setVisible(false)
+                buttonAsignarD.setVisible(false)
+                buttonDonar.setVisible(true)
+
+            }
+
+            if(resultado =='Fundacion') {
+                buttonDonar.setVisible(false)
+                buttonAspirar.setVisible(false)
+                buttonAsignarA.setVisible(true)
+                buttonAsignarD.setVisible(true)
             }
 
             

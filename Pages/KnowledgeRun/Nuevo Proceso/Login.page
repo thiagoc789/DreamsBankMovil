@@ -32,7 +32,8 @@
 							"AllowDefaultValueIfOneItem": false,
 							"PickerItems": [
 								"Aspirante",
-								"Empresa"
+								"Empresa",
+								"Fundacion"
 							]
 						},
 						{
