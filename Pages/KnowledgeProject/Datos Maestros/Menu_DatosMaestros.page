@@ -36,7 +36,8 @@
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"Image": "res://mdk_logo.png",
-							"ImagePosition": "Leading"
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgeProject/NavTo_DonanteList.action"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",

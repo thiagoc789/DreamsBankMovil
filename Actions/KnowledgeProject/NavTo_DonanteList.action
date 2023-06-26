@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_DonanteList"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Donante/Donante_List.page"
+}

@@ -1,12 +1,83 @@
 {
-	"_Type": "Page",
-	"_Name": "Donante_List",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			"Sections": [
+				{
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": false
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"EntitySet": "DONANTE_KP",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectTable0",
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{nombre}",
+						"Subhead": "{CEO}",
+						"Footnote": "{identificacion}",
+						"Description": "Ciudad: {ciudad}",
+						"StatusText": "{correo}",
+						"SubstatusText": "{telefono}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "disclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "{imagen}"
+								}
+							],
+							"ImageIsCircular": false
+						}
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					}
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			}
 		}
 	],
-	"Caption": "Donante_List",
-	"PrefersLargeCaption": true
+	"_Type": "Page",
+	"_Name": "Donante_List",
+	"Caption": "Empresa Donante",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/DreamsBank/Actions/KnowledgeProject/NavTo_Donante_Create.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

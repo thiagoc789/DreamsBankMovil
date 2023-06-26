@@ -8,7 +8,23 @@
 	"CF": {
 		"Target": "https://api.cf.us10-001.hana.ondemand.com",
 		"Organization": "5dfaa0b5-2862-4dc9-a9a0-d820134da8d5",
-		"Space": "fa59d10d-4ea7-4bfb-8bec-2468695cbbb9"
+		"Space": "fa59d10d-4ea7-4bfb-8bec-2468695cbbb9",
+		"Deploy": {
+			"Destination": [
+				{
+					"CF": "dreamsbankmov",
+					"MDK": "dreamsbankmov",
+					"URL": ""
+				}
+			],
+			"Name": "ns.DreamsBank",
+			"Version": "1.0.0",
+			"AppRouter": "standalone",
+			"WebClient": {
+				"Runtime": "production",
+				"URL": "https://mdk-webclient-runtime.cfapps.us10.hana.ondemand.com/runtime/"
+			}
+		}
 	},
 	"MobileService": {
 		"Type": "standard",

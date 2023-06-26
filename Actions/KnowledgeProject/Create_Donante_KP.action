@@ -7,7 +7,7 @@
 	"OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
 	"Target": {
 		"Service": "/DreamsBank/Services/dreamsbankmov.service",
-		"EntitySet": "ASPIRANTE_KP"
+		"EntitySet": "DONANTE_KP"
 	},
 	"Properties": {
 		"identificacion": "#Control:identificacion/#Value",
