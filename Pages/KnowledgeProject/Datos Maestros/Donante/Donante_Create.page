@@ -1,0 +1,12 @@
+{
+	"_Type": "Page",
+	"_Name": "Donante_Create",
+	"Controls": [
+		{
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Caption": "Donante_Create",
+	"PrefersLargeCaption": true
+}

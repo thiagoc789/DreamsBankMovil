@@ -1220,13 +1220,83 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
 
 /***/ }),
 
+/***/ 5339:
+/*!************************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Aspirante/Aspirante_Create.page ***!
+  \************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"identificacion","Caption":"identificacion","KeyboardType":"Number"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"contrasena","Caption":"contrasena","KeyboardType":"Password"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"nombre","Caption":"nombre"},{"_Type":"Control.Type.FormCell.DatePicker","_Name":"ceo","Caption":"CEO","Mode":"Date"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"direccion","Caption":"direccion"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"ciudad","Caption":"ciudad"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"telefono","Caption":"telefono","KeyboardType":"Number"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"correo","Caption":"correo"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"web","Caption":"web"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2"}]}],"_Type":"Page","_Name":"Aspirante_Create","Caption":"Crear una empresa Aspirante","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"OnPress":"/DreamsBank/Actions/CloseModalPage_Cancel.action"},{"_Name":"ActionBarItem1","Caption":"","SystemItem":"Save","Position":"Right","IsIconCircular":false,"OnPress":"/DreamsBank/Actions/KnowledgeProject/Create_AspiranteKP.action"}],"_Name":"ActionBar1"}}
+
+/***/ }),
+
+/***/ 9779:
+/*!**********************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Aspirante/Aspirante_List.page ***!
+  \**********************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Name":"SectionHeader0","UseTopPadding":false},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"ASPIRANTE_KP","QueryOptions":""},"_Name":"SectionObjectTable0","EmptySection":{"Caption":"No record found!","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true},"Title":"{nombre}","Subhead":"{CEO}","Footnote":"{identificacion}","Description":"Ciudad: {ciudad}","StatusText":"{correo}","SubstatusText":"{telefono}","PreserveIconStackSpacing":false,"AccessoryType":"disclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[{"Image":"{imagen}"}],"ImageIsCircular":false}},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."}}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."}}],"_Type":"Page","_Name":"Aspirante_List","Caption":"Empresa Aspirante","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/DreamsBank/Actions/KnowledgeProject/NavTo_Aspirante_Create.action"}],"_Name":"ActionBar1"}}
+
+/***/ }),
+
+/***/ 2816:
+/*!********************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Donante/Donante_Create.page ***!
+  \********************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Page","_Name":"Donante_Create","Controls":[{"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"Caption":"Donante_Create","PrefersLargeCaption":true}
+
+/***/ }),
+
+/***/ 5547:
+/*!******************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Donante/Donante_List.page ***!
+  \******************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Page","_Name":"Donante_List","Controls":[{"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"Caption":"Donante_List","PrefersLargeCaption":true}
+
+/***/ }),
+
+/***/ 7097:
+/*!**************************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Fabricante/Fabricante_Create.page ***!
+  \**************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Page","_Name":"Fabricante_Create","Controls":[{"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"Caption":"Fabricante_Create","PrefersLargeCaption":true}
+
+/***/ }),
+
+/***/ 8538:
+/*!************************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Fabricante/Fabricante_List.page ***!
+  \************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Page","_Name":"Fabricante_List","Controls":[{"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"Caption":"Fabricante_List","PrefersLargeCaption":true}
+
+/***/ }),
+
+/***/ 4812:
+/*!****************************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Menu_DatosMaestros.page ***!
+  \****************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Empresa aspirante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgeProject/NavTo_AspiranteList.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Title":"Empresa donante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Title":"Fabricante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Menu_DatosMaestros","Caption":"Datos Maestros","PrefersLargeCaption":true}
+
+/***/ }),
+
 /***/ 3961:
 /*!****************************************************************************************!*\
   !*** ./build.definitions/DreamsBank/Pages/KnowledgeProject/Menu_KnowledgeProject.page ***!
   \****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0"}],"_Type":"Page","_Name":"Menu_KnowledgeProject","Caption":"Knowledge Project","PrefersLargeCaption":true}
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","ObjectHeader":{"DetailImage":"/DreamsBank/Images/usersmanagment.png","DetailImageIsCircular":false,"HeadlineText":"Ayuda a empresas con proyectos","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"Visible":true},{"Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Title":"Datos Maestros","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://add-contact","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgeProject/NavTo_Menu_DatosMaestros.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Title":"Nuevo Proceso","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://manager","ImagePosition":"Leading"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Consultas","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://information","ImagePosition":"Leading"}]}]}],"_Type":"Page","_Name":"Menu_KnowledgeProject","Caption":"Knowledge Project","PrefersLargeCaption":true}
 
 /***/ }),
 
@@ -2030,6 +2100,36 @@ module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavT
 
 /***/ }),
 
+/***/ 3414:
+/*!*****************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgeProject/Create_AspiranteKP.action ***!
+  \*****************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"create"},"OnFailure":"/DreamsBank/Actions/CreateEntityFailureMessage.action","OnSuccess":"/DreamsBank/Actions/CreateEntitySuccessMessage.action","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"ASPIRANTE_KP"},"Properties":{"identificacion":"#Control:identificacion/#Value","nombre":"#Control:nombre/#Value","ciudad":"#Control:ciudad/#Value","CEO":"#Control:ceo/#Value","telefono":"#Control:telefono/#Value","correo":"#Control:correo/#Value","web":"#Control:web/#Value","direccion":"#Control:direccion/#Value","contrasena":"#Control:contrasena/#Value"}}
+
+/***/ }),
+
+/***/ 9571:
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgeProject/NavTo_AspiranteList.action ***!
+  \******************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_AspiranteList"},"PageToOpen":"/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Aspirante/Aspirante_List.page"}
+
+/***/ }),
+
+/***/ 5634:
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgeProject/NavTo_Aspirante_Create.action ***!
+  \*********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_Aspirante_Create"},"PageToOpen":"/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Aspirante/Aspirante_Create.page"}
+
+/***/ }),
+
 /***/ 7113:
 /*!*************************************************************************************************!*\
   !*** ./build.definitions/DreamsBank/Actions/KnowledgeProject/NavTo_MenuKnowledgeProject.action ***!
@@ -2037,6 +2137,16 @@ module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavT
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_MenuKnowledgeProject"},"PageToOpen":"/DreamsBank/Pages/KnowledgeProject/Menu_KnowledgeProject.page"}
+
+/***/ }),
+
+/***/ 8867:
+/*!***********************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgeProject/NavTo_Menu_DatosMaestros.action ***!
+  \***********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_Menu_DatosMaestros"},"PageToOpen":"/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Menu_DatosMaestros.page"}
 
 /***/ }),
 
@@ -2460,6 +2570,16 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJ
 
 /***/ }),
 
+/***/ 9920:
+/*!****************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Images/usersmanagment.png ***!
+  \****************************************************************/
+/***/ ((module) => {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
 /***/ 6280:
 /*!************************************************!*\
   !*** ./build.definitions/application-index.js ***!
@@ -2524,6 +2644,10 @@ let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_consultas_producto_ac
 let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_donar_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Donar.action */ 2899)
 let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_login_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Login.action */ 3278)
 let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_menu_proceso_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Menu_proceso.action */ 378)
+let dreamsbank_actions_knowledgeproject_create_aspirantekp_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/Create_AspiranteKP.action */ 3414)
+let dreamsbank_actions_knowledgeproject_navto_aspirante_create_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/NavTo_Aspirante_Create.action */ 5634)
+let dreamsbank_actions_knowledgeproject_navto_aspirantelist_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/NavTo_AspiranteList.action */ 9571)
+let dreamsbank_actions_knowledgeproject_navto_menu_datosmaestros_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/NavTo_Menu_DatosMaestros.action */ 8867)
 let dreamsbank_actions_knowledgeproject_navto_menuknowledgeproject_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/NavTo_MenuKnowledgeProject.action */ 7113)
 let dreamsbank_actions_knowledgerun_consultas_navto_consultasporasignacion_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeRun/Consultas/NavTo_ConsultasPorasignacion.action */ 1874)
 let dreamsbank_actions_knowledgerun_consultas_navto_consultasporaspirante_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeRun/Consultas/NavTo_ConsultasPorAspirante.action */ 5784)
@@ -2566,6 +2690,7 @@ let dreamsbank_images_dreamsbank_jpg = __webpack_require__(/*! ./DreamsBank/Imag
 let dreamsbank_images_finanza_png = __webpack_require__(/*! ./DreamsBank/Images/finanza.png */ 1029)
 let dreamsbank_images_innovar_png = __webpack_require__(/*! ./DreamsBank/Images/innovar.png */ 1177)
 let dreamsbank_images_produccion_png = __webpack_require__(/*! ./DreamsBank/Images/Produccion.png */ 8544)
+let dreamsbank_images_usersmanagment_png = __webpack_require__(/*! ./DreamsBank/Images/usersmanagment.png */ 9920)
 let dreamsbank_jsconfig_json = __webpack_require__(/*! ./DreamsBank/jsconfig.json */ 8300)
 let dreamsbank_pages_knowledgefactory_menu_knowledgefactory_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeFactory/Menu_KnowledgeFactory.page */ 7248)
 let dreamsbank_pages_knowledgepeople_consultas_consultas_asignaciones_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Consultas/Consultas_Asignaciones.page */ 2843)
@@ -2597,6 +2722,13 @@ let dreamsbank_pages_knowledgepeople_nuevo_proceso_aspirar_page = __webpack_requ
 let dreamsbank_pages_knowledgepeople_nuevo_proceso_donar_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Nuevo Proceso/Donar.page */ 1623)
 let dreamsbank_pages_knowledgepeople_nuevo_proceso_login_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Nuevo Proceso/Login.page */ 941)
 let dreamsbank_pages_knowledgepeople_nuevo_proceso_menu_proceso_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgePeople/Nuevo Proceso/Menu_proceso.page */ 1581)
+let dreamsbank_pages_knowledgeproject_datos_maestros_aspirante_aspirante_create_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeProject/Datos Maestros/Aspirante/Aspirante_Create.page */ 5339)
+let dreamsbank_pages_knowledgeproject_datos_maestros_aspirante_aspirante_list_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeProject/Datos Maestros/Aspirante/Aspirante_List.page */ 9779)
+let dreamsbank_pages_knowledgeproject_datos_maestros_donante_donante_create_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeProject/Datos Maestros/Donante/Donante_Create.page */ 2816)
+let dreamsbank_pages_knowledgeproject_datos_maestros_donante_donante_list_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeProject/Datos Maestros/Donante/Donante_List.page */ 5547)
+let dreamsbank_pages_knowledgeproject_datos_maestros_fabricante_fabricante_create_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeProject/Datos Maestros/Fabricante/Fabricante_Create.page */ 7097)
+let dreamsbank_pages_knowledgeproject_datos_maestros_fabricante_fabricante_list_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeProject/Datos Maestros/Fabricante/Fabricante_List.page */ 8538)
+let dreamsbank_pages_knowledgeproject_datos_maestros_menu_datosmaestros_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeProject/Datos Maestros/Menu_DatosMaestros.page */ 4812)
 let dreamsbank_pages_knowledgeproject_menu_knowledgeproject_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeProject/Menu_KnowledgeProject.page */ 3961)
 let dreamsbank_pages_knowledgerun_consultas_consultaporaspirante_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeRun/Consultas/ConsultaPorAspirante.page */ 9845)
 let dreamsbank_pages_knowledgerun_consultas_consultasporasignacion_page = __webpack_require__(/*! ./DreamsBank/Pages/KnowledgeRun/Consultas/ConsultasPorAsignacion.page */ 7355)
@@ -2707,6 +2839,10 @@ module.exports = {
 	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_donar_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_donar_action,
 	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_login_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_login_action,
 	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_menu_proceso_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_menu_proceso_action,
+	dreamsbank_actions_knowledgeproject_create_aspirantekp_action : dreamsbank_actions_knowledgeproject_create_aspirantekp_action,
+	dreamsbank_actions_knowledgeproject_navto_aspirante_create_action : dreamsbank_actions_knowledgeproject_navto_aspirante_create_action,
+	dreamsbank_actions_knowledgeproject_navto_aspirantelist_action : dreamsbank_actions_knowledgeproject_navto_aspirantelist_action,
+	dreamsbank_actions_knowledgeproject_navto_menu_datosmaestros_action : dreamsbank_actions_knowledgeproject_navto_menu_datosmaestros_action,
 	dreamsbank_actions_knowledgeproject_navto_menuknowledgeproject_action : dreamsbank_actions_knowledgeproject_navto_menuknowledgeproject_action,
 	dreamsbank_actions_knowledgerun_consultas_navto_consultasporasignacion_action : dreamsbank_actions_knowledgerun_consultas_navto_consultasporasignacion_action,
 	dreamsbank_actions_knowledgerun_consultas_navto_consultasporaspirante_action : dreamsbank_actions_knowledgerun_consultas_navto_consultasporaspirante_action,
@@ -2749,6 +2885,7 @@ module.exports = {
 	dreamsbank_images_finanza_png : dreamsbank_images_finanza_png,
 	dreamsbank_images_innovar_png : dreamsbank_images_innovar_png,
 	dreamsbank_images_produccion_png : dreamsbank_images_produccion_png,
+	dreamsbank_images_usersmanagment_png : dreamsbank_images_usersmanagment_png,
 	dreamsbank_jsconfig_json : dreamsbank_jsconfig_json,
 	dreamsbank_pages_knowledgefactory_menu_knowledgefactory_page : dreamsbank_pages_knowledgefactory_menu_knowledgefactory_page,
 	dreamsbank_pages_knowledgepeople_consultas_consultas_asignaciones_page : dreamsbank_pages_knowledgepeople_consultas_consultas_asignaciones_page,
@@ -2780,6 +2917,13 @@ module.exports = {
 	dreamsbank_pages_knowledgepeople_nuevo_proceso_donar_page : dreamsbank_pages_knowledgepeople_nuevo_proceso_donar_page,
 	dreamsbank_pages_knowledgepeople_nuevo_proceso_login_page : dreamsbank_pages_knowledgepeople_nuevo_proceso_login_page,
 	dreamsbank_pages_knowledgepeople_nuevo_proceso_menu_proceso_page : dreamsbank_pages_knowledgepeople_nuevo_proceso_menu_proceso_page,
+	dreamsbank_pages_knowledgeproject_datos_maestros_aspirante_aspirante_create_page : dreamsbank_pages_knowledgeproject_datos_maestros_aspirante_aspirante_create_page,
+	dreamsbank_pages_knowledgeproject_datos_maestros_aspirante_aspirante_list_page : dreamsbank_pages_knowledgeproject_datos_maestros_aspirante_aspirante_list_page,
+	dreamsbank_pages_knowledgeproject_datos_maestros_donante_donante_create_page : dreamsbank_pages_knowledgeproject_datos_maestros_donante_donante_create_page,
+	dreamsbank_pages_knowledgeproject_datos_maestros_donante_donante_list_page : dreamsbank_pages_knowledgeproject_datos_maestros_donante_donante_list_page,
+	dreamsbank_pages_knowledgeproject_datos_maestros_fabricante_fabricante_create_page : dreamsbank_pages_knowledgeproject_datos_maestros_fabricante_fabricante_create_page,
+	dreamsbank_pages_knowledgeproject_datos_maestros_fabricante_fabricante_list_page : dreamsbank_pages_knowledgeproject_datos_maestros_fabricante_fabricante_list_page,
+	dreamsbank_pages_knowledgeproject_datos_maestros_menu_datosmaestros_page : dreamsbank_pages_knowledgeproject_datos_maestros_menu_datosmaestros_page,
 	dreamsbank_pages_knowledgeproject_menu_knowledgeproject_page : dreamsbank_pages_knowledgeproject_menu_knowledgeproject_page,
 	dreamsbank_pages_knowledgerun_consultas_consultaporaspirante_page : dreamsbank_pages_knowledgerun_consultas_consultaporaspirante_page,
 	dreamsbank_pages_knowledgerun_consultas_consultasporasignacion_page : dreamsbank_pages_knowledgerun_consultas_consultasporasignacion_page,

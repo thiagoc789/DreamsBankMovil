@@ -5,23 +5,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ObjectHeader",
-					"_Name": "SectionObjectHeader0",
-					"ObjectHeader": {
-						"DetailImage": "/DreamsBank/Images/usersmanagment.png",
-						"DetailImageIsCircular": false,
-						"HeadlineText": "Ayuda a empresas con proyectos",
-						"StatusPosition": "Stacked",
-						"StatusImagePosition": "Leading",
-						"SubstatusImagePosition": "Leading"
-					},
-					"Visible": true
-				},
-				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -29,53 +12,57 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton1",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Empresa aspirante",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgeProject/NavTo_AspiranteList.action"
+						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "FormCellButton0",
 							"IsVisible": true,
 							"Separator": true,
-							"Title": "Datos Maestros",
+							"Title": "Empresa donante",
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"Image": "sap-icon://add-contact",
-							"ImagePosition": "Leading",
-							"OnPress": "/DreamsBank/Actions/KnowledgeProject/NavTo_Menu_DatosMaestros.action"
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "FormCellButton2",
 							"IsVisible": true,
 							"Separator": true,
-							"Title": "Nuevo Proceso",
+							"Title": "Fabricante",
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
-							"Image": "sap-icon://manager",
-							"ImagePosition": "Leading"
-						},
-						{
-							"_Type": "Control.Type.FormCell.Button",
-							"_Name": "FormCellButton1",
-							"IsVisible": true,
-							"Separator": true,
-							"Title": "Consultas",
-							"Alignment": "Center",
-							"ButtonType": "Text",
-							"Semantic": "Tint",
-							"Image": "sap-icon://information",
+							"Image": "res://mdk_logo.png",
 							"ImagePosition": "Leading"
 						}
-					]
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				}
 			]
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Menu_KnowledgeProject",
-	"Caption": "Knowledge Project",
+	"_Name": "Menu_DatosMaestros",
+	"Caption": "Datos Maestros",
 	"PrefersLargeCaption": true
 }

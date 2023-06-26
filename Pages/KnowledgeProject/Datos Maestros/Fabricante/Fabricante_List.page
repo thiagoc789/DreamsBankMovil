@@ -1,0 +1,12 @@
+{
+	"_Type": "Page",
+	"_Name": "Fabricante_List",
+	"Controls": [
+		{
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Caption": "Fabricante_List",
+	"PrefersLargeCaption": true
+}

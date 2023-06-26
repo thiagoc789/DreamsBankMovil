@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_Aspirante_Create"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Aspirante/Aspirante_Create.page"
+}
