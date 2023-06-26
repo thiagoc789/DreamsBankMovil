@@ -1,12 +1,97 @@
 {
-	"_Type": "Page",
-	"_Name": "Fabricante_Create",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "identificacion",
+							"Caption": "identificacion",
+							"KeyboardType": "Number"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "contrasena",
+							"Caption": "contrasena",
+							"KeyboardType": "Password"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "nombre",
+							"Caption": "nombre"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "ceo",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "CEO",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "direccion",
+							"Caption": "direccion"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "ciudad",
+							"Caption": "ciudad"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "telefono",
+							"Caption": "telefono",
+							"KeyboardType": "Number"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "correo",
+							"Caption": "correo"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "web",
+							"Caption": "web"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell2"
+				}
+			]
 		}
 	],
-	"Caption": "Fabricante_Create",
-	"PrefersLargeCaption": true
+	"_Type": "Page",
+	"_Name": "Fabricante_Create",
+	"Caption": "Crear un Fabricante",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/DreamsBank/Actions/KnowledgeProject/Create_Fabricante_KP.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

@@ -1266,7 +1266,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \**************************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Page","_Name":"Fabricante_Create","Controls":[{"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"Caption":"Fabricante_Create","PrefersLargeCaption":true}
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"identificacion","Caption":"identificacion","KeyboardType":"Number"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"contrasena","Caption":"contrasena","KeyboardType":"Password"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"nombre","Caption":"nombre"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"ceo","IsEditable":true,"IsVisible":true,"Separator":true,"Caption":"CEO","Enabled":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"direccion","Caption":"direccion"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"ciudad","Caption":"ciudad"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"telefono","Caption":"telefono","KeyboardType":"Number"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"correo","Caption":"correo"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"web","Caption":"web"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2"}]}],"_Type":"Page","_Name":"Fabricante_Create","Caption":"Crear un Fabricante","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"OnPress":"/DreamsBank/Actions/CloseModalPage_Cancel.action"},{"_Name":"ActionBarItem1","Caption":"","SystemItem":"Save","Position":"Right","IsIconCircular":false,"OnPress":"/DreamsBank/Actions/KnowledgeProject/Create_Fabricante_KP.action"}],"_Name":"ActionBar1"}}
 
 /***/ }),
 
@@ -1276,7 +1276,7 @@ module.exports = {"_Type":"Page","_Name":"Fabricante_Create","Controls":[{"_Name
   \************************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Page","_Name":"Fabricante_List","Controls":[{"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"Caption":"Fabricante_List","PrefersLargeCaption":true}
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Name":"SectionHeader0","UseTopPadding":false},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"FABRICANTE_KP","QueryOptions":""},"_Name":"SectionObjectTable0","EmptySection":{"Caption":"No record found!","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true},"Title":"{nombre}","Subhead":"{CEO}","Footnote":"{identificacion}","Description":"Ciudad: {ciudad}","StatusText":"{correo}","SubstatusText":"{telefono}","PreserveIconStackSpacing":false,"AccessoryType":"disclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[{"Image":"{imagen}"}],"ImageIsCircular":false}},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."}}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."}}],"_Type":"Page","_Name":"Fabricante_List","Caption":"Lista de fabricantes","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/DreamsBank/Actions/KnowledgeProject/NavTo_Fabricante_Create.action"}],"_Name":"ActionBar1"}}
 
 /***/ }),
 
@@ -1286,7 +1286,7 @@ module.exports = {"_Type":"Page","_Name":"Fabricante_List","Controls":[{"_Name":
   \****************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Empresa aspirante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgeProject/NavTo_AspiranteList.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Title":"Empresa donante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgeProject/NavTo_DonanteList.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Title":"Fabricante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Menu_DatosMaestros","Caption":"Datos Maestros","PrefersLargeCaption":true}
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Empresa aspirante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgeProject/NavTo_AspiranteList.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Title":"Empresa donante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgeProject/NavTo_DonanteList.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Title":"Fabricante","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"res://mdk_logo.png","ImagePosition":"Leading","OnPress":"/DreamsBank/Actions/KnowledgeProject/NavTo_Fabricante_List.action"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Menu_DatosMaestros","Caption":"Datos Maestros","PrefersLargeCaption":true}
 
 /***/ }),
 
@@ -2120,6 +2120,16 @@ module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult"
 
 /***/ }),
 
+/***/ 2303:
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgeProject/Create_Fabricante_KP.action ***!
+  \*******************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"create"},"OnFailure":"/DreamsBank/Actions/CreateEntityFailureMessage.action","OnSuccess":"/DreamsBank/Actions/CreateEntitySuccessMessage.action","Target":{"Service":"/DreamsBank/Services/dreamsbankmov.service","EntitySet":"FABRICANTE_KP"},"Properties":{"identificacion":"#Control:identificacion/#Value","nombre":"#Control:nombre/#Value","ciudad":"#Control:ciudad/#Value","CEO":"#Control:ceo/#Value","telefono":"#Control:telefono/#Value","correo":"#Control:correo/#Value","web":"#Control:web/#Value","direccion":"#Control:direccion/#Value","contrasena":"#Control:contrasena/#Value","fecha_creacion":"/DreamsBank/Rules/traer_fecha.js"}}
+
+/***/ }),
+
 /***/ 9571:
 /*!******************************************************************************************!*\
   !*** ./build.definitions/DreamsBank/Actions/KnowledgeProject/NavTo_AspiranteList.action ***!
@@ -2157,6 +2167,26 @@ module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavT
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_Donante_Create"},"PageToOpen":"/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Donante/Donante_Create.page"}
+
+/***/ }),
+
+/***/ 2323:
+/*!**********************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgeProject/NavTo_Fabricante_Create.action ***!
+  \**********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_Fabricante_Create"},"PageToOpen":"/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Fabricante/Fabricante_Create.page"}
+
+/***/ }),
+
+/***/ 243:
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/DreamsBank/Actions/KnowledgeProject/NavTo_Fabricante_List.action ***!
+  \********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavTo_Fabricante_List"},"PageToOpen":"/DreamsBank/Pages/KnowledgeProject/Datos Maestros/Fabricante/Fabricante_List.page"}
 
 /***/ }),
 
@@ -2676,10 +2706,13 @@ let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_login_action = __webp
 let dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_menu_proceso_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgePeople/Nuevo Proceso/NavTo_Menu_proceso.action */ 378)
 let dreamsbank_actions_knowledgeproject_create_aspirantekp_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/Create_AspiranteKP.action */ 3414)
 let dreamsbank_actions_knowledgeproject_create_donante_kp_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/Create_Donante_KP.action */ 128)
+let dreamsbank_actions_knowledgeproject_create_fabricante_kp_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/Create_Fabricante_KP.action */ 2303)
 let dreamsbank_actions_knowledgeproject_navto_aspirante_create_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/NavTo_Aspirante_Create.action */ 5634)
 let dreamsbank_actions_knowledgeproject_navto_aspirantelist_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/NavTo_AspiranteList.action */ 9571)
 let dreamsbank_actions_knowledgeproject_navto_donante_create_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/NavTo_Donante_Create.action */ 1366)
 let dreamsbank_actions_knowledgeproject_navto_donantelist_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/NavTo_DonanteList.action */ 4887)
+let dreamsbank_actions_knowledgeproject_navto_fabricante_create_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/NavTo_Fabricante_Create.action */ 2323)
+let dreamsbank_actions_knowledgeproject_navto_fabricante_list_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/NavTo_Fabricante_List.action */ 243)
 let dreamsbank_actions_knowledgeproject_navto_menu_datosmaestros_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/NavTo_Menu_DatosMaestros.action */ 8867)
 let dreamsbank_actions_knowledgeproject_navto_menuknowledgeproject_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeProject/NavTo_MenuKnowledgeProject.action */ 7113)
 let dreamsbank_actions_knowledgerun_consultas_navto_consultasporasignacion_action = __webpack_require__(/*! ./DreamsBank/Actions/KnowledgeRun/Consultas/NavTo_ConsultasPorasignacion.action */ 1874)
@@ -2874,10 +2907,13 @@ module.exports = {
 	dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_menu_proceso_action : dreamsbank_actions_knowledgepeople_nuevo_proceso_navto_menu_proceso_action,
 	dreamsbank_actions_knowledgeproject_create_aspirantekp_action : dreamsbank_actions_knowledgeproject_create_aspirantekp_action,
 	dreamsbank_actions_knowledgeproject_create_donante_kp_action : dreamsbank_actions_knowledgeproject_create_donante_kp_action,
+	dreamsbank_actions_knowledgeproject_create_fabricante_kp_action : dreamsbank_actions_knowledgeproject_create_fabricante_kp_action,
 	dreamsbank_actions_knowledgeproject_navto_aspirante_create_action : dreamsbank_actions_knowledgeproject_navto_aspirante_create_action,
 	dreamsbank_actions_knowledgeproject_navto_aspirantelist_action : dreamsbank_actions_knowledgeproject_navto_aspirantelist_action,
 	dreamsbank_actions_knowledgeproject_navto_donante_create_action : dreamsbank_actions_knowledgeproject_navto_donante_create_action,
 	dreamsbank_actions_knowledgeproject_navto_donantelist_action : dreamsbank_actions_knowledgeproject_navto_donantelist_action,
+	dreamsbank_actions_knowledgeproject_navto_fabricante_create_action : dreamsbank_actions_knowledgeproject_navto_fabricante_create_action,
+	dreamsbank_actions_knowledgeproject_navto_fabricante_list_action : dreamsbank_actions_knowledgeproject_navto_fabricante_list_action,
 	dreamsbank_actions_knowledgeproject_navto_menu_datosmaestros_action : dreamsbank_actions_knowledgeproject_navto_menu_datosmaestros_action,
 	dreamsbank_actions_knowledgeproject_navto_menuknowledgeproject_action : dreamsbank_actions_knowledgeproject_navto_menuknowledgeproject_action,
 	dreamsbank_actions_knowledgerun_consultas_navto_consultasporasignacion_action : dreamsbank_actions_knowledgerun_consultas_navto_consultasporasignacion_action,

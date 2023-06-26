@@ -1,0 +1,24 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "FABRICANTE_KP"
+	},
+	"Properties": {
+		"identificacion": "#Control:identificacion/#Value",
+		"nombre": "#Control:nombre/#Value",
+		"ciudad": "#Control:ciudad/#Value",
+		"CEO": "#Control:ceo/#Value",
+		"telefono": "#Control:telefono/#Value",
+		"correo": "#Control:correo/#Value",
+		"web": "#Control:web/#Value",
+		"direccion": "#Control:direccion/#Value",
+		"contrasena": "#Control:contrasena/#Value",
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js"
+	}
+}
