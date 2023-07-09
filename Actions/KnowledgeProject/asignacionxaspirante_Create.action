@@ -1,0 +1,21 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Asignacion_KProject"
+	},
+	"Properties": {
+		"aspirante_identificacion": "#Page:seleccionDonante/#Control:aspiranteid/#Value",
+		"donante_identificacion": "#Page:seleccionFabricante/#Control:donanteid/#Value",
+		"area": "#Page:seleccionDonante/#Control:kparea/#Value",
+		"valor": "#Page:seleccionDonante/#Control:kpvalor/#Value",
+		"tiempo": "#Page:seleccionDonante/#Control:kptiempo/#Value",
+		"descripcion": "#Page:seleccionFabricante/#Control:listpickerfabricante/#SelectedValue",
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js"
+	}
+}

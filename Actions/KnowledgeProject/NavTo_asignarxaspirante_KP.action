@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_asignarxaspirante_KP"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgeProject/Nuevo Proceso/Asignarxaspirante.page",
+	"ModalPage": true
+}

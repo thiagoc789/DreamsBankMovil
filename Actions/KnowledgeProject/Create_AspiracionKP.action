@@ -1,0 +1,20 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Aspiracion_KProject"
+	},
+	"Properties": {
+		"aspirante_identificacion": "#Page:Aspirar_KP/#Control:idAspirar/#Value",
+		"area": "#Page:Aspirar_KP/#Control:area/#SelectedValue",
+		"descripcion": "#Page:Aspirar_KP/#Control:descripcion/#Value",
+		"presupuesto": "#Page:Aspirar_KP/#Control:valor_estimado/#Value",
+		"tiempo_estimado": "#Page:Aspirar_KP/#Control:tiempo_estimado/#Value",
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_seleccionDonante"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgeProject/Nuevo Proceso/selecicionDonante.page"
+}

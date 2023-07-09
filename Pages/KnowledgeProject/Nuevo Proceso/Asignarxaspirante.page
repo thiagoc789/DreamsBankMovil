@@ -1,0 +1,76 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"EntitySet": "Aspiracion_KProject",
+						"QueryOptions": "$expand=aspirante"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{aspirante/nombre}",
+						"Subhead": "{aspirante/CEO}",
+						"Footnote": "{area}",
+						"Description": "{descripcion}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "Tiempo: {tiempo_estimado}",
+						"SubstatusText": "Valor: ${presupuesto}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "{aspirante/imagen}",
+									"ImageText": ""
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": "/DreamsBank/Actions/KnowledgeProject/NavTo_seleccionDonante.action",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						}
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Asignarxaspirante",
+	"Caption": "Asignar por aspirante",
+	"PrefersLargeCaption": true
+}

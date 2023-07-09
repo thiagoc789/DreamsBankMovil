@@ -1,0 +1,110 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"Value": "#Page:seleccionDonante/#Control:aspirantenombre/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty1",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Aspirante:",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "#Page:seleccionFabricante/#Control:donantenombre/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty2",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Donante:",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "#Page:seleccionFabricante/#Control:listpickerfabricante/#SelectedValue",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty3",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Fabricante:",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "#Page:seleccionDonante/#Control:kparea/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty4",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Area:",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "#Page:seleccionDonante/#Control:kpvalor/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Valor: ",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "#Page:seleccionDonante/#Control:kptiempo/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty5",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Tiempo:",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Asignar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgeProject/asignacionxaspirante_Create.action"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "resumenxaspirante",
+	"Caption": "Resumen",
+	"PrefersLargeCaption": true
+}

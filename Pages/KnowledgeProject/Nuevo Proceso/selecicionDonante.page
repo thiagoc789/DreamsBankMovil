@@ -1,0 +1,148 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1",
+					"Controls": [
+						{
+							"Value": "{aspirante/identificacion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "aspiranteid",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "aspiranteid",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{area}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "kparea",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{tiempo_estimado}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "kptiempo",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{presupuesto}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "kpvalor",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{aspirante/nombre}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "aspirantenombre",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "aspirantenombre",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						}
+					]
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DreamsBank/Services/dreamsbankmov.service",
+						"EntitySet": "Donacion_KProject",
+						"QueryOptions": "$expand=donante&$filter=area eq '{area}'"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{donante/nombre}",
+						"Subhead": "{donante/CEO}",
+						"Footnote": "{area}",
+						"Description": "{descripcion}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "Tiempo: {tiempoTope}",
+						"SubstatusText": "Valor: ${valorTope}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "{donante/imagen}",
+									"ImageText": ""
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": "/DreamsBank/Actions/KnowledgeProject/NavTo_SeleccionFabricante.action",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "seleccionDonante",
+	"Caption": "Seleccion Donante",
+	"PrefersLargeCaption": true
+}

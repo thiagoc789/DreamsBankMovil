@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_Donar_KP"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgeProject/Nuevo Proceso/Donar_KP.page"
+}

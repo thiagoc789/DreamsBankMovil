@@ -5,8 +5,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ObjectHeader",
-					"_Name": "SectionObjectHeader0",
 					"ObjectHeader": {
 						"DetailImage": "/DreamsBank/Images/usersmanagment.png",
 						"DetailImageIsCircular": false,
@@ -15,13 +13,11 @@
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading"
 					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
 					"Visible": true
 				},
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -29,8 +25,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -55,7 +49,8 @@
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"Image": "sap-icon://manager",
-							"ImagePosition": "Leading"
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgeProject/NavTo_Login_KP.action"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -69,7 +64,13 @@
 							"Image": "sap-icon://information",
 							"ImagePosition": "Leading"
 						}
-					]
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				}
 			]
 		}

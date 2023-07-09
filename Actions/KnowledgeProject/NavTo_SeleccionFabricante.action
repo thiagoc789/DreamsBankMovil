@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_SeleccionFabricante"
+	},
+	"PageToOpen": "/DreamsBank/Pages/KnowledgeProject/Nuevo Proceso/seleccionFabricante.page"
+}

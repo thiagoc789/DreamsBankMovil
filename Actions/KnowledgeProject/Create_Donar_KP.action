@@ -1,0 +1,20 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/DreamsBank/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/DreamsBank/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"Service": "/DreamsBank/Services/dreamsbankmov.service",
+		"EntitySet": "Donacion_KProject"
+	},
+	"Properties": {
+		"donante_identificacion": "#Page:Donar_KP/#Control:idAspirar/#Value",
+		"area": "#Page:Donar_KP/#Control:area/#SelectedValue",
+		"descripcion": "#Page:Donar_KP/#Control:descripcion/#Value",
+		"valorTope": "#Page:Donar_KP/#Control:valor_estimado/#Value",
+		"tiempoTope": "#Page:Donar_KP/#Control:tiempo_estimado/#Value",
+		"fecha_creacion": "/DreamsBank/Rules/traer_fecha.js"
+	}
+}

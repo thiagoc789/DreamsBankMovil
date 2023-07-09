@@ -1,0 +1,101 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "#Page:KP_Login/#Control:identificacion/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "idAspirar",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Identificacion",
+							"Enabled": true
+						},
+						{
+							"Value": "#Page:Menu_nuevoproceso/#Control:nombre_proceso/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "nombreAspirar",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Nombre",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "area",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Seleccione una area",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select one single item",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"PickerItems": {
+								"Target": {
+									"Service": "/DreamsBank/Services/dreamsbankmov.service",
+									"EntitySet": "Area"
+								},
+								"DisplayValue": "{nombre}",
+								"ReturnValue": "{nombre}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "descripcion",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Descripción:",
+							"PlaceHolder": "Que tipo de proyectos puede donar del area escogida...",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "valor_estimado",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Valor:",
+							"PlaceHolder": "Valor tope de proyectos para donar...",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "tiempo_estimado",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Tiempo:",
+							"PlaceHolder": "Tiempo maximo de proyectos para donar...",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Title": "Donar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgeProject/Create_Donar_KP.action"
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Donar_KP",
+	"Caption": "Donar"
+}

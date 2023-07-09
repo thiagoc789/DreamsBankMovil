@@ -1,0 +1,94 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"Value": "{donante/identificacion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "donanteid",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "donanteid",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{donante/nombre}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "donantenombre",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "donantenombre",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "listpickerfabricante",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Seleccione un fabricante",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Seleccione un fabricante",
+							"HelperText": "Dejar en blanco si no se asigna un fabricante",
+							"IsSelectedSectionEnabled": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"PickerItems": {
+								"Target": {
+									"Service": "/DreamsBank/Services/dreamsbankmov.service",
+									"EntitySet": "FABRICANTE_KP"
+								},
+								"DisplayValue": "{nombre}",
+								"ReturnValue": "{nombre}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Ver resumen",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"OnPress": "/DreamsBank/Actions/KnowledgeProject/NavTo_KPresumenaspirante.action"
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "seleccionFabricante",
+	"Caption": "Fabricante",
+	"PrefersLargeCaption": true
+}
